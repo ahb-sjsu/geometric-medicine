@@ -219,7 +219,7 @@ This prediction is testable: administer both the MISS-HP (scalar) and a boundary
 
 ---
 
-## 14.5 COVID-19 as Natural Experiment: Detailed Analysis
+## 14.6 COVID-19 as Natural Experiment: Detailed Analysis
 
 ### The Pandemic Triage Setting Expanded
 
@@ -257,7 +257,7 @@ The empirical literature on COVID-19 moral injury is substantial and broadly con
 
 ---
 
-## 14.6 Sarah Across Three Settings
+## 14.7 Sarah Across Three Settings
 
 ### Pandemic ICU (Month 1)
 

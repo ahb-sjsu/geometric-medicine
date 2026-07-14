@@ -364,7 +364,7 @@ Dr. Stein's post-DBS state: excellent clinical outcomes ($d_1$), intact autonomy
 
 ### The Consent Paradox of Identity-Altering Interventions
 
-**Theorem 9.2 (Identity-Alteration Consent Paradox).** *For any intervention that modifies $h_{\text{patient}}$, the gauge-invariance test for valid consent (Theorem 4 from the GCE paper) is structurally unable to validate consent across the identity boundary. Consent at time $t_0$ is evaluated using $h_{t_0}$; the consequences are experienced using $h_{t_1}$. If $h_{t_0} \neq h_{t_1}$, no framing of the information at $t_0$ can guarantee that the decision is stable under the transformation $h_{t_0} \to h_{t_1}$.*
+**Theorem 9.2 (Identity-Alteration Consent Paradox).** *For any intervention that modifies $h_{\text{patient}}$, the gauge-invariance test for valid consent (Theorem 8.1) is structurally unable to validate consent across the identity boundary. Consent at time $t_0$ is evaluated using $h_{t_0}$; the consequences are experienced using $h_{t_1}$. If $h_{t_0} \neq h_{t_1}$, no framing of the information at $t_0$ can guarantee that the decision is stable under the transformation $h_{t_0} \to h_{t_1}$.*
 
 This is not a failure of the framework — it is a genuine paradox that the framework makes precise. Identity-altering interventions are the one class of clinical decisions where the consent apparatus breaks down structurally, not merely practically.
 

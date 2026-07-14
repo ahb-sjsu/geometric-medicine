@@ -120,7 +120,7 @@ Determining whether the clinical manifold is Riemannian, Finsler, or topological
 
 ---
 
-## 18.4 How Does the No Escape Theorem Constrain Medical AI?
+## 18.5 How Does the No Escape Theorem Constrain Medical AI?
 
 ### The General Theorem and Its Clinical Specificity
 

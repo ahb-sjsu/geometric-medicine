@@ -280,7 +280,7 @@ Each of these falsification criteria is specific, testable, and decisive. The fr
 
 ---
 
-## 17.5 Sarah's Experiment
+## 17.6 Sarah's Experiment
 
 Sarah designs her first study: a prospective consent gauge-invariance experiment. She presents patients scheduled for elective surgery with consent information in two framings:
 

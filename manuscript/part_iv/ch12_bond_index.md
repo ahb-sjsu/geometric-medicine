@@ -329,7 +329,7 @@ The framework suggests the general strategy: identify the dimensions contributin
 
 ---
 
-## 12.8 Sarah's Bond Index
+## 12.9 Sarah's Bond Index
 
 Sarah presents the Bond Index results to her hospital's ethics committee. The slide reads:
 

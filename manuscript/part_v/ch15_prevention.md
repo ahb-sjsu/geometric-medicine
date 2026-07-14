@@ -162,7 +162,7 @@ The geometric framework suggests that moral resilience training should focus on 
 
 **Capability 1: Boundary awareness.** The clinician learns to identify which boundaries are being crossed, on which dimensions, with what penalties. This is metacognitive — the clinician observes their own heuristic function rather than being passively driven by it.
 
-**Capability 2: Conscioous recalibration.** When the clinician notices that $\beta_k$ has shifted (either inflated or deflated), they can consciously adjust — not by suppressing the shift but by comparing their current $\beta_k$ with their pre-injury reference value and identifying whether the shift reflects genuine recalibration (the boundary's true cost has changed) or heuristic damage (the boundary's perceived cost has changed without a change in true cost).
+**Capability 2: Conscious recalibration.** When the clinician notices that $\beta_k$ has shifted (either inflated or deflated), they can consciously adjust — not by suppressing the shift but by comparing their current $\beta_k$ with their pre-injury reference value and identifying whether the shift reflects genuine recalibration (the boundary's true cost has changed) or heuristic damage (the boundary's perceived cost has changed without a change in true cost).
 
 **Capability 3: Source attribution.** The clinician learns to distinguish between forced boundary crossings (imposed by institutional policy — moral injury) and voluntary boundary crossings (part of the clinician's own geodesic computation — not moral injury). Forced crossings produce moral injury; voluntary crossings do not. A clinician who performs a risky surgery that they believe is the right decision for the patient has crossed the harm boundary voluntarily — this is clinical courage, not moral injury. A clinician who performs a triage decision that they believe is wrong has crossed the abandonment boundary involuntarily — this is moral injury.
 
@@ -276,7 +276,7 @@ Functional adaptation is not the same as recovery. The clinician's heuristic is 
 
 ---
 
-## 15.7 Sarah's Repair
+## 15.8 Sarah's Repair
 
 After the pandemic, Sarah participates in a structured debrief program — twelve sessions over six months, facilitated by a clinical ethicist and a psychologist.
 

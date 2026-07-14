@@ -48,7 +48,7 @@ Vaccine hesitancy is a specific form of heuristic corruption: the individual's $
 - *Underestimation of $d_6$ benefit: the herd immunity contribution is ignored or discounted.*
 - *Gauge variance: the heuristic is sensitive to framing (absolute numbers of adverse events vs. base rates), violating the Bond Invariance Principle.*
 
-The gauge-variance feature is particularly diagnostic. A person who rejects a vaccine after reading "10,000 adverse events reported" but would accept it after reading "0.001% adverse event rate" has a gauge-variant heuristic — their decision depends on the framing, not the underlying clinical reality. This is a BIP violation detectable by the gauge-invariance test (Theorem 4 from the GCE paper).
+The gauge-variance feature is particularly diagnostic. A person who rejects a vaccine after reading "10,000 adverse events reported" but would accept it after reading "0.001% adverse event rate" has a gauge-variant heuristic — their decision depends on the framing, not the underlying clinical reality. This is a BIP violation detectable by the gauge-invariance test (Theorem 8.1).
 
 **Proposition 11.1 (Hesitancy Reduces to Three Distinct Failures).** *Vaccine hesitancy decomposes into three structurally distinct failures:*
 
@@ -291,7 +291,7 @@ Every allocation policy sits on a frontier between equity ($d_3$) and efficiency
 
 ---
 
-## 11.6 Sarah's Post-Pandemic Committee Work
+## 11.8 Sarah's Post-Pandemic Committee Work
 
 Six months after the pandemic surge subsides, Sarah joins a hospital committee tasked with redesigning the organ transplant evaluation process. She brings the nine-dimensional framework.
 

@@ -114,7 +114,7 @@ The accumulation theorem has four practical implications:
 
 **Implication 2: Prevention is more effective than treatment.** Because MI is irreversible above $\text{MI}_{\text{crit}}$, the primary institutional strategy should be prevention — keeping $\text{MI}(T) < \text{MI}_{\text{crit}}$ — rather than treatment of clinicians who have exceeded the threshold.
 
-**Implication 3: Frequency matters more than severity.** A clinician who makes one profoundly morally costly decision ($\Delta \text{MI} = 50$) accumulates less moral injury than a clinician who makes fifty moderately morally costly decisions ($50 \times \Delta \text{MI} = 5 = 250$). The slow accumulation of moderate boundary crossings is more damaging than the acute impact of a single dramatic crossing.
+**Implication 3: Frequency matters more than severity.** A clinician who makes one profoundly morally costly decision ($\Delta \text{MI} = 50$) accumulates less moral injury than a clinician who makes fifty moderately morally costly decisions ($50 \times \Delta \text{MI} = 50 \times 5 = 250$). The slow accumulation of moderate boundary crossings is more damaging than the acute impact of a single dramatic crossing.
 
 **Implication 4: The two damage modes are clinically distinguishable.** Hypervigilance and moral numbing (Section 13.4) produce opposite clinical signatures and can be detected by measuring boundary penalty changes over time.
 
@@ -305,7 +305,7 @@ The framework predicts that resilience-trained clinicians should show stable $\b
 
 ---
 
-## 13.8 Sarah's Moral Injury
+## 13.9 Sarah's Moral Injury
 
 Sarah's first moral injury event is not dramatic. It is quiet.
 

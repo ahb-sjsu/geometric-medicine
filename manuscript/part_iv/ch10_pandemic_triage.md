@@ -149,7 +149,7 @@ The age-based deprioritization activates $d_3$ (justice). The retired engineer h
 
 $$\beta_{\text{justice}} \cdot \mathbf{1}[\text{age used as triage criterion}]$$
 
-The QALY Irrecoverability Theorem (Theorem 2) predicts exactly this failure: the QALY calculation discards the $d_3$ information. A QALY of 7.20 and a QALY of 29.25 differ only on $d_1$ — the eight dimensions discarded by the scalar include the justice dimension that makes the comparison problematic.
+The QALY Irrecoverability Theorem (Theorem 5.1) predicts exactly this failure: the QALY calculation discards the $d_3$ information. A QALY of 7.20 and a QALY of 29.25 differ only on $d_1$ — the eight dimensions discarded by the scalar include the justice dimension that makes the comparison problematic.
 
 When prognoses are comparable (the survival probabilities differ by only 5 percentage points — 65% vs. 60%), the $d_1$ differential is small and the $d_3$ cost of age-based discrimination may exceed it:
 
