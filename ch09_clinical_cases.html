@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chapter 9: Clinical Geodesics in Practice &mdash; Geometric Medicine</title>
   <meta name="description" content="Chapter 9: Clinical Geodesics in Practice from Geometric Medicine: Clinical Reasoning, Triage, and the Ethics of Allocation, by Andrew H. Bond.">
+  <meta name="generator" content="geometric-series build kit">
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../book/book.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +14,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 </head>
 
-<body data-book-slug="geometric-medicine">
+<body data-book-slug="geometric-medicine" data-chapter-id="ch09_clinical_cases">
   <nav id="main-nav">
     <div class="nav-inner">
       <a href="../index.html" class="nav-brand">
@@ -36,6 +37,11 @@
         <span class="breadcrumb-sep">&rsaquo;</span>
         <span class="breadcrumb-current">Chapter 9: Clinical Geodesics in Practice</span>
       </nav>
+      <div class="chapter-nav-top">
+        <a href="ch08_consent_gauge.html" class="nav-prev">&larr; Chapter 8: Informed Consent as Gauge Invariance</a>
+        <a href="index.html" class="nav-toc">Contents</a>
+        <a href="ch10_pandemic_triage.html" class="nav-next">Chapter 10: Pandemic Triage as Manifold Allocation &rarr;</a>
+      </div>
 
       <div class="chapter-content">
 <h1 id="chapter-9-clinical-geodesics-in-practice">Chapter 9: Clinical Geodesics in Practice</h1>
@@ -278,7 +284,7 @@ $$\text{CF}(\gamma_B) = \sum_{i=1}^{4} w_{\text{step}_i} = w_{\text{meeting}} + 
 <p>In Mr. Okafor&rsquo;s case (Case 1), the patient&rsquo;s heuristic was well-calibrated — he understood the consequences of his refusal and chose on the basis of deeply held values. His $d_9$ (understanding) was high; his $d_4$ (autonomy) was intact. The consent boundary was sacred.</p>
 <p>In Mr. Torres&rsquo;s case, the patient&rsquo;s heuristic is catastrophically miscalibrated. His psychosis has distorted his $d_9$ to the point where his perception of reality does not correspond to clinical reality. His &ldquo;refusal&rdquo; is not an autonomous choice ($d_4$) but a symptom of the disease itself. The gauge-invariance test fails immediately: Mr. Torres&rsquo;s decision is not invariant under meaning-preserving reframing because his heuristic function is not responding to the attribute vectors at all — it is responding to delusional inputs that have no manifold representation.</p>
 <p><strong>Definition 9.1 (Heuristic Override).</strong> <em>An institutional heuristic override is justified when the patient&rsquo;s heuristic function $h_{\text{patient}}(n)$ is so severely miscalibrated that the patient&rsquo;s computed geodesic $\gamma^*_{\text{patient}}$ diverges from the geodesic $\gamma^*_{\text{calibrated}}$ that the patient would compute with a calibrated heuristic by more than threshold $\delta$:</em></p>
-<p>$$\|\gamma^*_{\text{patient}} - \gamma^*_{\text{calibrated}}\| > \delta$$</p>
+<p>$$\|\gamma^*_{\text{patient}} - \gamma^*_{\text{calibrated}}\| &gt; \delta$$</p>
 <p><em>In this case, the institution substitutes $h_{\text{institution}}(n)$ for $h_{\text{patient}}(n)$, subject to the constraint that the substitution minimizes total autonomy cost $\Delta d_4$.</em></p>
 <h3 id="the-multi-dimensional-trade-off">The Multi-Dimensional Trade-Off</h3>
 <p>The involuntary treatment decision activates a genuine trade-off — not between &ldquo;autonomy and beneficence&rdquo; (the principlism formulation) but between specific dimensional costs:</p>
@@ -410,7 +416,7 @@ $$\text{CF}(\gamma_B) = \sum_{i=1}^{4} w_{\text{step}_i} = w_{\text{meeting}} + 
 </ul>
 <p><strong>Theorem 9.1 (Proxy Pathfinding Divergence).</strong> <em>Let $h_{\text{proxy}}$ and $h_{\text{patient}}$ be the heuristic functions of the proxy and the patient, respectively. The divergence between the proxy-computed geodesic and the patient&rsquo;s true geodesic is bounded by:</em></p>
 <p>$$\|\gamma^*_{\text{proxy}} - \gamma^*_{\text{patient}}\| \leq K \cdot \|h_{\text{proxy}} - h_{\text{patient}}\|_{\infty}$$</p>
-<p><em>where $K$ depends on the curvature of the clinical decision complex. No calibration procedure can guarantee $\|h_{\text{proxy}} - h_{\text{patient}}\|_{\infty} < \epsilon$ without direct knowledge of $h_{\text{patient}}$, which is unavailable when the patient lacks capacity.</em></p>
+<p><em>where $K$ depends on the curvature of the clinical decision complex. No calibration procedure can guarantee $\|h_{\text{proxy}} - h_{\text{patient}}\|_{\infty} &lt; \epsilon$ without direct knowledge of $h_{\text{patient}}$, which is unavailable when the patient lacks capacity.</em></p>
 <p>The theorem states a structural limitation: proxy pathfinding is fundamentally uncertain. The proxy is navigating with someone else&rsquo;s map, and the map may be wrong.</p>
 <h3 id="the-clinical-geodesic-for-proxy-decisions">The Clinical Geodesic for Proxy Decisions</h3>
 <p>The geodesic for this case is not &ldquo;continue everything&rdquo; (Carlos&rsquo;s immediate request) or &ldquo;withdraw immediately&rdquo; (the scalar utilitarian answer). It is a calibration process — an attempt to improve $h_{\text{proxy}}$ before major decisions are made:</p>
@@ -464,7 +470,7 @@ $$\text{CF}(\gamma_B) = \sum_{i=1}^{4} w_{\text{step}_i} = w_{\text{meeting}} + 
 <p><strong>Pre-modification identity documentation</strong>: Before DBS, the patient articulates their values, identity commitments, and criteria for acceptable personality change. This is stored as a reference attribute vector $\mathbf{a}_{\text{reference}}$.</p>
 </li>
 <li>
-<p><strong>Post-modification monitoring</strong>: After DBS, the clinical team periodically measures the patient&rsquo;s attribute vector and compares it to $\mathbf{a}_{\text{reference}}$. If $\|d_7^{\text{post}} - d_7^{\text{reference}}\| > \delta_{\text{identity}}$, a structured review is triggered.</p>
+<p><strong>Post-modification monitoring</strong>: After DBS, the clinical team periodically measures the patient&rsquo;s attribute vector and compares it to $\mathbf{a}_{\text{reference}}$. If $\|d_7^{\text{post}} - d_7^{\text{reference}}\| &gt; \delta_{\text{identity}}$, a structured review is triggered.</p>
 </li>
 <li>
 <p><strong>Reversibility as boundary constraint</strong>: DBS is adjustable and, in principle, reversible. The geodesic favors identity-altering interventions that are reversible (DBS, medication) over those that are irreversible (ablative neurosurgery), because reversibility preserves a return path on the manifold.</p>
@@ -553,13 +559,26 @@ $$\text{CF}(\gamma_B) = \sum_{i=1}^{4} w_{\text{step}_i} = w_{\text{meeting}} + 
 <p>This chapter has applied the nine-dimensional clinical decision complex and the $A^*$ pathfinding model to five paradigm cases in clinical ethics. Each case demonstrates that the clinical geodesic — the minimum-cost path on the full manifold — differs from the answer produced by scalar frameworks (QALY analysis, utilitarian calculus, binary principlism). The differences are not marginal; they are structural. The cases collectively demonstrate that the geometric framework captures the reasoning that experienced clinicians already perform — the multi-dimensional, boundary-aware, process-sensitive pathfinding that clinical wisdom represents — and provides the mathematical vocabulary to make that reasoning explicit, teachable, and auditable.</p>
 <p>The five structural features revealed by the cases — sacred-value boundaries, process path optimization, heuristic override, proxy divergence, and temporal identity asymmetry — recur throughout clinical medicine. Each will reappear in the chapters that follow: boundaries in triage (Chapter 10), proxy pathfinding in allocation (Chapter 11), identity in moral injury (Chapter 13), and heuristic override in AI clinical reasoning (Chapter 16). The cases are not isolated examples. They are the fundamental structures of the clinical manifold, encountered at the bedside every day.</p>
 <hr />
-<p>[^1]: The actual clinical management of Jehovah&rsquo;s Witness patients is well-established and broadly consistent with the geodesic analysis presented here. Guidelines from the American College of Surgeons (2019) and the British Journal of Anaesthesia (2020) recommend respecting the refusal and aggressively pursuing bloodless surgical techniques.</p>
-<p>[^2]: The proxy asymmetry problem is distinct from the well-known surrogate accuracy literature (Shalowitz et al., 2006), which demonstrates that surrogates predict patient preferences with approximately 68% accuracy. The geometric framework explains <em>why</em> surrogate accuracy has a structural ceiling: the proxy is pathfinding with a different heuristic, and no calibration procedure can guarantee convergence without direct access to the patient&rsquo;s heuristic function.</p>
-<p>[^3]: The identity-alteration consent paradox has been discussed extensively in the neuroethics literature (Glannon, 2016; Focquaert and Schermer, 2015) but without the formal apparatus to make the paradox precise. The geometric framework&rsquo;s contribution is not the observation that identity-altering interventions raise consent problems — that observation is well-established — but the mathematical characterization of <em>why</em> the consent apparatus fails in these cases: the gauge-invariance test cannot operate across a heuristic discontinuity.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>The actual clinical management of Jehovah&rsquo;s Witness patients is well-established and broadly consistent with the geodesic analysis presented here. Guidelines from the American College of Surgeons (2019) and the British Journal of Anaesthesia (2020) recommend respecting the refusal and aggressively pursuing bloodless surgical techniques.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>The proxy asymmetry problem is distinct from the well-known surrogate accuracy literature (Shalowitz et al., 2006), which demonstrates that surrogates predict patient preferences with approximately 68% accuracy. The geometric framework explains <em>why</em> surrogate accuracy has a structural ceiling: the proxy is pathfinding with a different heuristic, and no calibration procedure can guarantee convergence without direct access to the patient&rsquo;s heuristic function.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>The identity-alteration consent paradox has been discussed extensively in the neuroethics literature (Glannon, 2016; Focquaert and Schermer, 2015) but without the formal apparatus to make the paradox precise. The geometric framework&rsquo;s contribution is not the observation that identity-altering interventions raise consent problems — that observation is well-established — but the mathematical characterization of <em>why</em> the consent apparatus fails in these cases: the gauge-invariance test cannot operate across a heuristic discontinuity.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
       </div>
 
       <div class="chapter-nav-bottom">
-        <a href="index.html" class="nav-toc">&larr; Contents</a>
+        <a href="ch08_consent_gauge.html" class="nav-prev">&larr; Chapter 8: Informed Consent as Gauge Invariance</a>
+        <a href="index.html" class="nav-toc">Contents</a>
+        <a href="ch10_pandemic_triage.html" class="nav-next">Chapter 10: Pandemic Triage as Manifold Allocation &rarr;</a>
       </div>
     </div>
   </article>
@@ -587,6 +606,7 @@ $$\text{CF}(\gamma_B) = \sum_{i=1}^{4} w_{\text{step}_i} = w_{\text{meeting}} + 
         {left: '\\\\(', right: '\\\\)', display: false},
         {left: '\\\\[', right: '\\\\]', display: true}
       ],
+      ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
       throwOnError: false
     });"></script>
 </body>

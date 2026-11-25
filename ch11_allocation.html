@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chapter 11: Vaccine Allocation, Organ Transplant, and the Geometry of Scarcity &mdash; Geometric Medicine</title>
   <meta name="description" content="Chapter 11: Vaccine Allocation, Organ Transplant, and the Geometry of Scarcity from Geometric Medicine: Clinical Reasoning, Triage, and the Ethics of Allocation, by Andrew H. Bond.">
+  <meta name="generator" content="geometric-series build kit">
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../book/book.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +14,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 </head>
 
-<body data-book-slug="geometric-medicine">
+<body data-book-slug="geometric-medicine" data-chapter-id="ch11_allocation">
   <nav id="main-nav">
     <div class="nav-inner">
       <a href="../index.html" class="nav-brand">
@@ -36,6 +37,11 @@
         <span class="breadcrumb-sep">&rsaquo;</span>
         <span class="breadcrumb-current">Chapter 11: Vaccine Allocation, Organ Transplant, and the Geometry of Scarcity</span>
       </nav>
+      <div class="chapter-nav-top">
+        <a href="ch10_pandemic_triage.html" class="nav-prev">&larr; Chapter 10: Pandemic Triage as Manifold Allocation</a>
+        <a href="index.html" class="nav-toc">Contents</a>
+        <a href="ch12_bond_index.html" class="nav-next">Chapter 12: The Clinical Bond Index and Structural Healthcar… &rarr;</a>
+      </div>
 
       <div class="chapter-content">
 <h1 id="chapter-11-vaccine-allocation-organ-transplant-and-the-geometry-of-scarcity">Chapter 11: Vaccine Allocation, Organ Transplant, and the Geometry of Scarcity</h1>
@@ -162,9 +168,9 @@
 <p>Public health mandates — vaccination requirements, quarantine orders, water fluoridation, mask mandates — restrict individual autonomy ($d_4$) to achieve collective health benefits ($d_1 + d_6$). Each mandate is a forced deviation from individual geodesics in the service of the collective geodesic.</p>
 <p><strong>Definition 11.3 (Geometric Justification of a Public Health Mandate).</strong> <em>A public health mandate is geometrically justified when three conditions hold simultaneously:</em></p>
 <p><em>1. Geodesic divergence: The collective geodesic $\gamma^*_{\text{collective}}$ differs from the Nash equilibrium $\gamma^*_{\text{Nash}}$. Without the mandate, individual choices produce a collectively suboptimal outcome.</em></p>
-<p><em>2. Bounded autonomy cost: The autonomy restriction $\Delta d_4$ does not cross a sacred-value boundary ($\beta_{\text{sacred}} < \infty$). The mandate restricts autonomy but does not violate bodily integrity, religious practice, or personal identity in ways that have infinite boundary penalties.</em></p>
+<p><em>2. Bounded autonomy cost: The autonomy restriction $\Delta d_4$ does not cross a sacred-value boundary ($\beta_{\text{sacred}} &lt; \infty$). The mandate restricts autonomy but does not violate bodily integrity, religious practice, or personal identity in ways that have infinite boundary penalties.</em></p>
 <p><em>3. Proportionate benefit: The collective benefit on $d_1 + d_6$ exceeds the individual cost on $d_4$, under the community&rsquo;s metric tensor $\Sigma$.</em></p>
-<p>$$\frac{(\Delta d_1 + \Delta d_6)^T \Sigma^{-1} (\Delta d_1 + \Delta d_6)}{(\Delta d_4)^2 / \sigma_4^2} > 1$$</p>
+<p>$$\frac{(\Delta d_1 + \Delta d_6)^T \Sigma^{-1} (\Delta d_1 + \Delta d_6)}{(\Delta d_4)^2 / \sigma_4^2} &gt; 1$$</p>
 <p><em>All three conditions are necessary. A mandate that satisfies conditions 1 and 3 but not condition 2 (e.g., forced medical experimentation that violates bodily integrity — a sacred-value boundary) is never geometrically justified, regardless of the collective benefit.</em></p>
 <h3 id="application-vaccination-mandates">Application: Vaccination Mandates</h3>
 <p>Childhood vaccination mandates satisfy all three conditions for most vaccines and most populations:</p>
@@ -244,7 +250,7 @@
 <h3 id="worked-example-1-childhood-vaccination-mandate">Worked Example 1: Childhood Vaccination Mandate</h3>
 <p>Consider a state legislature considering a childhood vaccination mandate that would eliminate non-medical exemptions for school enrollment. The geometric analysis:</p>
 <p><strong>Condition 1 (Geodesic divergence):</strong> The individual geodesic for a vaccine-hesitant parent includes non-vaccination (the parent&rsquo;s $h_{\text{patient}}$ overestimates $d_1$ cost of vaccination and underestimates $d_6$ benefit of herd immunity). The collective geodesic includes vaccination for all children capable of being vaccinated. The geodesics diverge. Condition satisfied.</p>
-<p><strong>Condition 2 (Bounded autonomy cost):</strong> The mandate restricts $d_4$ (parental autonomy over the child&rsquo;s medical care) but does not cross a sacred-value boundary. The parent retains medical decision-making authority for all other medical decisions; the mandate restricts one specific decision. The $d_4$ cost is finite: $\Delta d_4 < \infty$. Condition satisfied.</p>
+<p><strong>Condition 2 (Bounded autonomy cost):</strong> The mandate restricts $d_4$ (parental autonomy over the child&rsquo;s medical care) but does not cross a sacred-value boundary. The parent retains medical decision-making authority for all other medical decisions; the mandate restricts one specific decision. The $d_4$ cost is finite: $\Delta d_4 &lt; \infty$. Condition satisfied.</p>
 <p>For a specific subset of parents — those with sincere religious objections where vaccination conflicts with core religious identity ($d_7$) — the autonomy cost may approach a sacred-value boundary. The geometric analysis for this subset: if $\beta_{\text{religious}} = \infty$ for these parents, the mandate&rsquo;s $d_4$ cost is infinite on their manifold, and Condition 2 is not satisfied. This is the geometric justification for religious exemptions — not as a blanket permission but as a recognition that the autonomy cost is infinite for a specific subpopulation.</p>
 <p><strong>Condition 3 (Proportionate benefit):</strong> The $d_1 + d_6$ benefit of universal vaccination is substantial: prevention of serious illness in the vaccinated child ($d_1$) plus herd immunity protection for immunocompromised children who cannot be vaccinated ($d_6$). The benefit exceeds the $d_4$ cost by a large margin for most populations. Condition satisfied.</p>
 <p><strong>Geometric verdict:</strong> The childhood vaccination mandate is geometrically justified for the general population. Religious exemptions are geometrically justified for the subpopulation where $\beta_{\text{religious}} = \infty$.</p>
@@ -299,13 +305,26 @@
 <h2 id="chapter-summary">Chapter Summary</h2>
 <p>Beyond pandemic triage, three allocation problems reveal distinct structures of the clinical manifold under scarcity. Vaccine allocation introduces the collective geodesic — the population-level optimum that diverges from the Nash equilibrium of individual decisions — and vaccine hesitancy decomposes into three structurally distinct failures (epistemic, trust, autonomy) requiring different interventions. Organ transplant allocation reveals dimensional omission: existing scoring systems assign zero weight to trust ($d_5$) and dignity ($d_7$), producing systematic disparities that the Bond Index can detect and quantify. Public health mandates are geometrically justified when three conditions hold simultaneously — geodesic divergence, bounded autonomy cost, and proportionate benefit — providing a framework that distinguishes justified mandates from unjustified overreach. Irreversible allocation decisions carry an additional manifold cost proportional to forecasting uncertainty, formalizing the precautionary principle as a specific geometric penalty rather than a blanket prohibition. The bioethical decision complex extends the clinical manifold to population scale, with a Gini penalty that makes equity a computable component of the allocation objective.</p>
 <hr />
-<p>[^1]: The MELD score was introduced in 2002 by Kamath et al. and has been widely validated as a predictor of short-term mortality in end-stage liver disease. Its clinical validity is not in question. The geometric critique is that clinical validity on $d_1$ does not imply adequacy on the full manifold — and that allocation decisions should be evaluated on the full manifold, not on $d_1$ alone.</p>
-<p>[^2]: The three-failure decomposition of vaccine hesitancy parallels the three-failure decomposition of manifold alignment in shared decision-making (Definition 6 in Chapter 8): epistemic misalignment, value misalignment, and goal misalignment. The geometric framework reveals the structural isomorphism between individual clinical consent and population-level public health uptake — both are manifold alignment problems with the same dimensional structure.</p>
-<p>[^3]: The geometric justification for public health mandates is structurally similar to the justification for psychiatric involuntary treatment (Case 3 in Chapter 9): both involve overriding $d_4$ (autonomy) when the individual&rsquo;s geodesic diverges dangerously from the manifold-optimal path. The key difference is that involuntary treatment overrides a miscalibrated heuristic (the patient&rsquo;s psychosis distorts their perception of reality), while mandates override a correctly calibrated but individually rational heuristic (the individual correctly computes their personal geodesic but ignores externalities on $d_6$).</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>The MELD score was introduced in 2002 by Kamath et al. and has been widely validated as a predictor of short-term mortality in end-stage liver disease. Its clinical validity is not in question. The geometric critique is that clinical validity on $d_1$ does not imply adequacy on the full manifold — and that allocation decisions should be evaluated on the full manifold, not on $d_1$ alone.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>The three-failure decomposition of vaccine hesitancy parallels the three-failure decomposition of manifold alignment in shared decision-making (Definition 6 in Chapter 8): epistemic misalignment, value misalignment, and goal misalignment. The geometric framework reveals the structural isomorphism between individual clinical consent and population-level public health uptake — both are manifold alignment problems with the same dimensional structure.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>The geometric justification for public health mandates is structurally similar to the justification for psychiatric involuntary treatment (Case 3 in Chapter 9): both involve overriding $d_4$ (autonomy) when the individual&rsquo;s geodesic diverges dangerously from the manifold-optimal path. The key difference is that involuntary treatment overrides a miscalibrated heuristic (the patient&rsquo;s psychosis distorts their perception of reality), while mandates override a correctly calibrated but individually rational heuristic (the individual correctly computes their personal geodesic but ignores externalities on $d_6$).&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
       </div>
 
       <div class="chapter-nav-bottom">
-        <a href="index.html" class="nav-toc">&larr; Contents</a>
+        <a href="ch10_pandemic_triage.html" class="nav-prev">&larr; Chapter 10: Pandemic Triage as Manifold Allocation</a>
+        <a href="index.html" class="nav-toc">Contents</a>
+        <a href="ch12_bond_index.html" class="nav-next">Chapter 12: The Clinical Bond Index and Structural Healthcar… &rarr;</a>
       </div>
     </div>
   </article>
@@ -333,6 +352,7 @@
         {left: '\\\\(', right: '\\\\)', display: false},
         {left: '\\\\[', right: '\\\\]', display: true}
       ],
+      ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
       throwOnError: false
     });"></script>
 </body>

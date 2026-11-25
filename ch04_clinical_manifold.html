@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chapter 4: The Clinical Decision Complex &mdash; Geometric Medicine</title>
   <meta name="description" content="Chapter 4: The Clinical Decision Complex from Geometric Medicine: Clinical Reasoning, Triage, and the Ethics of Allocation, by Andrew H. Bond.">
+  <meta name="generator" content="geometric-series build kit">
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../book/book.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +14,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 </head>
 
-<body data-book-slug="geometric-medicine">
+<body data-book-slug="geometric-medicine" data-chapter-id="ch04_clinical_manifold">
   <nav id="main-nav">
     <div class="nav-inner">
       <a href="../index.html" class="nav-brand">
@@ -36,6 +37,11 @@
         <span class="breadcrumb-sep">&rsaquo;</span>
         <span class="breadcrumb-current">Chapter 4: The Clinical Decision Complex</span>
       </nav>
+      <div class="chapter-nav-top">
+        <a href="ch03_history_medical_ethics.html" class="nav-prev">&larr; Chapter 3: A Brief History of Medical Ethics, Geometrically</a>
+        <a href="index.html" class="nav-toc">Contents</a>
+        <a href="ch05_qaly_irrecoverability.html" class="nav-next">Chapter 5: The QALY Irrecoverability Theorem &rarr;</a>
+      </div>
 
       <div class="chapter-content">
 <h1 id="chapter-4-the-clinical-decision-complex">Chapter 4: The Clinical Decision Complex</h1>
@@ -203,7 +209,7 @@ $(+0.10, 0.0, -0.10, -0.10, -0.10, -0.10, -0.20, +0.10, -0.05)$</p>
 <h2 id="47-care-bundles-as-higher-simplices">4.7 Care Bundles as Higher Simplices</h2>
 <p>Many clinical actions are not isolated edges but bundles &mdash; collections of actions that must be performed together and whose costs are not additive.</p>
 <p><strong>Definition 4.5 (Care Bundle).</strong> <em>A care bundle is a $k$-simplex $[v_0, v_1, \ldots, v_k]$ on $\mathcal{C}$ representing $k$ jointly administered interventions. The cost of the bundle is:</em></p>
-<p>$$w([v_0, \ldots, v_k]) \neq \sum_{i < j} w(v_i, v_j)$$</p>
+<p>$$w([v_0, \ldots, v_k]) \neq \sum_{i &lt; j} w(v_i, v_j)$$</p>
 <p><em>The inequality holds because interactions between the bundled interventions create cross-terms that the individual edge weights do not capture.</em></p>
 <p>Example: A chemotherapy protocol is a care bundle consisting of the cytotoxic drug + antiemetic + hydration + counseling + follow-up scheduling. The cost of the bundle is not the sum of the individual costs because the interactions matter: counseling ($d_9$ improvement) reduces the cost of the cytotoxic drug ($d_7$ degradation is mitigated by understanding), antiemetic ($d_1$ improvement through symptom management) enables the patient to tolerate the drug, and follow-up scheduling ($d_5$ improvement through continuity) provides relational context that changes the meaning of the treatment.</p>
 <p>Care bundles are the clinical decision complex&rsquo;s representation of the clinical reality that medicine is practiced not as isolated actions but as coordinated interventions. The higher-simplex structure captures the non-additivity that makes clinical reasoning more complex than a sequence of independent binary choices.</p>
@@ -396,11 +402,20 @@ $(+0.10, 0.0, -0.10, -0.10, -0.10, -0.10, -0.20, +0.10, -0.05)$</p>
 <p>The key insight is that clinical decisions are pathfinding problems on this complex, and the clinical geodesic &mdash; the minimum-cost path from the patient&rsquo;s current state to the goal region &mdash; is the recommended plan of care. The geodesic is computed on the full nine-dimensional complex, not on a scalar projection. When it diverges from the QALY-optimal path, the geodesic is right and the QALY is wrong &mdash; not because the QALY has been miscalibrated, but because the QALY has been projected onto one dimension of a nine-dimensional reality.</p>
 <p>The next chapter proves this claim formally.</p>
 <hr />
-<p>[^1]: The clinical decision complex is formally identical to Definition 1 of the GCE paper (submitted to <em>Journal of Medical Ethics</em>, 2026). The notation follows the series conventions: $\mathcal{C}$ for the clinical decision complex, $\mathbf{a}$ for attribute vectors, $\Sigma$ for the covariance matrix, $\beta_k$ for boundary penalties, $\gamma^*$ for the clinical geodesic. See Appendix E for the complete notation guide.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>The clinical decision complex is formally identical to Definition 1 of the GCE paper (submitted to <em>Journal of Medical Ethics</em>, 2026). The notation follows the series conventions: $\mathcal{C}$ for the clinical decision complex, $\mathbf{a}$ for attribute vectors, $\Sigma$ for the covariance matrix, $\beta_k$ for boundary penalties, $\gamma^*$ for the clinical geodesic. See Appendix E for the complete notation guide.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
       </div>
 
       <div class="chapter-nav-bottom">
-        <a href="index.html" class="nav-toc">&larr; Contents</a>
+        <a href="ch03_history_medical_ethics.html" class="nav-prev">&larr; Chapter 3: A Brief History of Medical Ethics, Geometrically</a>
+        <a href="index.html" class="nav-toc">Contents</a>
+        <a href="ch05_qaly_irrecoverability.html" class="nav-next">Chapter 5: The QALY Irrecoverability Theorem &rarr;</a>
       </div>
     </div>
   </article>
@@ -428,6 +443,7 @@ $(+0.10, 0.0, -0.10, -0.10, -0.10, -0.10, -0.20, +0.10, -0.05)$</p>
         {left: '\\\\(', right: '\\\\)', display: false},
         {left: '\\\\[', right: '\\\\]', display: true}
       ],
+      ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
       throwOnError: false
     });"></script>
 </body>

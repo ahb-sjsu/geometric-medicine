@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chapter 10: Pandemic Triage as Manifold Allocation &mdash; Geometric Medicine</title>
   <meta name="description" content="Chapter 10: Pandemic Triage as Manifold Allocation from Geometric Medicine: Clinical Reasoning, Triage, and the Ethics of Allocation, by Andrew H. Bond.">
+  <meta name="generator" content="geometric-series build kit">
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../book/book.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +14,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 </head>
 
-<body data-book-slug="geometric-medicine">
+<body data-book-slug="geometric-medicine" data-chapter-id="ch10_pandemic_triage">
   <nav id="main-nav">
     <div class="nav-inner">
       <a href="../index.html" class="nav-brand">
@@ -36,6 +37,11 @@
         <span class="breadcrumb-sep">&rsaquo;</span>
         <span class="breadcrumb-current">Chapter 10: Pandemic Triage as Manifold Allocation</span>
       </nav>
+      <div class="chapter-nav-top">
+        <a href="ch09_clinical_cases.html" class="nav-prev">&larr; Chapter 9: Clinical Geodesics in Practice</a>
+        <a href="index.html" class="nav-toc">Contents</a>
+        <a href="ch11_allocation.html" class="nav-next">Chapter 11: Vaccine Allocation, Organ Transplant, and the Ge… &rarr;</a>
+      </div>
 
       <div class="chapter-content">
 <h1 id="chapter-10-pandemic-triage-as-manifold-allocation">Chapter 10: Pandemic Triage as Manifold Allocation</h1>
@@ -100,7 +106,7 @@
 <p>(2b) Age-based deprioritization weights younger patients&rsquo; expected life-years more heavily. This is equivalent to applying a discount factor to $d_1$ based on age, which violates $d_3$ (equal moral worth). The manifold cost of the $d_3$ violation is:</p>
 <p>$$\beta_{\text{justice}} \cdot \mathbf{1}[\text{age-based deprioritization}]$$</p>
 <p>When $\beta_{\text{justice}}$ exceeds the $d_1$ differential between the age groups, the manifold-optimal allocation is age-neutral.</p>
-<p>(2c) When two patients have similar prognoses ($|d_1(p_i) - d_1(p_j)| < \epsilon$), the utilitarian objective is indifferent between them — any allocation is equally good on $d_1$. The manifold objective is not indifferent: a lottery allocation preserves $d_3$ (procedural fairness), $d_7$ (neither patient is devalued by the criterion), and $d_8$ (transparent, rule-based process), while a criterion-based allocation (by age, social value, or other discriminator) imposes costs on these dimensions. $\square$</p>
+<p>(2c) When two patients have similar prognoses ($|d_1(p_i) - d_1(p_j)| &lt; \epsilon$), the utilitarian objective is indifferent between them — any allocation is equally good on $d_1$. The manifold objective is not indifferent: a lottery allocation preserves $d_3$ (procedural fairness), $d_7$ (neither patient is devalued by the criterion), and $d_8$ (transparent, rule-based process), while a criterion-based allocation (by age, social value, or other discriminator) imposes costs on these dimensions. $\square$</p>
 <hr />
 <h2 id="103-three-cases-of-divergence">10.3 Three Cases of Divergence</h2>
 <h3 id="case-a-ventilator-withdrawal-and-reallocation">Case A: Ventilator Withdrawal and Reallocation</h3>
@@ -120,7 +126,7 @@
 </ul>
 <p>Additionally, the withdrawal imposes a cost on $d_7$ (dignity) — the current patient is effectively told that their life is worth less than the new arrival&rsquo;s — and on $d_8$ (institutional legitimacy) — the hospital&rsquo;s protocols did not warn the patient that ventilator support could be withdrawn.</p>
 <p>$$\text{CF}(\text{reallocate}) = \Delta d_1 \text{ gain} + \beta_{\text{abandon}} + \beta_{\text{trust}} + \Delta d_7 + \Delta d_8$$</p>
-<p>For $\beta_{\text{abandon}} + \beta_{\text{trust}} > \Delta d_1$, the manifold-optimal decision is to <em>not</em> reallocate — to continue ventilation for the current patient and find an alternative for the new arrival (transfer, improvised ventilation, prone positioning without intubation).</p>
+<p>For $\beta_{\text{abandon}} + \beta_{\text{trust}} &gt; \Delta d_1$, the manifold-optimal decision is to <em>not</em> reallocate — to continue ventilation for the current patient and find an alternative for the new arrival (transfer, improvised ventilation, prone positioning without intubation).</p>
 <p><strong>The key insight</strong>: The utilitarian analysis counts only the $d_1$ differential. The manifold analysis counts the full cost of the allocation process, including the boundaries crossed and the trust destroyed. The two analyses disagree precisely when the boundary costs are large — which is exactly the scenario that causes moral injury to clinicians.</p>
 <h3 id="case-b-age-based-deprioritization">Case B: Age-Based Deprioritization</h3>
 <p>A 32-year-old teacher and a 74-year-old retired engineer arrive simultaneously with comparable severity of illness. Both need ICU admission. One bed is available. The utilitarian protocol prioritizes the 32-year-old: more expected life-years saved.</p>
@@ -133,7 +139,7 @@ $$d_1(\text{engineer}) = 0.60 \times 12 \text{ life-years} = 7.20 \text{ QALYs}$
 <p>$$\beta_{\text{justice}} \cdot \mathbf{1}[\text{age used as triage criterion}]$$</p>
 <p>The QALY Irrecoverability Theorem (Theorem 5.1) predicts exactly this failure: the QALY calculation discards the $d_3$ information. A QALY of 7.20 and a QALY of 29.25 differ only on $d_1$ — the eight dimensions discarded by the scalar include the justice dimension that makes the comparison problematic.</p>
 <p>When prognoses are comparable (the survival probabilities differ by only 5 percentage points — 65% vs. 60%), the $d_1$ differential is small and the $d_3$ cost of age-based discrimination may exceed it:</p>
-<p>$$\beta_{\text{justice}} > \frac{(0.65 - 0.60)^2}{\sigma_1^2}$$</p>
+<p>$$\beta_{\text{justice}} &gt; \frac{(0.65 - 0.60)^2}{\sigma_1^2}$$</p>
 <p>In this case, the manifold-optimal allocation uses a lottery rather than an age-based criterion — preserving $d_3$ at negligible $d_1$ cost.</p>
 <h3 id="case-c-lottery-allocation-among-similar-prognoses">Case C: Lottery Allocation Among Similar Prognoses</h3>
 <p>Six patients with comparable severity and comparable prognoses need ICU admission. Three beds are available. The utilitarian algorithm can rank them by expected life-years, but the differences are within the uncertainty range — the ranking is dominated by measurement noise, not by genuine prognostic differences.</p>
@@ -311,13 +317,26 @@ $$d_1(\text{engineer}) = 0.60 \times 12 \text{ life-years} = 7.20 \text{ QALYs}$
 <h2 id="chapter-summary">Chapter Summary</h2>
 <p>Triage is constrained multi-agent pathfinding on the clinical decision complex. The utilitarian objective — maximize clinical outcomes — coincides with the manifold objective only when triage decisions activate only $d_1$ and no moral boundaries are crossed. In the cases that matter most — ventilator withdrawal, age-based deprioritization, and allocation among comparable-prognosis patients — the utilitarian and manifold objectives diverge. Clinician resistance to utilitarian triage is not irrationality but correct computation on a higher-dimensional space. The COVID-19 pandemic served as a natural experiment that tested and confirmed the framework&rsquo;s predictions about moral distress, boundary-crossing costs, and the dimensional structure of triage decisions. Manifold-aware triage protocol design — which supplements the utilitarian objective with boundary penalties, lottery tiebreaking, Bond Index monitoring, and Moral Injury Index estimation — offers a path toward triage systems that are both clinically effective and morally sustainable.</p>
 <hr />
-<p>[^1]: Emanuel et al. (2020) proposed a multi-value framework for COVID-19 allocation, but the operationalization reduced to maximizing clinical benefit ($d_1$) with equity considerations as secondary tiebreakers. The geometric framework makes the equity dimensions primary components of the objective function, not secondary adjustments.</p>
-<p>[^2]: The manifold superiority of lottery allocation has a long history in the ethics of scarcity. Broome (1984) argued for fairness-based lottery allocation on philosophical grounds; the geometric framework provides the mathematical basis by demonstrating that lotteries avoid boundary crossings on $d_3$, $d_7$, and $d_8$ that criterion-based allocations incur.</p>
-<p>[^3]: The distinction between acute-surge and slow-surge moral injury has not, to my knowledge, been characterized in the existing moral injury literature. The geometric framework predicts the distinction from the Moral Injury Accumulation Theorem: cumulative boundary crossings over time produce more total moral injury than a single concentrated allocation event with the same total boundary-crossing count, because sustained crossing also degrades the heuristic (making each subsequent crossing easier to perform but more damaging to the clinician&rsquo;s long-term moral architecture).</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Emanuel et al. (2020) proposed a multi-value framework for COVID-19 allocation, but the operationalization reduced to maximizing clinical benefit ($d_1$) with equity considerations as secondary tiebreakers. The geometric framework makes the equity dimensions primary components of the objective function, not secondary adjustments.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>The manifold superiority of lottery allocation has a long history in the ethics of scarcity. Broome (1984) argued for fairness-based lottery allocation on philosophical grounds; the geometric framework provides the mathematical basis by demonstrating that lotteries avoid boundary crossings on $d_3$, $d_7$, and $d_8$ that criterion-based allocations incur.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>The distinction between acute-surge and slow-surge moral injury has not, to my knowledge, been characterized in the existing moral injury literature. The geometric framework predicts the distinction from the Moral Injury Accumulation Theorem: cumulative boundary crossings over time produce more total moral injury than a single concentrated allocation event with the same total boundary-crossing count, because sustained crossing also degrades the heuristic (making each subsequent crossing easier to perform but more damaging to the clinician&rsquo;s long-term moral architecture).&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
       </div>
 
       <div class="chapter-nav-bottom">
-        <a href="index.html" class="nav-toc">&larr; Contents</a>
+        <a href="ch09_clinical_cases.html" class="nav-prev">&larr; Chapter 9: Clinical Geodesics in Practice</a>
+        <a href="index.html" class="nav-toc">Contents</a>
+        <a href="ch11_allocation.html" class="nav-next">Chapter 11: Vaccine Allocation, Organ Transplant, and the Ge… &rarr;</a>
       </div>
     </div>
   </article>
@@ -345,6 +364,7 @@ $$d_1(\text{engineer}) = 0.60 \times 12 \text{ life-years} = 7.20 \text{ QALYs}$
         {left: '\\\\(', right: '\\\\)', display: false},
         {left: '\\\\[', right: '\\\\]', display: true}
       ],
+      ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
       throwOnError: false
     });"></script>
 </body>

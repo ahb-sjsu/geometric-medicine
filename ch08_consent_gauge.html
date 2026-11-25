@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chapter 8: Informed Consent as Gauge Invariance &mdash; Geometric Medicine</title>
   <meta name="description" content="Chapter 8: Informed Consent as Gauge Invariance from Geometric Medicine: Clinical Reasoning, Triage, and the Ethics of Allocation, by Andrew H. Bond.">
+  <meta name="generator" content="geometric-series build kit">
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../book/book.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +14,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 </head>
 
-<body data-book-slug="geometric-medicine">
+<body data-book-slug="geometric-medicine" data-chapter-id="ch08_consent_gauge">
   <nav id="main-nav">
     <div class="nav-inner">
       <a href="../index.html" class="nav-brand">
@@ -36,6 +37,11 @@
         <span class="breadcrumb-sep">&rsaquo;</span>
         <span class="breadcrumb-current">Chapter 8: Informed Consent as Gauge Invariance</span>
       </nav>
+      <div class="chapter-nav-top">
+        <a href="ch07_heuristic_spectrum.html" class="nav-prev">&larr; Chapter 7: Clinical Heuristics and the $\varepsilon$-Admissi…</a>
+        <a href="index.html" class="nav-toc">Contents</a>
+        <a href="ch09_clinical_cases.html" class="nav-next">Chapter 9: Clinical Geodesics in Practice &rarr;</a>
+      </div>
 
       <div class="chapter-content">
 <h1 id="chapter-8-informed-consent-as-gauge-invariance">Chapter 8: Informed Consent as Gauge Invariance</h1>
@@ -49,7 +55,7 @@
 </blockquote>
 <hr />
 <h2 id="81-the-consent-checklist-and-its-failures">8.1 The Consent Checklist and Its Failures</h2>
-<p>The standard legal test for valid informed consent requires four elements:[^1]</p>
+<p>The standard legal test for valid informed consent requires four elements:<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
 <ol>
 <li><strong>Disclosure:</strong> The clinician has disclosed the material risks, benefits, and alternatives of the proposed treatment.</li>
 <li><strong>Comprehension:</strong> The patient has understood the disclosed information.</li>
@@ -68,7 +74,7 @@
 <h2 id="82-consent-as-manifold-calibration">8.2 Consent as Manifold Calibration</h2>
 <p>The geometric framework provides a deeper characterization of informed consent than the legal checklist.</p>
 <p><strong>Definition 8.1 (Informed Consent as Manifold Calibration).</strong> <em>Valid informed consent requires that the patient&rsquo;s clinical decision complex $\mathcal{C}_{\text{patient}}$ be calibrated &mdash; that the patient&rsquo;s attribute vectors, edge weights, and boundary penalties approximate the true clinical-moral costs closely enough that the patient&rsquo;s clinical geodesic is a good approximation of the geodesic they would compute with perfect information. Formally:</em></p>
-<p>$$\|w_{\text{patient}}(v_i, v_j) - w_{\text{true}}(v_i, v_j)\| < \varepsilon \quad \text{for all relevant edges } (v_i, v_j)$$</p>
+<p>$$\|w_{\text{patient}}(v_i, v_j) - w_{\text{true}}(v_i, v_j)\| &lt; \varepsilon \quad \text{for all relevant edges } (v_i, v_j)$$</p>
 <p><em>where $\varepsilon$ is the tolerance for manifold miscalibration.</em></p>
 <p>The patient does not need to compute exact edge weights. They do not need to know the covariance matrix, the boundary penalties, or the Mahalanobis distance formula. They need weights close enough that the geodesic they would compute on their miscalibrated manifold is approximately the same as the geodesic they would compute with perfect information.</p>
 <p>This is a substantially different requirement from the legal checklist. The checklist asks: &ldquo;Was information disclosed?&rdquo; The calibration requirement asks: &ldquo;Is the patient&rsquo;s representation of the decision landscape close enough to the true landscape that their navigation produces approximately the right path?&rdquo; The checklist evaluates the input to the consent process. The calibration requirement evaluates the output.</p>
@@ -149,7 +155,7 @@
 <p>This requirement is routinely violated. Patients who speak the clinician&rsquo;s language receive different care than patients who require interpreters &mdash; not because their clinical states are different, but because the communication channel ($d_9$) is degraded by translation, and the degraded channel produces a less calibrated clinical decision complex. The BIP violation is indirect: the language difference degrades $d_9$, the degraded $d_9$ changes the clinical evaluation, and the changed evaluation violates gauge invariance.</p>
 <h3 id="853-chart-format-as-gauge-transformation">8.5.3 Chart Format as Gauge Transformation</h3>
 <p>The same clinical information presented in different chart formats (handwritten vs. electronic, narrative vs. structured, chronological vs. problem-oriented) should produce the same clinical evaluation. Chart format is a gauge transformation: it changes the presentation without changing the content.</p>
-<p>This requirement is also routinely violated. Clinicians form different impressions of the same patient depending on how the chart is organized &mdash; a phenomenon known as &ldquo;chart bias&rdquo; that is well-documented in the medical literature.[^2] A patient whose chart leads with a psychiatric diagnosis (&ldquo;56-year-old male with schizophrenia presenting with chest pain&rdquo;) receives different evaluation than a patient whose chart leads with the presenting complaint (&ldquo;56-year-old male presenting with chest pain, past history of schizophrenia&rdquo;), even though the information content is identical. The ordering of information is a gauge transformation. The clinical evaluation should be invariant under it. When it is not, the evaluation is gauge-variant, and the BIP is violated.</p>
+<p>This requirement is also routinely violated. Clinicians form different impressions of the same patient depending on how the chart is organized &mdash; a phenomenon known as &ldquo;chart bias&rdquo; that is well-documented in the medical literature.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> A patient whose chart leads with a psychiatric diagnosis (&ldquo;56-year-old male with schizophrenia presenting with chest pain&rdquo;) receives different evaluation than a patient whose chart leads with the presenting complaint (&ldquo;56-year-old male presenting with chest pain, past history of schizophrenia&rdquo;), even though the information content is identical. The ordering of information is a gauge transformation. The clinical evaluation should be invariant under it. When it is not, the evaluation is gauge-variant, and the BIP is violated.</p>
 <h2 id="86-sarah-learns-the-gauge-test">8.6 Sarah Learns the Gauge Test</h2>
 <p>During her third year, Sarah was assigned to a surgical rotation. She watched the consent process for elective surgeries and noticed a pattern: surgeons described procedures in optimistic frames (&ldquo;95% of patients do very well&rdquo;), patients readily agreed, and consent forms were signed in five minutes. The process was efficient, legally valid, and ethically untested.</p>
 <p>Sarah began informally applying the gauge-invariance test. After the surgeon left, she would ask the patient: &ldquo;The surgeon mentioned that 95% of patients do very well. Another way to say the same thing is that 1 in 20 patients have a significant problem. Does that change how you feel about the surgery?&rdquo;</p>
@@ -208,12 +214,23 @@
 <p>The framework distinguishes consent-as-calibration (the patient&rsquo;s clinical decision complex is calibrated to within tolerance of the true clinical-moral costs) from consent-as-gauge-invariance (the patient&rsquo;s decision is invariant under re-description) and identifies three independent alignment conditions for shared decision-making: epistemic alignment ($d_9$: the patient understands), value alignment ($d_2$&ndash;$d_8$: the clinician understands the patient&rsquo;s values), and goal alignment ($G$: both parties agree on acceptable outcomes). Each condition can fail independently, and each has a distinctive clinical presentation and intervention.</p>
 <p>The medical Bond Invariance Principle extends gauge invariance from consent to all clinical evaluations: the same clinical-moral state, re-described in a different language, by a different physician, in a different chart format, should receive the same evaluation. Algorithmic bias, language barriers, and chart bias are specific violations of the medical BIP, detectable by the gauge-invariance test and measurable by the Bond Index. Special populations &mdash; pediatric, psychiatric, emergency, and research &mdash; each present specific challenges to gauge-invariant consent that the framework addresses through population-specific calibration requirements.</p>
 <hr />
-<p>[^1]: The four-element formulation is standard in U.S. medical law. See Faden, R. R., &amp; Beauchamp, T. L. (1986). <em>A History and Theory of Informed Consent</em>. Oxford University Press. The U.K. standard, following <em>Montgomery v Lanarkshire Health Board</em> [2015] UKSC 11, has moved toward a patient-centered standard that is closer to the gauge-invariance requirement: the clinician must disclose what a reasonable patient in the patient&rsquo;s position would want to know.</p>
-<p>[^2]: Tversky, A., &amp; Kahneman, D. (1981). The framing of decisions and the psychology of choice. <em>Science</em>, 211(4481), 453&ndash;458. The original demonstration of framing effects in decision-making. For the clinical setting specifically, see McNeil, B. J., et al. (1982) and Moxey, A., et al. (2003). Chart ordering effects are documented in Mamede, S., et al. (2017). The influence of case history on the interpretation of clinical findings. <em>Academic Medicine</em>, 92(10), 1459&ndash;1465.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>The four-element formulation is standard in U.S. medical law. See Faden, R. R., &amp; Beauchamp, T. L. (1986). <em>A History and Theory of Informed Consent</em>. Oxford University Press. The U.K. standard, following <em>Montgomery v Lanarkshire Health Board</em> [2015] UKSC 11, has moved toward a patient-centered standard that is closer to the gauge-invariance requirement: the clinician must disclose what a reasonable patient in the patient&rsquo;s position would want to know.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Tversky, A., &amp; Kahneman, D. (1981). The framing of decisions and the psychology of choice. <em>Science</em>, 211(4481), 453&ndash;458. The original demonstration of framing effects in decision-making. For the clinical setting specifically, see McNeil, B. J., et al. (1982) and Moxey, A., et al. (2003). Chart ordering effects are documented in Mamede, S., et al. (2017). The influence of case history on the interpretation of clinical findings. <em>Academic Medicine</em>, 92(10), 1459&ndash;1465.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
       </div>
 
       <div class="chapter-nav-bottom">
-        <a href="index.html" class="nav-toc">&larr; Contents</a>
+        <a href="ch07_heuristic_spectrum.html" class="nav-prev">&larr; Chapter 7: Clinical Heuristics and the $\varepsilon$-Admissi…</a>
+        <a href="index.html" class="nav-toc">Contents</a>
+        <a href="ch09_clinical_cases.html" class="nav-next">Chapter 9: Clinical Geodesics in Practice &rarr;</a>
       </div>
     </div>
   </article>
@@ -241,6 +258,7 @@
         {left: '\\\\(', right: '\\\\)', display: false},
         {left: '\\\\[', right: '\\\\]', display: true}
       ],
+      ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
       throwOnError: false
     });"></script>
 </body>
