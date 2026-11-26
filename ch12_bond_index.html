@@ -40,7 +40,7 @@
       <div class="chapter-nav-top">
         <a href="ch11_allocation.html" class="nav-prev">&larr; Chapter 11: Vaccine Allocation, Organ Transplant, and the Ge…</a>
         <a href="index.html" class="nav-toc">Contents</a>
-        <a href="appendix_a_math.html" class="nav-next">Appendix A: Mathematical Prerequisites &rarr;</a>
+        <a href="ch13_moral_injury_theory.html" class="nav-next">Chapter 13: The Mathematical Theory of Moral Injury &rarr;</a>
       </div>
 
       <div class="chapter-content">
@@ -184,13 +184,13 @@
 <p>$$\text{BI}(P, S) = \frac{1}{|S|} \sum_{s \in S} \left[\text{CF}(\gamma_P^*(s)) - \text{CF}(\gamma_{\mathcal{C}}^*(s))\right]$$</p>
 <p><strong>Step 5: Stratify by demographics.</strong> Compute $\text{BI}(P, S_k)$ for each demographic subgroup $S_k$ and compute the disparity ratio $\text{DR}(P, S_k, S_{\text{ref}})$ relative to a reference population.</p>
 <hr />
-<h2 id="124-case-study-bond-index-of-a-hospital-triage-policy">12.4 Case Study: Bond Index of a Hospital Triage Policy</h2>
+<h2 id="124-illustrative-case-study-bond-index-of-a-hospital-triage-policy">12.4 Illustrative Case Study: Bond Index of a Hospital Triage Policy</h2>
 <h3 id="the-policy">The Policy</h3>
-<p>A large academic medical center&rsquo;s COVID-19 crisis standards of care, implemented during the pandemic surge. The policy uses a modified SOFA score (Sequential Organ Failure Assessment) supplemented by comorbidity adjustment and life-expectancy estimation. Patients are ranked by expected clinical benefit ($d_1$) and allocated ICU beds in rank order.</p>
+<p>A hypothetical large academic medical center&rsquo;s COVID-19 crisis standards of care, implemented during the pandemic surge. The case is illustrative: the clinical Bond Index has not yet been computed from clinical data, and the numbers below are invented to show what the computation would report. The policy uses a modified SOFA score (Sequential Organ Failure Assessment) supplemented by comorbidity adjustment and life-expectancy estimation. Patients are ranked by expected clinical benefit ($d_1$) and allocated ICU beds in rank order.</p>
 <h3 id="the-bond-index-computation">The Bond Index Computation</h3>
-<p><strong>Population</strong>: 847 patients evaluated for ICU admission during the surge period.</p>
+<p><strong>Population</strong> (hypothetical): 847 patients evaluated for ICU admission during the surge period.</p>
 <p><strong>Demographic stratification</strong>: White ($n = 412$), Black ($n = 198$), Hispanic ($n = 156$), Other ($n = 81$).</p>
-<p><strong>Results:</strong></p>
+<p><strong>Illustrative results:</strong></p>
 <table>
 <thead>
 <tr>
@@ -222,7 +222,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Dimensional decomposition of the Black-White disparity:</strong></p>
+<p><strong>Illustrative dimensional decomposition of the Black-White disparity:</strong></p>
 <p>The Bond Index disparity between Black and White populations decomposes by dimension:</p>
 <table>
 <thead>
@@ -267,7 +267,7 @@
 </table>
 <p>The largest single contributor to the disparity is $d_5$ (trust): 1.9 of the 4.2-unit disparity. The policy assumes that all patients have equal trust in the institution, but Black patients — due to documented historical and ongoing experiences of medical racism — have systematically lower trust. The policy-mandated path does not account for this, resulting in higher manifold cost for Black patients.</p>
 <h3 id="what-the-bond-index-reveals">What the Bond Index Reveals</h3>
-<p>The triage policy is not explicitly racist. It does not use race as a triage criterion. It uses clinical prognosis ($d_1$) supplemented by comorbidity adjustment. But the Bond Index reveals that the policy is <em>structurally</em> unjust: it imposes 2.31 times the manifold cost on Black patients.</p>
+<p>The triage policy of this illustration is not explicitly racist. It does not use race as a triage criterion. It uses clinical prognosis ($d_1$) supplemented by comorbidity adjustment. But the Bond Index reveals that the policy is <em>structurally</em> unjust: it imposes 2.31 times the manifold cost on Black patients.</p>
 <p>The injustice is structural because it arises from dimensional omission — the policy operates on $d_1$ and ignores $d_5$, $d_7$, and $d_9$. The omission is not intentional; it is the inevitable consequence of scalar optimization on a multi-dimensional manifold.</p>
 <p>The Bond Index does not prescribe a specific remedy. It diagnoses the problem and quantifies its magnitude. Possible remedies include:</p>
 <ol>
@@ -282,7 +282,7 @@
 <ol>
 <li><strong>Edge weights</strong>: Derived from clinical decision data (treatment choices, outcomes, costs) using the Mahalanobis metric with empirically estimated covariance matrix $\Sigma$.</li>
 <li><strong>Boundary penalties</strong>: Estimated from clinician surveys (what boundary-crossing costs do clinicians assign?) and patient outcome data (what are the measurable consequences of boundary crossings?).</li>
-<li><strong>Population-level attribute vectors</strong>: Measured using validated instruments ($d_5$: trust scales, $d_7$: dignity inventories, $d_9$: health literacy assessments) and EHR data ($d_1$, $d_2$, $d_6$, $d_8$).</li>
+<li><strong>Population-level attribute vectors</strong>: Measured using validated instruments ($d_5$: trust scales, $d_7$: dignity inventories, $d_9$: health literacy assessments) and EHR data ($d_1$, $d_2$, $d_3$, $d_4$, $d_6$, $d_8$).</li>
 </ol>
 <p>The claim &ldquo;policy $P$ is structurally unjust toward population $S$&rdquo; becomes:</p>
 <p>$$\text{BI}(P, S) &gt; \text{BI}(P, S_{\text{ref}}) + \epsilon$$</p>
@@ -353,7 +353,7 @@ $$\frac{d}{dt}\text{BI}(P, S, t) &gt; 0 \quad \Rightarrow \quad \text{Equity dec
 <p>The framework suggests the general strategy: identify the dimensions contributing most to the disparity (dimensional decomposition), design interventions that address those specific dimensions, and re-measure the Bond Index after implementation to assess impact. But the specific interventions — culturally concordant care, trust-building programs, modified allocation criteria — require clinical expertise, community engagement, and institutional will that the mathematics alone cannot provide.</p>
 <hr />
 <h2 id="129-sarahs-bond-index">12.9 Sarah&rsquo;s Bond Index</h2>
-<p>Sarah presents the Bond Index results to her hospital&rsquo;s ethics committee. The slide reads:</p>
+<p>Sarah presents the illustrative Bond Index results of Section 12.4 to her hospital&rsquo;s ethics committee. The slide reads:</p>
 <blockquote>
 <p><strong>Clinical Bond Index: COVID-19 Triage Protocol</strong>
 - White patients: BI = 3.2 (reference)
@@ -392,7 +392,7 @@ $$\frac{d}{dt}\text{BI}(P, S, t) &gt; 0 \quad \Rightarrow \quad \text{Equity dec
       <div class="chapter-nav-bottom">
         <a href="ch11_allocation.html" class="nav-prev">&larr; Chapter 11: Vaccine Allocation, Organ Transplant, and the Ge…</a>
         <a href="index.html" class="nav-toc">Contents</a>
-        <a href="appendix_a_math.html" class="nav-next">Appendix A: Mathematical Prerequisites &rarr;</a>
+        <a href="ch13_moral_injury_theory.html" class="nav-next">Chapter 13: The Mathematical Theory of Moral Injury &rarr;</a>
       </div>
     </div>
   </article>

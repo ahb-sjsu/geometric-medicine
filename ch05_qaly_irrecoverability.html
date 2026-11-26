@@ -66,7 +66,7 @@
 <p><em>The standard QALY is the most common instantiation. The theorem applies to all instantiations.</em></p>
 <p>The question the theorem answers is precise: what happens to the clinical information when we apply $Q$? Is the compression lossless (recoverable) or lossy (irrecoverable)? And if lossy, what specifically is lost?</p>
 <h2 id="52-the-theorem">5.2 The Theorem</h2>
-<p><strong>Theorem 5.1 (QALY Irrecoverability).</strong> <em>Let $Q: \mathbb{R}^9 \to \mathbb{R}$ be any function that maps a 9-dimensional clinical-moral attribute vector to a scalar QALY value. Then:</em></p>
+<p><strong>Theorem 5.1 (QALY Irrecoverability).</strong> <em>Let $Q: \mathbb{R}^9 \to \mathbb{R}$ be any continuous function that maps a 9-dimensional clinical-moral attribute vector to a scalar QALY value. Then:</em></p>
 <ol>
 <li>
 <p><em>$Q$ is not injective: there exist clinically and morally distinct states $\mathbf{a}_1 \neq \mathbf{a}_2$ such that $Q(\mathbf{a}_1) = Q(\mathbf{a}_2)$.</em></p>
@@ -75,7 +75,7 @@
 <p><em>The information destroyed by $Q$ is irrecoverable: there exists no function $\psi: \mathbb{R} \to \mathbb{R}^9$ such that $\psi \circ Q = \text{id}_{\mathbb{R}^9}$.</em></p>
 </li>
 <li>
-<p><em>The QALY-maximizing path on $\mathcal{C}$ is in general different from the clinical geodesic (Definition 4.3), and the divergence is not bounded by any function of $Q$ alone.</em></p>
+<p><em>The QALY-maximizing path on $\mathcal{C}$ is in general different from the clinical geodesic (Definition 6.2), and the divergence is not bounded by any function of $Q$ alone.</em></p>
 </li>
 </ol>
 <p><strong>Proof.</strong></p>
@@ -84,7 +84,7 @@
 <p>Since $\dim(\text{im}(dQ_{\mathbf{a}_0})) \leq 1$, we have $\dim(\ker(dQ_{\mathbf{a}_0})) \geq 8$. The kernel has dimension at least 8 at every regular point. By the implicit function theorem, the level set $Q^{-1}(c) = \{\mathbf{a} : Q(\mathbf{a}) = c\}$ is a submanifold of dimension at least 8 in a neighborhood of every regular value. This submanifold contains infinitely many clinically and morally distinct states that map to the same QALY value $c$.</p>
 <p>If $Q$ is not differentiable, the result follows from a topological argument: a continuous surjection from $\mathbb{R}^9$ to $\mathbb{R}$ cannot be injective by dimension counting (the fibers have dimension $\geq 8$).</p>
 <p><em>(2) Irrecoverability.</em> Suppose for contradiction that $\psi: \mathbb{R} \to \mathbb{R}^9$ satisfies $\psi \circ Q = \text{id}_{\mathbb{R}^9}$. Then $\psi$ is a left inverse of $Q$, which means $Q$ must be injective. But (1) shows $Q$ is not injective. Contradiction. $\square$</p>
-<p>Alternatively, by the data processing inequality from information theory: for any Markov chain $\mathbf{a} \to Q(\mathbf{a}) \to \psi(Q(\mathbf{a}))$, we have $I(\mathbf{a}; \psi(Q(\mathbf{a}))) \leq I(\mathbf{a}; Q(\mathbf{a}))$, where $I$ denotes mutual information. Since $Q$ maps $\mathbb{R}^9$ to $\mathbb{R}$ and the attribute vectors have full-rank covariance (all nine dimensions are informationally independent), the mutual information $I(\mathbf{a}; Q(\mathbf{a}))$ is strictly less than the entropy of $\mathbf{a}$. The information lost by $Q$ cannot be recovered by any subsequent processing.</p>
+<p>Alternatively, by the data processing inequality from information theory: for any Markov chain $\mathbf{a} \to Q(\mathbf{a}) \to \psi(Q(\mathbf{a}))$, we have $I(\mathbf{a}; \psi(Q(\mathbf{a}))) \leq I(\mathbf{a}; Q(\mathbf{a}))$, where $I$ denotes mutual information. Since $Q$ maps $\mathbb{R}^9$ to $\mathbb{R}$ and the attribute vectors have full-rank covariance (no dimension is a linear function of the others), the mutual information $I(\mathbf{a}; Q(\mathbf{a}))$ is strictly less than the entropy of $\mathbf{a}$. The information lost by $Q$ cannot be recovered by any subsequent processing.</p>
 <p><em>(3) Unbounded divergence.</em> We construct a family of examples parameterized by $\lambda &gt; 0$ in which the divergence between the QALY-maximizing path and the clinical geodesic is at least $\lambda$.</p>
 <p>Fix a clinical decision complex $\mathcal{C}$ with three vertices: $v_0$ (start), $v_1$ (QALY-optimal goal), $v_2$ (manifold-optimal goal). Set the attribute vectors such that $Q(\mathbf{a}(v_1)) &gt; Q(\mathbf{a}(v_2))$ (the QALY prefers $v_1$) but the total clinical friction to $v_2$ is less than to $v_1$ because the path to $v_1$ crosses a boundary with penalty $\beta_{\lambda} = \lambda$:</p>
 <p>$$\text{CF}(\gamma_{v_0 \to v_1}) = d_{\text{Mahal}}(v_0, v_1) + \lambda &gt; d_{\text{Mahal}}(v_0, v_2) = \text{CF}(\gamma_{v_0 \to v_2})$$</p>
@@ -161,7 +161,7 @@
 <p>He did not adopt the geometric framework. But he stopped using the phrase &ldquo;the QALY captures patient preferences.&rdquo; That, Sarah thought, was a start.</p>
 <h2 id="58-the-information-theoretic-perspective">5.8 The Information-Theoretic Perspective</h2>
 <p>The rank-nullity proof is algebraic. An information-theoretic proof provides additional insight.</p>
-<p><strong>Proposition 5.2 (Information Loss of QALY Projection).</strong> <em>Let $\mathbf{a}$ be a random variable on $\mathbb{R}^9$ with full-rank covariance matrix $\Sigma$ (all nine dimensions are informationally independent). Then for any QALY function $Q: \mathbb{R}^9 \to \mathbb{R}$:</em></p>
+<p><strong>Proposition 5.2 (Information Loss of QALY Projection).</strong> <em>Let $\mathbf{a}$ be a random variable on $\mathbb{R}^9$ with full-rank covariance matrix $\Sigma$ (no dimension is a linear function of the others). Then for any QALY function $Q: \mathbb{R}^9 \to \mathbb{R}$:</em></p>
 <p>$$I(\mathbf{a}; Q(\mathbf{a})) \leq H(Q(\mathbf{a})) \leq H(a_1)$$</p>
 <p><em>where $I$ is mutual information and $H$ is differential entropy. The information preserved by $Q$ is at most the entropy of a single dimension. The information destroyed is at least:</em></p>
 <p>$$H(\mathbf{a}) - H(a_1) = H(a_2, \ldots, a_9 \mid a_1)$$</p>
@@ -191,7 +191,7 @@
 <p>The QALY says: same number (0.35), same treatment priority. It cannot distinguish Margaret from David because the information that distinguishes them lives in the kernel of $dQ$. The eight-dimensional kernel contains the trust, the understanding, the autonomy, the dignity, and the social context that make Margaret and David not just clinically different but morally different &mdash; requiring different paths, different timelines, different goals, and different institutional responses.</p>
 <p>This is what the theorem means in practice. It is not an abstract mathematical fact. It is a fact about what happens to patients when institutions rely on a number that has lost the information needed to treat them as persons.</p>
 <h2 id="512-comparison-to-other-irrecoverability-results">5.12 Comparison to Other Irrecoverability Results</h2>
-<p>The QALY Irrecoverability Theorem is the clinical instantiation of the general Scalar Irrecoverability Theorem proved in <em>Geometric Reasoning</em> (Ch. 13) and applied in <em>Geometric Ethics</em> (Ch. 16), <em>Geometric Economics</em> (Ch. 6), <em>Geometric Communication</em> (Ch. 1), and <em>Geometric Cognition</em> (Ch. 1). In each domain, the theorem has the same algebraic structure (rank-nullity) but different substantive content (different dimensions in the kernel).</p>
+<p>The QALY Irrecoverability Theorem is the clinical instantiation of the general Scalar Irrecoverability Theorem proved in <em>Geometric Reasoning</em> (Ch. 13) and applied in <em>Geometric Ethics</em> (Ch. 15), <em>Geometric Economics</em> (Ch. 6), <em>Geometric Communication</em> (Ch. 1), and <em>Geometric Cognition</em> (Ch. 1). In each domain, the theorem has the same algebraic structure (rank-nullity) but different substantive content (different dimensions in the kernel).</p>
 <table>
 <thead>
 <tr>
