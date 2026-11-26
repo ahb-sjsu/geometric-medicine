@@ -151,6 +151,8 @@
 <p><strong>Implication 3: Frequency matters more than severity.</strong> A clinician who makes one profoundly morally costly decision ($\Delta \text{MI} = 50$) accumulates less moral injury than a clinician who makes fifty moderately morally costly decisions ($50 \times \Delta \text{MI} = 50 \times 5 = 250$). The slow accumulation of moderate boundary crossings is more damaging than the acute impact of a single dramatic crossing.</p>
 <p><strong>Implication 4: The two damage modes are clinically distinguishable.</strong> Hypervigilance and moral numbing (Section 13.4) produce opposite clinical signatures and can be detected by measuring boundary penalty changes over time.</p>
 <hr />
+<p><img alt="Figure 13.1" src="figures/ch13_fig1.svg" /></p>
+<p><em>Figure 13.1. Cumulative moral injury as Definition 13.1 computes it, for the two clinicians of Implication 3 in Section 13.3. The horizontal axis counts forced boundary crossings and the vertical axis is the running sum. One clinician makes a single crossing with an increment of 50 and then none. The other makes fifty crossings with an increment of 5 each and ends at 250. The sum never falls, because each increment is zero or positive. The values are the chapter&rsquo;s illustration of the definition, not measurements.</em></p>
 <h2 id="134-the-two-damage-modes-hypervigilance-and-moral-numbing">13.4 The Two Damage Modes: Hypervigilance and Moral Numbing</h2>
 <h3 id="hypervigilance-math63-inflation">Hypervigilance: $\beta_k$ Inflation</h3>
 <p><strong>Definition 13.2 (Hypervigilance).</strong> <em>A clinician exhibits hypervigilance on boundary $k$ when, following forced crossing of boundary $k$, the clinician&rsquo;s boundary penalty $\beta_k^{(\text{clin})}$ increases beyond its pre-injury value:</em></p>
@@ -203,7 +205,6 @@
 </tbody>
 </table>
 <p>But they are identical in their mechanism: both are permanent alterations of $h(n)$ caused by forced boundary crossing. And both degrade clinical decision quality — hypervigilance by making the clinician too cautious, moral numbing by making the clinician too permissive.</p>
-<p>[Figure 13.1: Phase diagram showing the two damage modes as perturbations of the pre-injury heuristic. The horizontal axis is boundary penalty $\beta_k$; the vertical axis is clinical decision quality. The optimal operating point (pre-injury $\varepsilon$-admissible heuristic) is at the peak. Hypervigilance shifts left (increased $\beta_k$, decreased quality); moral numbing shifts right (decreased $\beta_k$, decreased quality).]</p>
 <h3 id="which-mode-predominates">Which Mode Predominates?</h3>
 <p>The framework predicts that the damage mode depends on the pattern of boundary crossings:</p>
 <ul>
@@ -260,14 +261,14 @@
 </ul>
 <p>The vector representation reveals that &ldquo;moral injury&rdquo; is not a single construct — it is a profile of boundary-specific damages. Two clinicians with equal scalar MI may have radically different MI vectors, requiring different interventions.</p>
 <hr />
-<h2 id="137-the-moral-injury-threshold-math112-and-its-estimation">13.7 The Moral Injury Threshold: $\text{MI}_{\text{crit}}$ and Its Estimation</h2>
+<h2 id="137-the-moral-injury-threshold-math108-and-its-estimation">13.7 The Moral Injury Threshold: $\text{MI}_{\text{crit}}$ and Its Estimation</h2>
 <h3 id="what-determines-the-critical-threshold">What Determines the Critical Threshold?</h3>
 <p>The Moral Injury Accumulation Theorem states that $h(n)$ alteration is irreversible above a clinician-specific critical threshold $\text{MI}_{\text{crit}}$. Below this threshold, the clinician can compensate for altered $\beta_k$ through conscious recalibration. Above it, the alteration is self-reinforcing and permanent.</p>
 <p>But what determines $\text{MI}_{\text{crit}}$? The framework identifies three contributing factors:</p>
 <p><strong>Factor 1: Baseline heuristic robustness.</strong> Clinicians with more diversely calibrated heuristics — those who have navigated many different regions of the clinical manifold during training — have higher $\text{MI}_{\text{crit}}$. Their heuristic function has been tested and calibrated in multiple contexts, making it more resistant to perturbation by any single boundary crossing. This is the geometric interpretation of why broad clinical training produces more resilient clinicians.</p>
 <p><strong>Factor 2: Social support infrastructure.</strong> Clinicians with strong peer support, regular ethics consultation access, and institutional recognition of moral cost have higher effective $\text{MI}_{\text{crit}}$ — not because their heuristic is intrinsically more robust, but because the support infrastructure provides ongoing recalibration that offsets accumulating damage. The support system functions as a continuous repair mechanism, raising the effective threshold by recalibrating $\beta_k$ before the damage becomes self-reinforcing.</p>
 <p><strong>Factor 3: Concordance between personal and institutional values.</strong> Clinicians whose personal $\beta_k$ profiles are well-aligned with their institution&rsquo;s policies have higher effective $\text{MI}_{\text{crit}}$, because fewer institutional mandates cross their personal boundaries. A clinician who works at an institution whose values match their own experiences fewer forced boundary crossings per unit time, extending the period before $\text{MI}_{\text{crit}}$ is reached.</p>
-<h3 id="estimating-math123">Estimating $\text{MI}_{\text{crit}}$</h3>
+<h3 id="estimating-math119">Estimating $\text{MI}_{\text{crit}}$</h3>
 <p>The critical threshold cannot be measured directly — it is defined as the point beyond which heuristic damage becomes irreversible, and this point is identified retrospectively (when permanent $\beta_k$ alteration is observed) rather than prospectively.</p>
 <p>However, the framework suggests proxy indicators that a clinician is approaching $\text{MI}_{\text{crit}}$:</p>
 <ol>
@@ -285,7 +286,7 @@
 <p>This proposition has immediate practical implications: institutions that monitor these indicators can identify clinicians at risk and intervene (rotation, increased ethics support, reduced boundary-crossing exposure) before the threshold is crossed.</p>
 <hr />
 <h2 id="138-individual-vulnerability-and-resilience">13.8 Individual Vulnerability and Resilience</h2>
-<h3 id="pre-injury-math136-profiles-as-vulnerability-predictors">Pre-Injury $\beta_k$ Profiles as Vulnerability Predictors</h3>
+<h3 id="pre-injury-math132-profiles-as-vulnerability-predictors">Pre-Injury $\beta_k$ Profiles as Vulnerability Predictors</h3>
 <p>The moral injury increment $\Delta \text{MI}(t) = \sum_k \max(0, \beta_k^{(\text{clin})} - \tau)$ depends on the clinician&rsquo;s pre-existing boundary penalties. Clinicians with high $\beta_k$ values — those who assign high cost to boundary crossings — are more vulnerable to moral injury from forced crossings of boundary $k$.</p>
 <p><strong>Prediction 5 (from the GCE paper).</strong> <em>Clinician resistance to utilitarian triage protocols should correlate with pre-crisis $\beta_k$ profiles. Specifically, clinicians with high $\beta_{\text{abandon}}$ and $\beta_{\text{justice}}$ should show more resistance to utilitarian triage and higher MI when forced to implement it.</em></p>
 <p>This prediction is novel and testable. It implies that moral injury vulnerability can be assessed prospectively by measuring clinicians&rsquo; $\beta_k$ profiles before a crisis. Clinicians with high-$\beta$ profiles on the boundaries most likely to be crossed by the crisis protocol should receive additional support, role rotation, or assignment to non-triage roles.</p>
@@ -301,6 +302,8 @@
 </ul>
 <p>The framework predicts that resilience-trained clinicians should show stable $\beta_k$ profiles over time, while morally injured clinicians should show either inflation (hypervigilance) or deflation (numbing). This prediction is testable: measure $\beta_k$ profiles longitudinally in clinicians exposed to repeated boundary crossings, and compare profiles of clinicians with and without resilience training.</p>
 <hr />
+<p><img alt="Figure 13.2" src="figures/ch13_fig2.svg" /></p>
+<p><em>Figure 13.2. The two damage modes and moral resilience as Definitions 13.2, 13.3 and 13.6 state them, on one axis: a clinician&rsquo;s penalty for a boundary after forced crossings, compared with the value before. Moral numbing is a penalty that has fallen below the earlier value; hypervigilance is one that has risen above it; resilience is one that stays within a tolerance of it. The lines under each mode are the features the table of Section 13.4 posits. The chapter gives directions only, so no scale is drawn.</em></p>
 <h2 id="139-sarahs-moral-injury">13.9 Sarah&rsquo;s Moral Injury</h2>
 <p>Sarah&rsquo;s first moral injury event is not dramatic. It is quiet.</p>
 <p>She denies a ventilator to Mrs. Washington — the 78-year-old retired teacher she had cared for two months earlier. The triage protocol assigns Mrs. Washington to comfort care. Sarah implements the decision.</p>

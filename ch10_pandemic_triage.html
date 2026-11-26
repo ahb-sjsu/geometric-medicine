@@ -72,7 +72,6 @@
 <p><em>where $\text{CF}(\gamma_i)$ is the total clinical friction for patient $i$&rsquo;s path and $r(\gamma_i)$ is the resource cost of that path.</em></p>
 <h3 id="what-changes-under-resource-constraints">What Changes Under Resource Constraints</h3>
 <p>Without resource constraints, each patient follows their individual geodesic $\gamma_i^*$. The total cost is $\sum_i \text{CF}(\gamma_i^*)$ — the sum of individually optimal paths. Resource constraints force deviations from individual geodesics. Some patients receive suboptimal paths (delayed treatment, no ventilator, comfort care instead of ICU admission). The triage question is: <em>which patients deviate, and how far?</em></p>
-<p>[Figure 10.1: Schematic showing $n = 30$ patients on the clinical manifold, with individually optimal geodesics (dashed) and resource-constrained feasible paths (solid), highlighting the deviation between individual geodesics and constrained allocations]</p>
 <h3 id="tractability">Tractability</h3>
 <p>General multi-agent pathfinding is NP-hard. But clinical triage operates under constraints that make the problem tractable in practice:</p>
 <ul>
@@ -173,7 +172,6 @@ $$d_1(\text{engineer}) = 0.60 \times 12 \text{ life-years} = 7.20 \text{ QALYs}$
 <p>The pandemic literature is consistent with this prediction. Rushton (2018) documented that moral distress was highest among clinicians whose personal ethical commitments conflicted with institutional protocols — not among clinicians who were simply exhausted.</p>
 <h3 id="what-the-pandemic-revealed-about-triage-design">What the Pandemic Revealed About Triage Design</h3>
 <p>The pandemic exposed a fundamental asymmetry in existing triage protocols: they were designed to optimize $d_1$ (clinical outcomes) under resource constraints, but the moral costs of implementation fell on dimensions ($d_5$: trust, $d_7$: dignity, $d_3$: justice) that the protocols did not model.</p>
-<p>[Figure 10.2: Dimensional activation map of COVID-19 triage decisions, showing which of the nine clinical-moral dimensions were activated by different triage scenarios, with predicted and observed moral injury correlation]</p>
 <p>The framework suggests three design principles for manifold-aware triage protocols:</p>
 <ol>
 <li>
@@ -207,6 +205,8 @@ $$d_1(\text{engineer}) = 0.60 \times 12 \text{ life-years} = 7.20 \text{ QALYs}$
 <li>Patients who have been receiving ventilation for several days should not be withdrawn unless the $d_1$ differential exceeds the withdrawal boundary costs.</li>
 <li>Patients from communities with historically low healthcare trust ($d_5$) should not be disproportionately denied — the bond index (Chapter 12) should be monitored.</li>
 </ul>
+<p><img alt="Figure 10.1" src="figures/ch10_fig1.svg" /></p>
+<p><em>Figure 10.1. A schematic of Scenario 1 of Section 10.6: thirty patients who need a ventilator and twelve ventilators. Each mark is a position in the ranking by expected life-years; no prognosis is drawn. The scalar computation ventilates ranks 1 to 12 and denies the other 18. One of the modifications the chapter proposes treats ranks 11 to 14 as within measurement error and allocates among them by lottery, which by arithmetic leaves ten places set by ranking and two ventilators for those four patients.</em></p>
 <h3 id="scenario-2-the-slow-surge-accumulated-decisions-over-weeks">Scenario 2: The Slow Surge — Accumulated Decisions Over Weeks</h3>
 <p>The acute surge is dramatic but conceptually simple — thirty patients, twelve ventilators, one decision. The slow surge is harder. Over three weeks, a steady stream of patients arrives, each requiring an allocation decision. The cumulative effect is more damaging than any single decision because:</p>
 <ol>
@@ -273,8 +273,9 @@ $$d_1(\text{engineer}) = 0.60 \times 12 \text{ life-years} = 7.20 \text{ QALYs}$
 <p>COVID-19 triage guidelines (Emanuel et al., 2020; White et al., 2020) attempted to incorporate justice ($d_3$) alongside clinical outcomes ($d_1$): lotteries as tiebreakers, life-cycle considerations, essential worker prioritization. This represented an expansion from one-dimensional to two-dimensional triage. The geometric framework predicts that the expansion was insufficient — seven dimensions remained unaccounted for — and the pandemic moral injury literature confirms the prediction.</p>
 <h3 id="the-geometric-trend">The Geometric Trend</h3>
 <p>The history of triage shows a slow expansion of the acknowledged dimensional space: from $d_1$ alone (Larrey) to $d_1 + d_8$ (ESI) to $d_1 + d_3$ (pandemic ethics). The geometric framework proposes the final step: triage on the full nine-dimensional manifold. This does not mean that every triage decision must explicitly compute nine-dimensional costs — in acute settings, rapid heuristic triage remains necessary. It means that <em>the objective function</em> against which triage systems are designed and evaluated should be the full manifold cost, not a scalar projection.</p>
-<p>[Figure 10.3: Historical evolution of triage dimensionality, from Larrey (1D) through ESI (2D) and pandemic ethics (2D) to the manifold-optimal framework (9D)]</p>
 <hr />
+<p><img alt="Figure 10.2" src="figures/ch10_fig2.svg" /></p>
+<p><em>Figure 10.2. The dimensional reading of triage systems in Section 10.8, as a grid: one row for each system in the order the section lists them, one column for each of the nine dimensions, and a mark where the section says the system acknowledges the dimension. The pandemic crisis standards are entered as the section has them, an attempted expansion to justice. The last row is the framework&rsquo;s proposal, the full nine. The count at the right runs 1, 2, 1, 2, 9.</em></p>
 <h2 id="109-the-ethics-of-triage-communication">10.9 The Ethics of Triage Communication</h2>
 <h3 id="how-the-decision-is-communicated-matters-on-the-manifold">How the Decision Is Communicated Matters on the Manifold</h3>
 <p>Triage is not only a decision but a communication. The way a triage decision is communicated to the patient and family affects multiple dimensions of the clinical decision complex — and the manifold cost of communication is often larger than the manifold cost of the decision itself.</p>

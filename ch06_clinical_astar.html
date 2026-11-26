@@ -188,7 +188,8 @@
 <p><strong>The pandemic triage case.</strong> QALY path: reallocate the ventilator to the patient with better prognosis (maximizes total $d_1$). Geodesic: context-dependent, because the reallocation crosses $\beta_{\text{abandon}}$ and $\beta_{\text{trust}}$ boundaries whose costs may exceed the $d_1$ benefit.</p>
 </li>
 </ol>
-<p>[Figure 6.1: The clinical geodesic vs. the QALY-optimal path for the Jehovah&rsquo;s Witness case. The QALY path (dashed) heads directly toward high $d_1$ via forced transfusion but hits the consent boundary ($\beta_{\text{consent}} = \infty$). The geodesic (solid) respects the boundary and routes through alternative treatments (erythropoietin, cell salvage), reaching a lower $d_1$ endpoint but with finite total cost. The QALY path has infinite cost on the manifold; the geodesic has the minimum finite cost.]</p>
+<p><img alt="Figure 6.1" src="figures/ch06_fig1.svg" /></p>
+<p><em>Figure 6.1. A schematic of the first example of Section 6.4.2, the patient who refuses transfusion. The dashed path is the QALY-optimal one: it transfuses to maximize outcomes and so crosses the consent boundary, whose penalty the chapter sets to infinity, which makes the edge weight infinite. The solid path is the clinical geodesic as the chapter defines it: it respects the refusal, pursues alternatives and reaches the goal region at finite total cost.</em></p>
 <h2 id="65-clinical-reasoning-in-practice">6.5 Clinical Reasoning in Practice</h2>
 <h3 id="651-the-differential-diagnosis-as-tree-search">6.5.1 The Differential Diagnosis as Tree Search</h3>
 <p>The differential diagnosis &mdash; the list of possible diagnoses being considered for a patient &mdash; is the open list of A* search. Each candidate diagnosis defines a different subgraph of the clinical decision complex (different treatment options, different prognoses, different boundary structures), and the clinician evaluates each candidate by computing $f(n) = g(n) + h(n)$ for the paths it implies.</p>
@@ -202,15 +203,15 @@
 <p>This is why ethics consultations often produce consensus despite starting from disagreement: the disagreement is usually about $h(n)$ (different estimates of which boundaries are relevant, which dimensions are most important, how far we are from an acceptable outcome), and the consultation process recalibrates $h(n)$ by making the dimensional analysis explicit.</p>
 <h2 id="66-the-cost-function-in-detail">6.6 The Cost Function in Detail</h2>
 <p>The total cost function $f(n) = g(n) + h(n)$ has a specific structure that maps onto distinct clinical activities:</p>
-<h3 id="661-the-mahalanobis-component-of-math151">6.6.1 The Mahalanobis Component of $g(n)$</h3>
+<h3 id="661-the-mahalanobis-component-of-math148">6.6.1 The Mahalanobis Component of $g(n)$</h3>
 <p>The Mahalanobis distance component of each edge weight in $g(n)$ is:</p>
 <p>$$d_{\text{Mahal}}^2(v_i, v_j) = \Delta \mathbf{a}^T \Sigma^{-1} \Delta \mathbf{a}$$</p>
 <p>This measures the &ldquo;clinical-moral distance&rdquo; traveled by the action &mdash; how much the patient&rsquo;s nine-dimensional state changes, weighted by the covariance structure. A treatment that changes $d_1$ by a large amount but leaves all other dimensions unchanged has a Mahalanobis cost determined by $\Sigma_{11}^{-1}$. A treatment that changes $d_1$ and $d_5$ simultaneously has a Mahalanobis cost that includes the cross-term $\Sigma_{15}^{-1}$, which may be larger or smaller than the sum of the individual terms depending on the correlation between outcomes and trust.</p>
-<h3 id="662-the-boundary-component-of-math158">6.6.2 The Boundary Component of $g(n)$</h3>
+<h3 id="662-the-boundary-component-of-math155">6.6.2 The Boundary Component of $g(n)$</h3>
 <p>The boundary penalty component of each edge weight in $g(n)$ is:</p>
 <p>$$\sum_k \beta_k \cdot \mathbf{1}[\text{boundary } k \text{ crossed}]$$</p>
 <p>This is the cost of crossing clinical-moral boundaries &mdash; the discrete, discontinuous component of the edge weight that makes the clinical decision complex a simplicial complex rather than a smooth manifold. The boundary component is where clinical ethics happens in its most dramatic form: the decision to cross or not cross a boundary ($\beta_{\text{harm}}$: do I perform the surgery? $\beta_{\text{consent}}$: do I treat without consent? $\beta_{\text{futile}}$: do I continue treatment that is not helping?) is the discrete clinical-moral judgment that no amount of $d_1$ evidence can resolve.</p>
-<h3 id="663-the-heuristic-math164">6.6.3 The Heuristic $h(n)$</h3>
+<h3 id="663-the-heuristic-math161">6.6.3 The Heuristic $h(n)$</h3>
 <p>The heuristic estimate has the form:</p>
 <p>$$h_C(n) = \sum_k \beta_k \cdot P(\text{remaining path from } n \text{ crosses boundary } k)$$</p>
 <p>This is the clinician&rsquo;s estimate of the boundary crossings that lie ahead. It is computed not from evidence (there are no clinical trials measuring the probability of future boundary crossings) but from experience: the clinician who has navigated many similar paths has an intuitive sense of which boundaries are likely to be crossed and at what cost.</p>
@@ -295,7 +296,7 @@
 <p>The clinical geodesic is the minimum-cost path on the nine-dimensional clinical decision complex. It is a sequence of vertices and edges with computable costs. It may or may not correspond to a standard treatment plan; when it does, the treatment plan is manifold-optimal; when it does not, the treatment plan is suboptimal, and the divergence between the plan and the geodesic is measurable (this is what the Bond Index quantifies).</p>
 <p>The distinction matters because treatment plans are often constrained by institutional protocols, insurance requirements, formulary restrictions, and time pressures that force the plan away from the geodesic. These constraints are real and sometimes unavoidable. But they should be recognized as constraints &mdash; as forces that push the treatment path away from the optimal &mdash; rather than treated as features of the optimal path itself.</p>
 <p>A hospital that mandates a specific discharge protocol is not implementing the clinical geodesic for every patient. It is implementing an institutional path ($\gamma_P^*$) that approximates the geodesic for the average patient and diverges from it for patients whose attribute vectors differ substantially from the average. The Bond Index $\text{BI}(P, S)$ measures the expected divergence for patient population $S$. When $\text{BI}$ is high, the protocol is not serving the population well, and redesign is warranted.</p>
-<h2 id="611-integration-the-full-math213-architecture">6.11 Integration: The Full $f(n) = g(n) + h(n)$ Architecture</h2>
+<h2 id="611-integration-the-full-math210-architecture">6.11 Integration: The Full $f(n) = g(n) + h(n)$ Architecture</h2>
 <p>Let us trace the full architecture through a single clinical encounter to show how all the components integrate.</p>
 <p><strong>Patient:</strong> Rosa Martinez, 55 years old, presenting with a newly discovered breast mass. Mammogram shows a suspicious lesion. Biopsy is recommended.</p>
 <p><strong>Start node $v_0$:</strong> $\mathbf{a}(v_0) = (0.7, 0.6, 0.6, 0.7, 0.5, 0.6, 0.7, 0.6, 0.4)$. Rosa is physically well ($d_1 = 0.7$), has moderate trust in the medical system ($d_5 = 0.5$ &mdash; she has had mixed experiences with healthcare), and has limited understanding of the diagnostic process ($d_9 = 0.4$ &mdash; she does not know what a biopsy involves or why it is necessary).</p>
