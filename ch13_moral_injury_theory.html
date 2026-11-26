@@ -40,7 +40,7 @@
       <div class="chapter-nav-top">
         <a href="ch12_bond_index.html" class="nav-prev">&larr; Chapter 12: The Clinical Bond Index and Structural Healthcar…</a>
         <a href="index.html" class="nav-toc">Contents</a>
-        <a href="ch15_prevention.html" class="nav-next">Chapter 15: Preventing and Repairing Moral Injury &rarr;</a>
+        <a href="ch14_moral_injury_settings.html" class="nav-next">Chapter 14: Moral Injury in the Wild — Pandemic, Palliative,… &rarr;</a>
       </div>
 
       <div class="chapter-content">
@@ -98,7 +98,7 @@
 <li><strong>High burnout, low MI</strong>: The clinician is exhausted but has not been forced to cross moral boundaries. Rural physicians working excessive hours in ethically supportive environments occupy this cell. Staffing solutions help; ethics interventions are unnecessary.</li>
 <li><strong>High burnout, high MI</strong>: Both problems simultaneously. The clinician is exhausted and morally damaged. This is the pandemic ICU physician — overwhelmed by volume <em>and</em> forced to make morally costly triage decisions. Both resource and structural interventions are needed.</li>
 </ul>
-<p><strong>Prediction 2 (from the GCE paper).</strong> <em>Moral injury (measured by MISS-HP) and burnout (measured by MBI) are statistically dissociable. The framework predicts that MI and burnout will have different correlates: MI correlates with boundary-crossing frequency and protocol disagreement; burnout correlates with workload and staffing ratios. A perfect correlation between MI and burnout would falsify the structural distinction.</em></p>
+<p><strong>Prediction 2 (from the GCE paper).</strong> <em>Moral injury (measured by MISS-HP) and burnout (measured by MBI) are statistically dissociable. The framework predicts that MI and burnout will have different correlates: MI correlates with boundary-crossing frequency and protocol disagreement; burnout correlates with workload and staffing ratios. A perfect correlation between MI and burnout would falsify the structural distinction.</em><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
 <hr />
 <h2 id="132-moral-injury-as-forced-boundary-crossing">13.2 Moral Injury as Forced Boundary Crossing</h2>
 <h3 id="the-formal-definition">The Formal Definition</h3>
@@ -148,7 +148,7 @@
 <p>The accumulation theorem has four practical implications:</p>
 <p><strong>Implication 1: Moral injury is prospectively predictable.</strong> Because $\text{MI}(T)$ is a cumulative sum of individual boundary-crossing increments, it can be estimated prospectively. Given a policy $P$ and a clinician population with known $\beta_k$ distributions, the expected moral injury can be computed before the policy is implemented.</p>
 <p><strong>Implication 2: Prevention is more effective than treatment.</strong> Because MI is irreversible above $\text{MI}_{\text{crit}}$, the primary institutional strategy should be prevention — keeping $\text{MI}(T) &lt; \text{MI}_{\text{crit}}$ — rather than treatment of clinicians who have exceeded the threshold.</p>
-<p><strong>Implication 3: Frequency matters more than severity.</strong> A clinician who makes one profoundly morally costly decision ($\Delta \text{MI} = 50$) accumulates less moral injury than a clinician who makes fifty moderately morally costly decisions ($50 \times \Delta \text{MI} = 50 \times 5 = 250$). The slow accumulation of moderate boundary crossings is more damaging than the acute impact of a single dramatic crossing.</p>
+<p><strong>Implication 3: Frequency counts as well as severity.</strong> A clinician who makes one profoundly morally costly decision ($\Delta \text{MI} = 50$) accumulates less moral injury than a clinician who makes fifty moderately morally costly decisions ($50 \times \Delta \text{MI} = 50 \times 5 = 250$). Because the increments add, the slow accumulation of moderate boundary crossings can be more damaging than the acute impact of a single dramatic crossing. The sum does not by itself weigh frequency above severity: fifty crossings of 5 and one crossing of 250 accumulate the same total.</p>
 <p><strong>Implication 4: The two damage modes are clinically distinguishable.</strong> Hypervigilance and moral numbing (Section 13.4) produce opposite clinical signatures and can be detected by measuring boundary penalty changes over time.</p>
 <hr />
 <p><img alt="Figure 13.1" src="figures/ch13_fig1.svg" /></p>
@@ -159,7 +159,7 @@
 <p>$$\beta_k^{(\text{post})} &gt; \beta_k^{(\text{pre})}$$</p>
 <p><em>The clinician becomes risk-averse on the violated dimension, avoiding actions that approach boundary $k$ even when crossing the boundary would be manifold-optimal.</em></p>
 <p><strong>Clinical manifestation</strong>: A clinician who was forced to deny ventilators during a pandemic develops an inflated $\beta_{\text{abandon}}$. After the pandemic, she over-triages — holding ventilators in reserve &ldquo;just in case,&rdquo; assigning patients to ICU beds they don&rsquo;t need, refusing to discharge patients who are clinically ready. Each of these actions is manifold-suboptimal: the geodesic would have the clinician allocate resources efficiently, but the inflated boundary penalty makes efficient allocation feel dangerous.</p>
-<p>Hypervigilance is the heuristic equivalent of a trauma response: the system has learned that boundary $k$ is dangerous and has overadjusted its estimates to avoid approaching the boundary. The overadjustment degrades clinical decision quality — the clinician&rsquo;s $h(n)$ is no longer $\varepsilon$-admissible but inadmissible ($h(n) &gt; (1 + \varepsilon) h^*(n)$ in the neighborhood of boundary $k$), causing $A^*$ to miss the optimal path.</p>
+<p>Hypervigilance is the heuristic equivalent of a trauma response: the system has learned that boundary $k$ is dangerous and has overadjusted its estimates to avoid approaching the boundary. The overadjustment degrades clinical decision quality — the clinician&rsquo;s $h(n)$ is no longer $\varepsilon$-admissible but inadmissible ($h(n) &gt; (1 + \varepsilon) h^*(n)$ in the neighborhood of boundary $k$), causing $A^*$ to miss the optimal path.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></p>
 <h3 id="moral-numbing-math75-deflation">Moral Numbing: $\beta_k$ Deflation</h3>
 <p><strong>Definition 13.3 (Moral Numbing).</strong> <em>A clinician exhibits moral numbing on boundary $k$ when, following repeated forced crossing of boundary $k$, the clinician&rsquo;s boundary penalty $\beta_k^{(\text{clin})}$ decreases below its pre-injury value:</em></p>
 <p>$$\beta_k^{(\text{post})} &lt; \beta_k^{(\text{pre})}$$</p>
@@ -223,7 +223,7 @@
 <h3 id="prospective-risk-assessment">Prospective Risk Assessment</h3>
 <p><strong>Definition 13.4 (Moral Injury Index).</strong> <em>The Moral Injury Index of an institutional policy $P$ is the expected cumulative moral injury imposed on a clinician operating under $P$:</em></p>
 <p>$$\text{MI}(P) = \mathbb{E}\left[\sum_t \sum_k \max\left(0,\; \beta_k^{(\text{clin})} - \tau\right) \cdot \mathbf{1}[P \text{ requires crossing boundary } k \text{ at } t]\right]$$</p>
-<p><em>where the expectation is over the distribution of clinical scenarios encountered under normal operations and the distribution of clinician $\beta_k$ values.</em></p>
+<p><em>where the expectation is over the distribution of clinical scenarios encountered under normal operations and the distribution of clinician $\beta_k$ values.</em><sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></p>
 <p><strong>Proposition 13.1 (Institutional Moral Injury Is Predictable).</strong> <em>The Moral Injury Index $\text{MI}(P)$ can be estimated before a policy is implemented, by:</em></p>
 <p><em>1. Surveying clinicians to estimate the distribution of $\beta_k^{(\text{clin})}$ (boundary penalties in the clinician population&rsquo;s moral manifold).</em></p>
 <p><em>2. Analyzing the policy $P$ to identify which clinical scenarios require boundary crossing.</em></p>
@@ -347,7 +347,7 @@
       <div class="chapter-nav-bottom">
         <a href="ch12_bond_index.html" class="nav-prev">&larr; Chapter 12: The Clinical Bond Index and Structural Healthcar…</a>
         <a href="index.html" class="nav-toc">Contents</a>
-        <a href="ch15_prevention.html" class="nav-next">Chapter 15: Preventing and Repairing Moral Injury &rarr;</a>
+        <a href="ch14_moral_injury_settings.html" class="nav-next">Chapter 14: Moral Injury in the Wild — Pandemic, Palliative,… &rarr;</a>
       </div>
     </div>
   </article>

@@ -68,10 +68,10 @@
 <p><strong>Dimensional measurement</strong>: A coding scheme that assigns each clinical decision a nine-dimensional attribute vector. This requires trained coders (clinicians who can evaluate decisions along all nine dimensions) and a validated coding protocol.</p>
 </li>
 <li>
-<p><strong>Sufficient sample size</strong>: Estimating a $9 \times 9$ covariance matrix with reasonable precision requires at least $n = 200$ observations per condition (Maydeu-Olivares and Coffman, 2006). For ethics consultations, this means coding at least 500 consultations (allowing for incomplete data and stratification).</p>
+<p><strong>Sufficient sample size</strong>: Estimating a $9 \times 9$ covariance matrix with reasonable precision requires, as a rule of thumb, at least $n = 200$ observations per condition (a figure attributed to Maydeu-Olivares and Coffman, 2006). For ethics consultations, this means coding at least 500 consultations (allowing for incomplete data and stratification).</p>
 </li>
 <li>
-<p><strong>Representative sampling</strong>: The consultations must be representative of the clinical contexts where the framework applies — not just the dramatic cases (which are overrepresented in ethics consultations) but also the routine cases (which are underrepresented).</p>
+<p><strong>Representative sampling</strong>: The consultations must be representative of the clinical contexts where the framework applies — not just the dramatic cases (which are overrepresented in ethics consultations) but also the routine cases (which are underrepresented).<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
 </li>
 </ol>
 <p>These requirements are feasible but have not been met — the framework is new, and the measurement infrastructure does not yet exist.</p>
@@ -88,11 +88,11 @@
 2. Test for positive definiteness (required for the Mahalanobis metric to be well-defined).
 3. Identify the largest off-diagonal elements — these are the cross-dimensional dependencies that drive the most clinical-ethical complexity.
 4. Bootstrap confidence intervals for all 45 entries.</p>
-<p><em>Feasibility:</em> Ethics consultation records are maintained at most academic medical centers. Retrospective coding requires clinical expertise but not patient contact, IRB consent (the records already exist), or prospective recruitment. The primary cost is coder time — approximately 30 minutes per consultation for nine-dimensional coding, or 250 hours per coder for 500 consultations (500 coder-hours for the two independent coders).</p>
+<p><em>Feasibility:</em> Ethics consultation records are maintained at most academic medical centers. Retrospective coding requires clinical expertise but not patient contact or prospective recruitment. Because the records already exist, the study may not need new consent from the patients; review of identifiable records still needs ethics review by an IRB or a waiver from one (Section 18.10 budgets IRB approval at each site). The primary cost is coder time — approximately 30 minutes per consultation for nine-dimensional coding, or 250 hours per coder for 500 consultations (500 coder-hours for the two independent coders).</p>
 <p><strong>Study 2: Prospective Discrete Choice Experiment</strong></p>
 <p><em>Design:</em> A fractional-factorial discrete choice experiment using clinical vignettes. Each vignette presents a clinical scenario with two treatment options, and the clinician chooses between them. The vignettes systematically vary the nine-dimensional attribute vectors of the options.</p>
 <p><em>Sample:</em> $n \geq 200$ clinicians (physicians, nurses, and allied health professionals) from at least three clinical settings (ICU, general medicine, palliative care).</p>
-<p><em>Vignette design:</em> Fractional-factorial design with the nine clinical-moral dimensions as factors and two levels per factor (high/low). The full factorial design would require $2^9 = 512$ vignettes per participant — infeasible. A fractional-factorial design with resolution V (estimating all main effects and two-factor interactions) requires approximately 50–80 vignettes per participant, administrable in a 45-minute session.</p>
+<p><em>Vignette design:</em> Fractional-factorial design with the nine clinical-moral dimensions as factors and two levels per factor (high/low). The full factorial design would require $2^9 = 512$ vignettes per participant — infeasible. A fractional design that estimates all main effects and two-factor interactions needs at least 46 vignettes (one mean, nine main effects and 36 two-factor interactions); the chapter&rsquo;s estimate is approximately 50–80 vignettes per participant, administrable in a 45-minute session. A regular two-level fractional factorial of resolution V for nine factors has 128 runs, so a smaller design must be an irregular (for example, computer-generated) one.</p>
 <p><em>Analysis:</em> Conditional logit regression to estimate marginal rates of substitution (MRS) between dimensions:</p>
 <p>$$\text{MRS}_{ij} = \frac{\partial U / \partial d_i}{\partial U / \partial d_j}$$</p>
 <p>The MRS matrix is related to the inverse covariance matrix $\Sigma^{-1}$ — dimensions that clinicians are willing to trade off at low rates have high covariance (substitutes); dimensions that clinicians are unwilling to trade off have low covariance (complements or incommensurables).</p>
@@ -219,7 +219,7 @@
 - Framing A: &ldquo;This procedure has a 90% success rate.&rdquo;
 - Framing B: &ldquo;This procedure has a 10% failure rate.&rdquo;</p>
 <p>Measure: (a) treatment preference after each framing (same/different), (b) health literacy (REALM or NVS), (c) self-reported understanding of the procedure.</p>
-<p><strong>Predicted result:</strong> Framing-variant patients (those whose preferences change) have lower health literacy scores ($r = -0.4$) and lower self-reported understanding than framing-invariant patients. The gauge-invariance test identifies consent quality better than form completion alone.</p>
+<p><strong>Predicted result:</strong> Framing-variant patients (those whose preferences change) have lower health literacy scores ($r = -0.4$) and lower self-reported understanding than framing-invariant patients. The gauge-invariance test identifies consent quality better than form completion alone.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></p>
 <p><strong>What would falsify:</strong> No correlation between framing invariance and comprehension. This would indicate that framing effects are independent of understanding — refuting the claim that consent is a gauge-invariance condition.</p>
 <h3 id="prediction-4-bond-index-predicts-disparities">Prediction 4: Bond Index Predicts Disparities</h3>
 <p><strong>Claim:</strong> The clinical Bond Index, computed from institutional policy analysis, predicts patient-reported experience disparities across demographic groups.</p>
@@ -303,7 +303,7 @@
 <p><strong>Clinicians&rsquo; pre-crisis $\beta_k$ profiles do not predict post-crisis moral injury.</strong> If vulnerability is entirely situational rather than dispositional, the accumulation model&rsquo;s mechanism is wrong.</p>
 </li>
 </ol>
-<p>Each of these falsification criteria is specific, testable, and decisive. The framework stands or falls on the evidence.</p>
+<p>Each of these falsification criteria is specific, testable, and decisive. The framework stands or falls on the evidence.<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></p>
 <hr />
 <h2 id="176-sarahs-experiment-an-illustrative-scenario">17.6 Sarah&rsquo;s Experiment: An Illustrative Scenario</h2>
 <p>In this illustrative scenario (Sarah is a composite character, and no such study has been run), Sarah designs her first study: a prospective consent gauge-invariance experiment. She presents patients scheduled for elective surgery with consent information in two framings:</p>

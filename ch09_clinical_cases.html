@@ -140,7 +140,7 @@
 </table>
 <p>The edge weight for Path A:</p>
 <p>$$w_A = \Delta \mathbf{a}^T \Sigma^{-1} \Delta \mathbf{a} + \beta_{\text{consent}} + \beta_{\text{rights}} = \infty$$</p>
-<p>Path A has infinite cost. The consent boundary $\beta_{\text{consent}} = \infty$ for competent, non-emergency refusals by informed patients. This is not a contingent judgment — it is a structural feature of the clinical decision complex. A path that crosses a sacred-value boundary has infinite cost and is never the geodesic.</p>
+<p>Path A has infinite cost. The consent boundary $\beta_{\text{consent}} = \infty$ for a competent, informed refusal. The emergency is not an exception: Definition 4.3 lowers the penalty in emergencies because consent is then implied, and an explicit refusal by a competent patient leaves nothing to imply. This is not a contingent judgment — it is a structural feature of the clinical decision complex. A path that crosses a sacred-value boundary has infinite cost and is never the geodesic.</p>
 <p><strong>Path B: Respect the refusal and aggressively pursue transfusion alternatives.</strong></p>
 <table>
 <thead>
@@ -209,8 +209,8 @@
 </tbody>
 </table>
 <p>The edge weight for Path B:</p>
-<p>$$w_B = \frac{(\Delta d_1)^2}{\sigma_1^2} = \frac{(0.4)^2}{\sigma_1^2}$$</p>
-<p>This is finite. The clinical geodesic is Path B.</p>
+<p>$$w_B = \Delta \mathbf{a}^T \Sigma^{-1} \Delta \mathbf{a}$$</p>
+<p>With a diagonal $\Sigma$, and the four non-zero changes of the table, this is $\frac{(0.4)^2}{\sigma_1^2} + \frac{(0.5)^2}{\sigma_5^2} + \frac{(0.2)^2}{\sigma_6^2} + \frac{(0.3)^2}{\sigma_8^2}$, and no boundary penalty is added. This is finite. The clinical geodesic is Path B.</p>
 <p><img alt="Figure 9.1" src="figures/ch09_fig1.svg" /></p>
 <p><em>Figure 9.1. Case 1 of Section 9.1, a worked example. Each pair of bars is the change the section&rsquo;s two tables assign to one dimension. Path A, transfusing against the refusal, raises outcomes by 0.8 and is entered as minus infinity on rights and on autonomy; those two bars are drawn running off the scale. Path B, respecting the refusal and pursuing alternatives, lowers outcomes by 0.4 and raises trust, social impact and institutional legitimacy. The chapter gives Path A infinite weight and Path B a finite one.</em></p>
 <h3 id="the-geodesic-is-not-a-compromise">The Geodesic Is Not a &ldquo;Compromise&rdquo;</h3>
@@ -223,7 +223,7 @@
 <li>Surgical hemostasis without transfusion support</li>
 <li>Acceptance of permissive hypotension during surgery</li>
 </ul>
-<p>These alternatives are not compromises. They are the manifold-optimal strategy: they reduce $\Delta d_1$ (improving clinical outcomes) while maintaining zero cost on $d_2$ through $d_9$. A clinician who simply accepts the refusal and proceeds without exploring alternatives is not following the geodesic — they are following a suboptimal path that respects boundaries but does not optimize within them.</p>
+<p>These alternatives are not compromises. They are the manifold-optimal strategy: they reduce $\Delta d_1$ (improving clinical outcomes) while worsening none of $d_2$ through $d_9$. A clinician who simply accepts the refusal and proceeds without exploring alternatives is not following the geodesic — they are following a suboptimal path that respects boundaries but does not optimize within them.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
 <h3 id="what-sarah-learns">What Sarah Learns</h3>
 <p>Sarah presents Mr. Okafor to her attending. She says: &ldquo;The patient is refusing transfusion. We should respect his wishes.&rdquo; Her attending agrees — but asks: &ldquo;What else?&rdquo; Sarah has no answer. The attending walks her through the alternative strategies: cell salvage, EPO, permissive hypotension. Sarah realizes that &ldquo;respect the refusal&rdquo; is the start of the geodesic, not the end. The geodesic minimizes total manifold cost, and that means aggressively pursuing $d_1$ improvement within the constraints imposed by $d_2$ through $d_9$.</p>
 <p>The QALY analysis would have recommended overriding the refusal. The principlism analysis would have agonized over the &ldquo;balance.&rdquo; The geodesic analysis respects the boundary and then solves the optimization problem <em>within</em> the boundary constraints — a more sophisticated clinical strategy than either scalar framework can generate.</p>
@@ -418,7 +418,7 @@ $$\text{CF}(\gamma_B) = \sum_{i=1}^{4} w_{\text{step}_i} = w_{\text{meeting}} + 
 <p><strong>Theorem 9.1 (Proxy Pathfinding Divergence).</strong> <em>Let $h_{\text{proxy}}$ and $h_{\text{patient}}$ be the heuristic functions of the proxy and the patient, respectively. The divergence between the proxy-computed geodesic and the patient&rsquo;s true geodesic is bounded by:</em></p>
 <p>$$\|\gamma^*_{\text{proxy}} - \gamma^*_{\text{patient}}\| \leq K \cdot \|h_{\text{proxy}} - h_{\text{patient}}\|_{\infty}$$</p>
 <p><em>where $K$ depends on the curvature of the clinical decision complex. No calibration procedure can guarantee $\|h_{\text{proxy}} - h_{\text{patient}}\|_{\infty} &lt; \epsilon$ without direct knowledge of $h_{\text{patient}}$, which is unavailable when the patient lacks capacity.</em></p>
-<p>The theorem states a structural limitation: proxy pathfinding is fundamentally uncertain. The proxy is navigating with someone else&rsquo;s map, and the map may be wrong.</p>
+<p>The theorem states a structural limitation: proxy pathfinding is fundamentally uncertain. The proxy is navigating with someone else&rsquo;s map, and the map may be wrong.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></p>
 <h3 id="the-clinical-geodesic-for-proxy-decisions">The Clinical Geodesic for Proxy Decisions</h3>
 <p>The geodesic for this case is not &ldquo;continue everything&rdquo; (Carlos&rsquo;s immediate request) or &ldquo;withdraw immediately&rdquo; (the scalar utilitarian answer). It is a calibration process — an attempt to improve $h_{\text{proxy}}$ before major decisions are made:</p>
 <p><strong>Step 1: Elicit Rosa&rsquo;s values indirectly.</strong> Ask Carlos not &ldquo;What do you want?&rdquo; but &ldquo;Tell me about Rosa. What does she enjoy? What makes her life worth living? Has she ever talked about what she&rsquo;d want in a situation like this?&rdquo; Each answer provides partial information about $h_{\text{patient}}$, narrowing the divergence $\|h_{\text{proxy}} - h_{\text{patient}}\|$.</p>
@@ -455,6 +455,7 @@ $$\text{CF}(\gamma_B) = \sum_{i=1}^{4} w_{\text{step}_i} = w_{\text{meeting}} + 
 <p><em>The pre-modification self cannot anticipate the post-modification heuristic because the heuristic is precisely what the intervention changes.</em></p>
 <p>Dr. Stein consented to DBS with his pre-modification heuristic — a heuristic that valued intellectual engagement ($d_7$: identity as a philosopher), that experienced chronic suffering ($d_1$: poor clinical outcomes), and that was willing to accept personality change as a trade-off. His post-modification heuristic values different things. The person who consented is not the person who bears the consequences.</p>
 <h3 id="the-nine-dimensional-analysis-of-identity-altering-interventions">The Nine-Dimensional Analysis of Identity-Altering Interventions</h3>
+<p>The vectors of this case are scored on a signed scale from $-1$ to $+1$, not on the scale from 0 to 1 used in Chapters 2, 4 and 6.</p>
 <p><strong>Pre-DBS attribute vector:</strong> $\mathbf{a}_{\text{pre}} = (d_1{=}{-}0.9, d_2{=}0, d_3{=}0, d_4{=}{+}0.7, d_5{=}{+}0.3, d_6{=}{-}0.5, d_7{=}{+}0.8, d_8{=}0, d_9{=}{+}0.9)$</p>
 <p>Dr. Stein&rsquo;s pre-DBS state: terrible clinical outcomes ($d_1$), intact autonomy ($d_4$), moderate trust ($d_5$), suffering family ($d_6$), strong philosophical identity ($d_7$), and excellent understanding ($d_9$).</p>
 <p><strong>Post-DBS attribute vector:</strong> $\mathbf{a}_{\text{post}} = (d_1{=}{+}0.8, d_2{=}0, d_3{=}0, d_4{=}{+}0.7, d_5{=}{+}0.6, d_6{=}{+}0.3, d_7{=}{+}0.2, d_8{=}0, d_9{=}{+}0.5)$</p>
@@ -464,7 +465,7 @@ $$\text{CF}(\gamma_B) = \sum_{i=1}^{4} w_{\text{step}_i} = w_{\text{meeting}} + 
 <p><em>Figure 9.2. Case 5 of Section 9.5, a worked example. Each row is one dimension; the ring is the attribute before deep brain stimulation and the filled mark is the attribute after, on the section&rsquo;s scale from minus 1 to plus 1. Outcomes rise from minus 0.9 to plus 0.8, and trust and social impact rise. Dignity and identity fall from 0.8 to 0.2 and epistemic status from 0.9 to 0.5. A scalar that reads outcomes sees only the first row.</em></p>
 <h3 id="the-consent-paradox-of-identity-altering-interventions">The Consent Paradox of Identity-Altering Interventions</h3>
 <p><strong>Theorem 9.2 (Identity-Alteration Consent Paradox).</strong> <em>For any intervention that modifies $h_{\text{patient}}$, the gauge-invariance test for valid consent (Theorem 8.1) is structurally unable to validate consent across the identity boundary. Consent at time $t_0$ is evaluated using $h_{t_0}$; the consequences are experienced using $h_{t_1}$. If $h_{t_0} \neq h_{t_1}$, no framing of the information at $t_0$ can guarantee that the decision is stable under the transformation $h_{t_0} \to h_{t_1}$.</em></p>
-<p>This is not a failure of the framework — it is a genuine paradox that the framework makes precise. Identity-altering interventions are the one class of clinical decisions where the consent apparatus breaks down structurally, not merely practically.</p>
+<p>This is not a failure of the framework — it is a genuine paradox that the framework makes precise.<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> Identity-altering interventions are the one class of clinical decisions where the consent apparatus breaks down structurally, not merely practically.</p>
 <h3 id="the-clinical-geodesic-for-identity-cases">The Clinical Geodesic for Identity Cases</h3>
 <p>The geodesic for identity-altering interventions includes structural safeguards that the scalar framework does not require:</p>
 <ol>
@@ -567,7 +568,7 @@ $$\text{CF}(\gamma_B) = \sum_{i=1}^{4} w_{\text{step}_i} = w_{\text{meeting}} + 
 <p>The actual clinical management of Jehovah&rsquo;s Witness patients is well-established and broadly consistent with the geodesic analysis presented here. Guidelines from the American College of Surgeons (2019) and the British Journal of Anaesthesia (2020) recommend respecting the refusal and aggressively pursuing bloodless surgical techniques.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:2">
-<p>The proxy asymmetry problem is distinct from the well-known surrogate accuracy literature (Shalowitz et al., 2006), which demonstrates that surrogates predict patient preferences with approximately 68% accuracy. The geometric framework explains <em>why</em> surrogate accuracy has a structural ceiling: the proxy is pathfinding with a different heuristic, and no calibration procedure can guarantee convergence without direct access to the patient&rsquo;s heuristic function.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<p>The proxy asymmetry problem is distinct from the well-known surrogate accuracy literature (Shalowitz et al., 2006), which is cited for the finding that surrogates predict patient preferences with approximately 68% accuracy. The geometric framework explains <em>why</em> surrogate accuracy has a structural ceiling: the proxy is pathfinding with a different heuristic, and no calibration procedure can guarantee convergence without direct access to the patient&rsquo;s heuristic function.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 <li id="fn:3">
 <p>The identity-alteration consent paradox has been discussed extensively in the neuroethics literature (Glannon, 2016; Focquaert and Schermer, 2015) but without the formal apparatus to make the paradox precise. The geometric framework&rsquo;s contribution is not the observation that identity-altering interventions raise consent problems — that observation is well-established — but the mathematical characterization of <em>why</em> the consent apparatus fails in these cases: the gauge-invariance test cannot operate across a heuristic discontinuity.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>

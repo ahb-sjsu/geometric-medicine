@@ -54,7 +54,7 @@
 <hr />
 <h2 id="121-the-clinical-bond-index-formal-definition">12.1 The Clinical Bond Index: Formal Definition</h2>
 <h3 id="the-clinical-bond-index-and-the-bond-index">The Clinical Bond Index and the Bond Index</h3>
-<p>The clinical Bond Index was introduced in <em>Geometric Ethics</em> (Bond, 2026, Ch. 21, Definition 21.10) as a measure of the cost an institutional policy imposes on a population. This chapter develops it for healthcare.</p>
+<p>The clinical Bond Index was introduced in <em>Geometric Ethics</em>, Definition 21.10 (Bond, 2026c, Ch. 21), as a measure of the cost an institutional policy imposes on a population. This chapter develops it for healthcare.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
 <p>It shares a name with the Bond Index of <em>Geometric Ethics</em> (Ch. 18) and is a different quantity. The Bond Index measures how much an evaluation changes under re-descriptions that should not change it, and 0 is perfect invariance. The clinical Bond Index $\text{BI}(P, S)$ measures how much more the path a policy mandates costs a population than the clinical geodesic, and 0 means the policy costs that population nothing beyond the optimum. The two are not interchangeable, and a value of one says nothing about the other. In this chapter &ldquo;Bond Index&rdquo; always means the clinical Bond Index.</p>
 <p><strong>Definition 12.1 (Clinical Bond Index).</strong> <em>The clinical Bond Index $\text{BI}(P, S)$ of an institutional policy $P$ with respect to a patient population $S$ is the expected deviation between the clinical geodesic on the full manifold and the path mandated by the policy:</em></p>
 <p>$$\text{BI}(P, S) = \mathbb{E}_{s \in S}\left[\text{CF}(\gamma_P^*(s)) - \text{CF}(\gamma_{\mathcal{C}}^*(s))\right]$$</p>
@@ -73,7 +73,7 @@
 <p>The Bond Index for a single population tells us how far the policy deviates from the geodesic. But structural injustice is comparative: what matters is not just how far a policy deviates from the geodesic for one population but how much <em>more</em> it deviates for one population than another.</p>
 <p><strong>Definition 12.2 (Bond Index Disparity Ratio).</strong> <em>The disparity ratio of policy $P$ between populations $S_1$ and $S_2$ is:</em></p>
 <p>$$\text{DR}(P, S_1, S_2) = \frac{\text{BI}(P, S_1)}{\text{BI}(P, S_2)}$$</p>
-<p><em>A disparity ratio of 1.0 indicates equal manifold cost. A disparity ratio of 2.3 indicates that population $S_1$ bears 2.3 times the manifold cost of population $S_2$ under policy $P$.</em></p>
+<p><em>The ratio is defined when $\text{BI}(P, S_2) &gt; 0$; when the policy is manifold-optimal for $S_2$ (Proposition 12.1, part 2), it is undefined. A disparity ratio of 1.0 indicates equal manifold cost. A disparity ratio of 2.3 indicates that population $S_1$ bears 2.3 times the manifold cost of population $S_2$ under policy $P$.</em></p>
 <p>The disparity ratio is the clinical Bond Index&rsquo;s primary diagnostic output. It transforms &ldquo;this policy may be unjust&rdquo; into &ldquo;this policy imposes 2.3 times the manifold cost on Black patients compared to white patients&rdquo; — a specific, testable, actionable claim.</p>
 <hr />
 <h2 id="122-what-the-bond-index-detects">12.2 What the Bond Index Detects</h2>
@@ -100,7 +100,7 @@
 <p>A disabled patient&rsquo;s attribute vector may have lower $d_1$ (functional status) but intact or even elevated $d_4$ (autonomy — many disabled people have fought hard for self-determination), $d_7$ (dignity — disabled identity is a positive identity for many), and $d_5$ (trust — disability communities often have strong peer support networks).</p>
 <p>A QALY-based policy weights $d_1$ heavily and $d_4$, $d_7$ negligibly. The policy-mandated path for a disabled patient — which deprioritizes them in allocation decisions because their &ldquo;quality of life&rdquo; is lower — deviates from the geodesic on the full manifold, which would weight $d_4$ and $d_7$ according to the patient&rsquo;s own dimensional weights.</p>
 <p>$$\text{BI}(P_{\text{QALY}}, S_{\text{disabled}}) &gt; \text{BI}(P_{\text{QALY}}, S_{\text{non-disabled}})$$</p>
-<p>The disability discrimination is mathematical, not moral (Corollary 1 in the GCE paper). It follows from the dimensional collapse: any scalar projection that weights $d_1$ most heavily will disadvantage populations whose needs are concentrated on other dimensions.</p>
+<p>The disability discrimination is mathematical, not moral (Corollary 5.2; Corollary 1 in the GCE paper, Bond 2026h). It follows from the dimensional collapse: any scalar projection that weights $d_1$ most heavily will disadvantage populations whose needs are concentrated on other dimensions.</p>
 <h3 id="age-discrimination">Age Discrimination</h3>
 <p>Age-based triage — prioritizing younger patients because they have more expected life-years — is standard practice in utilitarian allocation frameworks. The geometric framework identifies the $d_3$ (justice) cost that the utilitarian framework ignores.</p>
 <p>An elderly patient has, by hypothesis, fewer remaining life-years ($d_1$). But the elderly patient has equal moral worth ($d_3$), intact dignity ($d_7$), and specific vulnerabilities (lower $d_5$ if they have experienced ageist dismissal in healthcare, lower $d_9$ if cognitive decline affects understanding).</p>
@@ -223,7 +223,7 @@
 </tbody>
 </table>
 <p><strong>Illustrative dimensional decomposition of the Black-White disparity:</strong></p>
-<p>The Bond Index disparity between Black and White populations decomposes by dimension:</p>
+<p>The Bond Index disparity between Black and White populations decomposes by dimension<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>:</p>
 <table>
 <thead>
 <tr>
@@ -288,7 +288,7 @@
 </ol>
 <p>The claim &ldquo;policy $P$ is structurally unjust toward population $S$&rdquo; becomes:</p>
 <p>$$\text{BI}(P, S) &gt; \text{BI}(P, S_{\text{ref}}) + \epsilon$$</p>
-<p>where $\epsilon$ is a threshold for clinically meaningful disparity. This is an empirical claim with a specific numerical value, testable against data, and falsifiable. If the Bond Index computation shows no disparity, the structural injustice claim is not supported — regardless of the analyst&rsquo;s political commitments. If it shows a disparity, the claim is supported — again regardless of political commitments.</p>
+<p>where $\epsilon$ is a threshold for clinically meaningful disparity.<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> This is an empirical claim with a specific numerical value, testable against data, and falsifiable. If the Bond Index computation shows no disparity, the structural injustice claim is not supported — regardless of the analyst&rsquo;s political commitments. If it shows a disparity, the claim is supported — again regardless of political commitments.</p>
 <p><strong>Prediction 4 (from the GCE paper, instantiated).</strong> <em>The clinical Bond Index computed from institutional policy analysis should predict patient-reported experience disparities across demographic groups. Specifically: groups with higher $\text{BI}$ should report worse experience on HCAHPS trust, communication, and respect dimensions.</em></p>
 <p>This prediction is falsifiable. If there is no correlation between the Bond Index and patient experience disparities, the framework&rsquo;s operationalization of structural injustice is wrong. If there is a correlation, the Bond Index provides a quantitative tool for evidence-based health equity policy.</p>
 <hr />
@@ -381,7 +381,7 @@ $$\frac{d}{dt}\text{BI}(P, S, t) &gt; 0 \quad \Rightarrow \quad \text{Equity dec
 <hr />
 <ol>
 <li id="fn:1">
-<p>The Bond Index is named for its structural role in the Geometric Series: it measures the deviation between actual and optimal paths on the moral manifold, serving as a &ldquo;bond&rdquo; between theoretical ethics and empirical measurement. The name is coincidental with the author&rsquo;s surname.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>The clinical Bond Index measures the deviation between actual and optimal paths on the clinical decision complex, serving as a &ldquo;bond&rdquo; between theoretical ethics and empirical measurement. The Bond Index of <em>Geometric Ethics</em> (Ch. 18), whose name it shares, is a different quantity: the mean deviation of an evaluation over declared re-descriptions, divided by a tolerance, which measures invariance under re-description (Section 12.1). The name is coincidental with the author&rsquo;s surname.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:2">
 <p>The dimensional decomposition of the Bond Index disparity is analogous to the Oaxaca-Blinder decomposition in labor economics, which decomposes wage gaps into explained (due to differences in characteristics) and unexplained (due to differences in returns to characteristics) components. The Bond Index decomposition operates on the clinical manifold rather than on the wage equation, but the methodological logic is similar.&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>

@@ -45,8 +45,11 @@
 
       <div class="chapter-content">
 <h1 id="appendix-b-code-walkthrough">Appendix B: Code Walkthrough</h1>
-<p>This appendix provides a guided walkthrough of the Python implementations that produce the computational results in this book. The code is organized in two modules: <code>ch21_clinical.py</code> (individual clinical decision-making, pathfinding, and moral injury) and <code>ch27_bioethics.py</code> (population-level allocation, the bioethical decision complex, and the clinical Bond Index). Both modules are self-contained and depend only on NumPy and SciPy.</p>
-<p>All code examples are presented in the order they appear in the text. Line references are to the versions archived with this volume.</p>
+<p>This appendix provides a guided walkthrough of the Python implementations described for the computations in this book. The code is organized in two modules: <code>ch21_clinical.py</code> (individual clinical decision-making, pathfinding, and moral injury) and <code>ch27_bioethics.py</code> (population-level allocation, the bioethical decision complex, and the clinical Bond Index). Both modules are self-contained and depend only on NumPy and SciPy.</p>
+<p>All code examples are presented in the order they appear in the text.</p>
+<blockquote>
+<p><strong>Note (2026-11-26).</strong> Neither <code>ch21_clinical.py</code> nor <code>ch27_bioethics.py</code> is in this book&rsquo;s repository or in the repository of <em>Geometric Ethics</em>, and no output from either is held with this volume. The listings below are the code as this appendix prints it. The worked numbers in the chapters follow from the formulas the chapters print, and several are illustrative; none is the recorded output of these modules.</p>
+</blockquote>
 <hr />
 <h2 id="b1-the-clinical-decision-complex">B.1 The Clinical Decision Complex</h2>
 <p>The clinical decision complex is implemented as a weighted graph with 9-dimensional attribute vectors on vertices and Mahalanobis-plus-boundary-penalty weights on edges.</p>
@@ -209,7 +212,7 @@ def clinical_astar(
 
     return None, float('inf')  # No path found: ethics consultation needed
 </code></pre>
-<p>The return value <code>None</code> corresponds to the clinical situation &ldquo;path not found&rdquo; &mdash; a genuine ethical impasse where no available clinical action reaches an acceptable outcome without crossing a sacred-value boundary. This is the formal trigger for ethics consultation (Chapter 6, Table 6.1).</p>
+<p>The return value <code>None</code> corresponds to the clinical situation &ldquo;path not found&rdquo; &mdash; a genuine ethical impasse where no available clinical action reaches an acceptable outcome without crossing a sacred-value boundary. This is the formal trigger for ethics consultation (Chapter 6, the component table of Section 6.1.1, row &ldquo;Path not found&rdquo;).</p>
 <hr />
 <h2 id="b3-moral-injury-computation">B.3 Moral Injury Computation</h2>
 <p>The Moral Injury Index is computed from a sequence of clinical decisions and their boundary-crossing events.</p>
@@ -423,17 +426,17 @@ def clinical_astar(
         ) / len(patients),
     }
 </code></pre>
-<p>The divergence analysis (Chapter 10) demonstrates the Divergence Theorem: utilitarian and manifold-optimal triage coincide only when decisions activate only $d_1$ and no boundaries are crossed. In every pandemic scenario tested, the divergence fraction is non-zero.</p>
+<p>The divergence analysis (Chapter 10) demonstrates the Divergence Theorem: utilitarian and manifold-optimal triage coincide only when decisions activate only $d_1$ and no boundaries are crossed. The theorem predicts a non-zero divergence fraction in any scenario where triage decisions cross boundaries or activate non-outcome dimensions; no run of this function is recorded with this volume.</p>
 <hr />
 <h2 id="b6-reproducibility">B.6 Reproducibility</h2>
-<p>All computational results in this book can be reproduced by:</p>
+<p>Once the two modules are available (see the note at the head of this appendix), the computations they implement are meant to be reproduced by:</p>
 <ol>
 <li>Installing dependencies: <code>pip install numpy scipy</code></li>
 <li>Running <code>ch21_clinical.py</code> for individual clinical decision results (Chapters 4&ndash;9, 13&ndash;15)</li>
 <li>Running <code>ch27_bioethics.py</code> for population-level allocation results (Chapters 10&ndash;12)</li>
 <li>Comparing output against the tables and figures in the relevant chapters</li>
 </ol>
-<p>Random seeds are fixed where stochastic elements appear. The code requires Python 3.10 or later. No GPU is required &mdash; all computations run on CPU in under one minute on commodity hardware.</p>
+<p>As described here, the modules fix random seeds where stochastic elements appear, require Python 3.10 or later, and need no GPU; the expectation is that all computations run on CPU in under one minute on commodity hardware.</p>
       </div>
 
       <div class="chapter-nav-bottom">

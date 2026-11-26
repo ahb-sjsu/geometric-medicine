@@ -45,7 +45,7 @@
 
       <div class="chapter-content">
 <h1 id="appendix-a-mathematical-prerequisites">Appendix A: Mathematical Prerequisites</h1>
-<p>This appendix collects the mathematical definitions and results used throughout the book. It is self-contained for readers unfamiliar with differential geometry, simplicial complexes, or search algorithms; those with background in these areas may skip directly to the chapters. Full proofs and extended treatments can be found in <em>Geometric Methods in Computational Modeling</em> (Bond, 2026a) and <em>Geometric Reasoning</em> (Bond, 2026c).</p>
+<p>This appendix collects the mathematical definitions and results used throughout the book. It is self-contained for readers unfamiliar with differential geometry, simplicial complexes, or search algorithms; those with background in these areas may skip directly to the chapters. Full proofs and extended treatments can be found in <em>Geometric Methods: Computational Modeling</em> (Bond, 2026a) and <em>Geometric Reasoning</em> (Bond, 2026b).</p>
 <hr />
 <h2 id="a1-smooth-manifolds">A.1 Smooth Manifolds</h2>
 <p><strong>Definition A.1 (Topological Manifold).</strong> A <em>topological manifold</em> of dimension $n$ is a Hausdorff, second-countable topological space $M$ such that every point $p \in M$ has a neighborhood homeomorphic to an open subset of $\mathbb{R}^n$.</p>
@@ -101,7 +101,7 @@
 <p><em>Clinical interpretation</em>: Informed consent is a gauge-invariance condition: the patient&rsquo;s clinical decision must be invariant under meaning-preserving reframing. If &ldquo;90% survival rate&rdquo; and &ldquo;10% mortality rate&rdquo; produce different treatment decisions, the patient&rsquo;s heuristic is gauge-variant, and consent is not genuinely informed regardless of what the form says. Algorithmic bias in medical AI is also a gauge-invariance violation: if a clinical decision support system produces different recommendations for the same clinical state described with different demographic labels, the system violates the medical BIP. (See Chapter 8.)</p>
 <hr />
 <h2 id="a8-the-scalar-irrecoverability-theorem">A.8 The Scalar Irrecoverability Theorem</h2>
-<p><strong>Theorem A.2 (Scalar Irrecoverability; Bond 2026c).</strong> Let $Q: \mathbb{R}^n \to \mathbb{R}$ be any continuous function mapping an $n$-dimensional state to a scalar ($n &gt; 1$). Then:</p>
+<p><strong>Theorem A.2 (Scalar Irrecoverability; Bond 2026c, <em>Geometric Ethics</em>, Theorem 15.1, conditional there on that book&rsquo;s Definition 5.2).</strong> Let $Q: \mathbb{R}^n \to \mathbb{R}$ be any continuous function mapping an $n$-dimensional state to a scalar ($n &gt; 1$). Then:</p>
 <ol>
 <li>$Q$ is not injective: multiple distinct states map to the same scalar value.</li>
 <li>The information destroyed by $Q$ is irrecoverable: there exists no function $\psi: \mathbb{R} \to \mathbb{R}^n$ such that $\psi \circ Q = \text{id}$.</li>
