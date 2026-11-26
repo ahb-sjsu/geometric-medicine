@@ -150,7 +150,9 @@ Each alignment condition can fail independently, and each failure has a distinct
 
 *Intervention:* Explicitly negotiate the goal region. "What would a good outcome look like for you?" is the goal-alignment question. The answer defines $G_{\text{patient}}$, which may differ from $G_{\text{clin}}$. The joint geodesic must navigate toward the intersection of the two goal regions, or, if the intersection is empty, toward the point in $G_{\text{patient}}$ that is closest to $G_{\text{clin}}$ (respecting patient autonomy) or vice versa (respecting clinical reality).
 
-[Figure 8.1: The three modes of alignment failure. (a) Epistemic misalignment: the patient's $d_1$ attribute vectors do not match the clinician's. (b) Value misalignment: the patient's boundary penalties do not match the clinician's. (c) Goal misalignment: the patient's goal region $G_{\text{patient}}$ does not overlap with the clinician's goal region $G_{\text{clin}}$. Each failure has a different clinical presentation and a different intervention.]
+![Figure 8.1](figures/ch08_fig1.svg)
+
+*Figure 8.1. A schematic of the three alignment conditions of Definition 8.2 and how each can fail (Section 8.4.1). Left: the patient and the clinician place the same clinical fact differently, a gap in understanding. Middle: the clinician's estimate of one of the patient's boundary penalties is far from the patient's own. Right: the two goal regions differ; where they overlap, the joint geodesic aims at the overlap. Under each panel are the presentation and the intervention the section gives.*
 
 ## 8.5 The Medical Bond Invariance Principle
 
@@ -271,6 +273,10 @@ The CIS is not proposed as a replacement for the legal consent checklist; it is 
 The CIS is empirically measurable, falsifiable (it predicts specific correlations with health literacy --- see Prediction 3, Chapter 17), and actionable (low CIS identifies which transformations the patient fails, pointing to specific areas where additional explanation is needed). It transforms consent quality from a binary legal judgment (valid/invalid) to a continuous quality metric that enables improvement.
 
 ---
+
+![Figure 8.2](figures/ch08_fig2.svg)
+
+*Figure 8.2. The consent invariance score of Definition 8.4, worked for an illustrative patient. The four rows are the meaning-preserving transformations listed in Section 8.3.1. This patient's decision stays the same under three and changes under one, so the score is 3 of 4, or 0.75. That is below 0.8, the example threshold the section mentions, and the row that changes shows where more explanation is needed. The responses are invented to show the computation; no patient was tested.*
 
 ## Summary
 

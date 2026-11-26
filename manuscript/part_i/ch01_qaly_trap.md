@@ -53,8 +53,6 @@ She did not yet have the mathematics to describe what she was seeing. But she ha
 
 This book provides the mathematics.
 
-[Figure 1.1: Two patients with identical QALY scores of 0.4, visualized in the nine-dimensional clinical decision complex. Patient A has moderate physical limitation ($d_1 = 0.4$) but intact trust ($d_5 = 0.9$), autonomy ($d_4 = 0.9$), dignity ($d_7 = 0.8$), and understanding ($d_9 = 0.8$). Patient B has better physical function ($d_1 = 0.6$) but degraded trust ($d_5 = 0.2$), coerced autonomy ($d_4 = 0.3$), diminished dignity ($d_7 = 0.3$), and poor understanding ($d_9 = 0.2$). The QALY projection collapses both to the same scalar. The nine-dimensional profiles are radically different, and the clinical geodesic --- the optimal path through the decision space --- differs accordingly.]
-
 ## 1.2 The Scalar Menagerie of Clinical Medicine
 
 Medicine has generated a remarkable collection of scalar metrics, each invented to solve a real problem, each capturing something genuine, and each destroying geometric structure that its inventors did not know existed. Sarah will encounter every one of them during her training. Each will tell her something useful. None will tell her enough.
@@ -123,8 +121,6 @@ The previous section catalogued five clinical metrics and their specific losses.
 
 **Trajectory structure.** The path through clinical-moral space --- the direction of change, the curvature of the trajectory, the sequence of clinical actions that connect the present state to the goal. A scalar is a point; it has no direction, no curvature, no path. The QALY integral averages over time and discards the temporal structure. The GCS is a snapshot that discards all dynamics. The APACHE score is an admission-day cross-section that has no representation of trajectory. Clinical reasoning, by contrast, is fundamentally about trajectory: Where is the patient going? What path will take them to the best accessible outcome? What obstacles lie along the path?
 
-[Figure 1.2: The four geometric structures destroyed by clinical scalar metrics. (a) Metric: continuous clinical-moral distance replaced by ordinal or scalar projection. (b) Cross-dimensional: $\Sigma_{ij}$ covariance between dimensions erased by dimensional collapse. (c) Boundary: clinical-moral thresholds invisible to continuous scalars. (d) Trajectory: temporal path structure discarded by point-in-time or integral summaries.]
-
 These four structures are not peripheral luxuries. They are the mathematical substance of what clinical reasoning *is*. Metric structure is what allows clinicians to judge which patients are "sicker" in the morally relevant sense --- not just physiologically more deranged but further from an acceptable outcome on the full manifold. Cross-dimensional structure is what makes clinical ethics hard --- the reason "balancing autonomy against beneficence" is not like balancing apples against apples but like navigating a space where the dimensions interact, curve into each other, and cannot be traded at fixed exchange rates. Boundary structure is what makes clinical ethics *clinical* --- the thresholds where everything changes, where a competent patient's refusal converts an obligation to treat into a prohibition on treating, where a diagnosis of futility transforms aggressive care from beneficent to harmful. Trajectory structure is what makes clinical reasoning *reasoning* --- a temporal process of navigating from one state to another, not a static evaluation of a single state.
 
 A measurement apparatus that destroys all four is not measuring clinical-moral reality. It is measuring something else --- something correlated with clinical-moral reality, perhaps, but structurally impoverished in exactly the dimensions that matter for the hardest decisions.
@@ -142,8 +138,6 @@ The theorem has a sharpened corollary that is particularly devastating for the Q
 **Corollary 1.1.1 (QALY Discrimination Is Mathematical, Not Moral).** *The well-documented biases of QALY-based allocation against the elderly, the disabled, and minority populations are not failures of implementation. They are mathematical consequences of dimensional collapse. Populations whose health needs are concentrated on non-outcome dimensions ($d_4$: autonomy for disabled patients, $d_5$: trust for minority patients with historical institutional betrayal, $d_7$: dignity for elderly patients) are systematically disadvantaged by any scalar projection that weights $d_1$ (clinical outcomes) most heavily.*
 
 This is not a philosophical argument. It is a theorem. The discrimination is in the dimensionality, not in the calibration. No recalibration of quality weights can fix it, because the problem is not that the weights are wrong but that the weights compress dimensions that should not be compressed. You cannot represent the difference between "I don't trust you because of Tuskegee" and "I trust you completely" in a number that has no trust dimension. You cannot represent the difference between "my dignity requires that I die at home" and "my dignity requires that every possible treatment be tried" in a number that has no dignity dimension. The QALY has no trust dimension. The QALY has no dignity dimension. The QALY has no justice dimension. And so the QALY cannot see --- cannot in principle see --- the moral information that matters most for the populations most vulnerable to healthcare injustice.
-
-[Figure 1.3: Scalar irrecoverability in clinical context. The nine-dimensional clinical-moral state space is projected onto the one-dimensional QALY axis. The preimage of a QALY value $Q = 0.4$ is an eight-dimensional hyperplane. All patients on this hyperplane are indistinguishable to QALY-based allocation. The hyperplane contains patients with radically different trust, autonomy, dignity, justice, and understanding profiles. The information that distinguishes them --- the information needed for equitable, patient-centered care --- is irrecoverable from the scalar.]
 
 ## 1.5 What This Costs
 
@@ -199,7 +193,9 @@ The QALY says: same number, same treatment priority.
 
 The manifold says: different patients, different dimensions, different geodesics, different urgencies, different ethical obligations. And the information that distinguishes them --- trust, understanding, autonomy, dignity, social context --- is exactly the information that the QALY, by mathematical necessity, has destroyed.
 
-[Figure 1.4: The two-patient problem. Patient A and Patient B have identical QALY projections (0.35) but radically different nine-dimensional attribute vectors. Patient A's needs are concentrated on $d_1$ (outcomes, via palliative optimization) with intact non-$d_1$ dimensions. Patient B's needs are concentrated on $d_4$ (autonomy), $d_5$ (trust), $d_7$ (dignity), and $d_9$ (understanding), with $d_1$ treatment contingent on resolving these dimensions first. The clinical geodesics diverge immediately from the start node.]
+![Figure 1.1](figures/ch01_fig1.svg)
+
+*Figure 1.1. The two-patient problem of Section 1.6, a worked example and not data. The top row is the QALY estimate, about 0.35 for both patients. The six rows below are the scores the section gives each patient, on a scale from 0 to 1. The two patients are 0.10 apart on outcomes and between 0.45 and 0.65 apart on the other five dimensions, which the scalar does not carry.*
 
 ## 1.7 Why Not Just Use Multiple Metrics?
 

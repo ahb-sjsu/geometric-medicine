@@ -103,8 +103,6 @@ The framing effect in clinical reasoning has been extensively documented. Clinic
 
 **Clinical significance:** Gauge-variant heuristics are the most dangerous category because they produce *inconsistent* clinical paths --- the same patient, described differently, receives different care. This is a Bond Invariance Principle violation (Chapter 8): the clinical evaluation is not invariant under patient re-description. And the inconsistency is invisible to the clinician, because the heuristic adjustment happens automatically, beneath conscious awareness.
 
-[Figure 7.1: The four-category heuristic hierarchy. Strictly admissible: $h_C \ll h^*$ (prohibitions, always safe). $\varepsilon$-admissible: $h_C \leq (1+\varepsilon) h^*$ (well-trained clinicians, near-optimal). Inadmissible: $h_C > h^*$ for some $n$ (damaged clinicians, avoidance patterns). Gauge-variant: $h_C(\tau(n)) \neq h_C(n)$ (biased clinicians, inconsistent care).]
-
 ## 7.3 The Anatomy of $\varepsilon$
 
 The error $\varepsilon$ in the $\varepsilon$-admissibility condition is not a single number; it is dimension-specific. A clinician may have excellent calibration on $d_1$ ($\varepsilon_1 \approx 0.05$) and poor calibration on $d_7$ ($\varepsilon_7 \approx 0.5$). The overall $\varepsilon$ is the maximum dimension-specific error:
@@ -121,6 +119,10 @@ This decomposition is clinically useful. It identifies where the clinician's heu
 - *Psychiatry: Low $\varepsilon_4$ (excellent autonomy calibration, given the constant engagement with consent and capacity issues), high $\varepsilon_8$ (institutional calibration may be poor due to tension between clinical judgment and institutional mandates).*
 
 These profiles are testable predictions. The framework predicts that specialty-specific heuristic miscalibrations will manifest as specialty-specific patterns of clinical decision suboptimality --- and that cross-specialty ethics consultations are effective precisely because they bring complementary $\varepsilon$-profiles to a shared clinical problem.
+
+![Figure 7.1](figures/ch07_fig1.svg)
+
+*Figure 7.1. The dimension-specific calibration errors that Proposition 7.2 posits for four specialties. A small mark is a low error on that dimension, a large mark a high one. A blank cell means the proposition says nothing for that pair. The profiles are complementary: where one specialty is posited to be poorly calibrated, another is posited to be well calibrated, which is the chapter's account of why cross-specialty ethics consultation helps. The levels are the proposition's words and have not been measured.*
 
 ## 7.4 Clinical Training as Heuristic Calibration
 

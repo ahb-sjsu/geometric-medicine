@@ -114,8 +114,6 @@ Specification is, geometrically, the process of instantiating the general manifo
 
 The problem with specification as a resolution strategy is that it pushes the hard work into the specification step and provides no formal method for performing it. How do you specify "justice" for ventilator allocation during a pandemic? Different specifications produce different allocations: maximize life-years (utilitarian specification), treat all equally (egalitarian specification), prioritize the worst off (Rawlsian specification), lottery among equals (procedural specification). Each specification is a different metric on the $d_3$ dimension, and the choice of metric determines the outcome. Specification without a metric is not a resolution; it is a relocation of the problem.
 
-[Figure 3.1: Principlism as a four-dimensional projection of the nine-dimensional clinical decision complex. The four principles map to $d_1$ (beneficence), $d_2 + \beta_{\text{harm}}$ (non-maleficence), $d_3$ (justice), and $d_4$ (autonomy). The remaining five dimensions ($d_5$--$d_9$) are discarded. The "conflict" between autonomy and beneficence is, on the full manifold, resolved by the metric: the clinical geodesic navigates both dimensions simultaneously.]
-
 ## 3.5 The Casuist's Metric
 
 Albert Jonsen and Stephen Toulmin's *The Abuse of Casuistry* (1988) proposed an alternative to principlism: case-based reasoning (casuistry), in which ethical judgments are made by comparing the case at hand to paradigm cases --- cases whose resolution is widely agreed upon --- and reasoning by analogy.[^6]
@@ -200,7 +198,9 @@ Each tradition captured part of the manifold. None captured all nine dimensions 
 
 The geometric framework is the synthesis. It does not replace any of these traditions. It provides the mathematical structure that unifies them: the nine-dimensional clinical decision complex on which all of them are operating, the edge weights that encode the trade-offs they all navigate, the boundary penalties that formalize the prohibitions they all recognize, and the clinical geodesic that provides the resolution algorithm they all lack.
 
-[Figure 3.2: Twenty-five centuries of manifold discovery. Timeline showing each tradition and its dimensional contribution to the clinical decision complex. The nine dimensions accumulate across the history, with each tradition adding or foregrounding specific dimensions. The geometric framework (2026) captures all nine simultaneously and provides the resolution algorithm --- pathfinding on the full manifold --- that the history has been seeking.]
+![Figure 3.1](figures/ch03_fig1.svg)
+
+*Figure 3.1. The table of Section 3.10 laid out as a grid: one row for each tradition, one column for each of the nine dimensions, and a filled mark where the table says the tradition captured that dimension. Casuistry is entered as the table has it, the full manifold implicitly. Narrative ethics is credited with trajectory structure and no dimension. Read down the columns: in this reading no tradition names dignity or institutional legitimacy outright.*
 
 ## 3.11 Sarah Reads the History
 

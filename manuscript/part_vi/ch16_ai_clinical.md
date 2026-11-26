@@ -170,6 +170,10 @@ If both humans and AI systems can perform pathfinding on the clinical decision c
 
 *The AI system provides information; the human provides judgment. The AI system navigates $d_1$; the human navigates the full manifold.*
 
+![Figure 16.1](figures/ch16_fig1.svg)
+
+*Figure 16.1. A schematic of the division of clinical labor that Definition 16.2 proposes. The AI system computes the accumulated-cost term g(n), optimizes outcomes and monitors diagnostic uncertainty. The human clinician computes the heuristic term h(n) and assesses the seven dimensions from rights to institutional legitimacy. Any action that crosses a moral boundary is authorized by a human. This is the chapter's proposal, not a description of existing systems.*
+
 ### The Danger of $h(n)$ Delegation
 
 The most dangerous failure mode in clinical AI is not algorithmic error on $d_1$ — that is detectable and correctable. It is the gradual delegation of $h(n)$ to the machine.
@@ -281,6 +285,10 @@ The committee accepts recommendations 2–4 and tables recommendation 1 for furt
 The manifold is everywhere. Even the committee that evaluates the AI is pathfinding on it.
 
 ---
+
+![Figure 16.2](figures/ch16_fig2.svg)
+
+*Figure 16.2. The illustrative audit of Section 16.8. The triage system and all of its numbers are hypothetical. Left: the single figure a scalar evaluation would report, an AUC of 0.89 for clinical accuracy. Right: the Bond Index the scenario assigns to four populations under the same system, with the ratio to the reference group above each bar. In the scenario the population over 70 bears three times the manifold cost of the reference group, which the accuracy figure does not show.*
 
 ## Chapter Summary
 

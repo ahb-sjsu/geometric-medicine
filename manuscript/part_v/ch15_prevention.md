@@ -58,6 +58,10 @@ In many ICUs, the most difficult conversations (withdrawal of life support, tran
 
 **Design guideline**: Map the boundary crossings mandated by a policy and identify whether they are concentrated on specific individuals or roles. If concentrated, redistribute. The total $\text{MI}$ across the workforce is the same (the same number of boundary crossings must occur), but no individual exceeds their critical threshold.
 
+![Figure 15.1](figures/ch15_fig1.svg)
+
+*Figure 15.1. Principle 2 of Section 15.2, worked with illustrative values: 30 forced boundary crossings, each with an increment of 5, among six physicians. Left: one physician takes every triage decision and accumulates 150 while the others accumulate nothing. Right: the same crossings in rotation give each physician 25. The total is 150 in both arrangements, as the section says. The dashed line is the critical threshold the chapter posits for an individual; its level here is illustrative, and the threshold has not been measured.*
+
 ### Principle 3: Provide Boundary-Crossing Support in Real Time
 
 When boundary crossings are necessary and equitably distributed, the institution should provide support at the moment of crossing — not days or weeks later.
@@ -131,6 +135,10 @@ The variance reduction corresponds to making the clinician population more consi
 This prediction is testable: survey clinicians' $\beta_k$ estimates before and after a structured ethics consultation series and measure the change in variance and mean.
 
 ---
+
+![Figure 15.2](figures/ch15_fig2.svg)
+
+*Figure 15.2. What Prediction 15.1 says effective ethics consultation should do to the spread of one boundary penalty across a population of clinicians. The horizontal axis is a clinician's estimate of the penalty, from deflated at the left to inflated at the right. Before consultation the estimates are spread widely; after, the prediction is a smaller variance about the same mean. The curves are illustrative normal curves with the standard deviation halved. This is a prediction to be tested, not a result.*
 
 ## 15.4 Moral Resilience in the Geometric Framework
 

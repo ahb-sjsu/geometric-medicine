@@ -202,6 +202,10 @@ The Bond Index disparity between Black and White populations decomposes by dimen
 
 The largest single contributor to the disparity is $d_5$ (trust): 1.9 of the 4.2-unit disparity. The policy assumes that all patients have equal trust in the institution, but Black patients — due to documented historical and ongoing experiences of medical racism — have systematically lower trust. The policy-mandated path does not account for this, resulting in higher manifold cost for Black patients.
 
+![Figure 12.1](figures/ch12_fig1.svg)
+
+*Figure 12.1. The illustrative case study of Section 12.4. The medical center is hypothetical and every number is invented to show what the computation would report; the clinical Bond Index has not been computed from clinical data. Left: the Bond Index the scenario assigns to each of four groups of the 847 hypothetical patients. Right: the scenario's split of the gap between the Black and White groups, 7.4 minus 3.2, into five dimensions. Trust carries 1.9 of the 4.2.*
+
 ### What the Bond Index Reveals
 
 The triage policy of this illustration is not explicitly racist. It does not use race as a triage criterion. It uses clinical prognosis ($d_1$) supplemented by comorbidity adjustment. But the Bond Index reveals that the policy is *structurally* unjust: it imposes 2.31 times the manifold cost on Black patients.
@@ -312,6 +316,10 @@ For the Bond Index to drive institutional action, thresholds for "acceptable" an
 *These thresholds are illustrative, not prescriptive. Each institution and community must establish thresholds that reflect their values — which is itself a metric choice on the manifold.*
 
 ---
+
+![Figure 12.2](figures/ch12_fig2.svg)
+
+*Figure 12.2. The disparity ratios of the illustrative case study of Section 12.4, set against the example thresholds of Proposition 12.2. Both are hypothetical: the ratios come from invented numbers, and the proposition calls its thresholds illustrative, not prescriptive. The vertical axis is the ratio of a group's Bond Index to that of the reference group. In the scenario the three non-reference groups fall in three different zones, at 1.25, 1.59 and 2.31.*
 
 ## 12.8 The Limits of the Bond Index
 

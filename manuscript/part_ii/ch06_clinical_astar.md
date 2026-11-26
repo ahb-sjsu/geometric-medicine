@@ -131,7 +131,9 @@ The divergence occurs whenever the geodesic and the QALY path cross different bo
 
 3. **The pandemic triage case.** QALY path: reallocate the ventilator to the patient with better prognosis (maximizes total $d_1$). Geodesic: context-dependent, because the reallocation crosses $\beta_{\text{abandon}}$ and $\beta_{\text{trust}}$ boundaries whose costs may exceed the $d_1$ benefit.
 
-[Figure 6.1: The clinical geodesic vs. the QALY-optimal path for the Jehovah's Witness case. The QALY path (dashed) heads directly toward high $d_1$ via forced transfusion but hits the consent boundary ($\beta_{\text{consent}} = \infty$). The geodesic (solid) respects the boundary and routes through alternative treatments (erythropoietin, cell salvage), reaching a lower $d_1$ endpoint but with finite total cost. The QALY path has infinite cost on the manifold; the geodesic has the minimum finite cost.]
+![Figure 6.1](figures/ch06_fig1.svg)
+
+*Figure 6.1. A schematic of the first example of Section 6.4.2, the patient who refuses transfusion. The dashed path is the QALY-optimal one: it transfuses to maximize outcomes and so crosses the consent boundary, whose penalty the chapter sets to infinity, which makes the edge weight infinite. The solid path is the clinical geodesic as the chapter defines it: it respects the refusal, pursues alternatives and reaches the goal region at finite total cost.*
 
 ## 6.5 Clinical Reasoning in Practice
 

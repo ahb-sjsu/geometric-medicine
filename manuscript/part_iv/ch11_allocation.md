@@ -281,11 +281,13 @@ $$w_{\mathcal{B}}(v_i, v_j) = \sum_{s \in S} w_{\mathcal{C}}(v_i^s, v_j^s) + \la
 
 The Gini penalty $\lambda \cdot \text{Gini}(\cdot)$ is the mathematical expression of distributive justice at population scale. A policy that imposes equal cost on all individuals has $\text{Gini} = 0$; a policy that concentrates cost on a minority has $\text{Gini} \to 1$. The parameter $\lambda$ controls how strongly the population values equity over efficiency.
 
+![Figure 11.1](figures/ch11_fig1.svg)
+
+*Figure 11.1. The Gini term of Definition 11.5, computed for a population of 100 in which a fixed total cost is split equally among a share of the people and the rest bear none. The horizontal axis is the share that bears the cost; the vertical axis is the Gini coefficient of the costs. Equal cost on everyone gives 0, as the section says, and concentrating the cost on fewer people moves the coefficient toward 1. The definition adds this coefficient, times a weight λ the community chooses, to the summed individual edge weights.*
+
 ### The Equity-Efficiency Frontier
 
 Every allocation policy sits on a frontier between equity ($d_3$) and efficiency ($d_1$). The utilitarian policy maximizes $d_1$ without regard to distribution. The egalitarian policy equalizes cost distribution without regard to $d_1$. The manifold-optimal policy finds the point on the frontier that minimizes total clinical friction including the Gini penalty.
-
-[Figure 11.1: The equity-efficiency frontier for vaccine allocation, showing utilitarian, egalitarian, and manifold-optimal allocations, with specific COVID-19 prioritization schemes plotted on the frontier]
 
 **Proposition 11.6 (No Free Lunch on the Equity-Efficiency Frontier).** *There exists no allocation policy that simultaneously maximizes $d_1$ and minimizes the Gini coefficient of cost distribution, except in the degenerate case where the population is homogeneous on all nine dimensions. Every allocation involves a trade-off between equity and efficiency — and the trade-off's optimal point depends on the community's metric tensor $\Sigma$, which encodes how the community weighs the nine dimensions against each other.*
 

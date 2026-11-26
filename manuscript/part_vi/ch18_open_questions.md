@@ -42,6 +42,10 @@ Clinical practice evolves. Patient expectations change. Institutional norms shif
 
 ---
 
+![Figure 18.1](figures/ch18_fig1.svg)
+
+*Figure 18.1. The 45 distinct entries of the nine-by-nine covariance matrix, one cell for each pair of dimensions and each diagonal entry. Section 18.1 proposes to estimate the six-by-six submatrix of the dimensions that electronic health records capture, which has 21 entries, and to use proxy instruments for the remaining 24, each of which involves trust, dignity or epistemic status. The two outlined cells are the entries Question 1 names as likely to differ between medical cultures. None of the 45 has been estimated.*
+
 ## 18.2 What Is the Conservation Law for Clinical Reasoning?
 
 > **Note (2026-11-26).** *Geometric Ethics* withdrew Conservation of Harm as a thesis on 2026-06-19 (its ledger entry GE-HARM-CONSERVATION; the claim is absent from its text since version 1.24) and kept the weaker claim, the invariance of harm accounting under re-description. The sentence of this section that cited conservation of harm now cites the weaker claim. Candidate 3 below was offered as the clinical analogue of harm conservation; it loses that precedent and stands only as an open candidate. Candidates 1, 2 and 4, and the research program of Section 18.3, do not depend on the withdrawn claim and stand as open questions.

@@ -244,6 +244,10 @@ Each prediction requires a specific sample size for adequate statistical power. 
 - Required $n$: 64 per group (128 total) for a two-sample $t$-test
 - Proposed $n$: 200 end-of-life cases (100 process-path, 100 direct-path) for adequate power with covariates
 
+![Figure 17.1](figures/ch17_fig1.svg)
+
+*Figure 17.1. The sample sizes Section 17.4 prints for its correlation tests, on the curve they come from. The horizontal axis is the correlation a study assumes; the vertical axis is the number of participants needed to detect it with 80 percent power at a two-sided significance level of 0.05. The curve is the standard Fisher approximation; it gives 47 at 0.4, as the chapter prints, and 85 at 0.3 where the chapter prints 84. A smaller assumed effect needs many more participants. These are planning figures: no study has been run.*
+
 ### Total Research Program Scope
 
 The complete six-prediction program requires approximately:

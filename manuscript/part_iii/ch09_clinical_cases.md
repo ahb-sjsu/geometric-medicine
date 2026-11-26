@@ -39,8 +39,6 @@ The QALY analysis is also catastrophically wrong. It reduces a nine-dimensional 
 
 ### The Nine-Dimensional Attribute Decomposition
 
-[Figure 9.1: Nine-dimensional radar chart showing attribute vectors for Path A (transfuse against refusal) and Path B (respect refusal, optimize alternatives)]
-
 We decompose the decision along all nine clinical-moral dimensions:
 
 **Path A: Transfuse against the patient's refusal.**
@@ -82,6 +80,10 @@ The edge weight for Path B:
 $$w_B = \frac{(\Delta d_1)^2}{\sigma_1^2} = \frac{(0.4)^2}{\sigma_1^2}$$
 
 This is finite. The clinical geodesic is Path B.
+
+![Figure 9.1](figures/ch09_fig1.svg)
+
+*Figure 9.1. Case 1 of Section 9.1, a worked example. Each pair of bars is the change the section's two tables assign to one dimension. Path A, transfusing against the refusal, raises outcomes by 0.8 and is entered as minus infinity on rights and on autonomy; those two bars are drawn running off the scale. Path B, respecting the refusal and pursuing alternatives, lowers outcomes by 0.4 and raises trust, social impact and institutional legitimacy. The chapter gives Path A infinite weight and Path B a finite one.*
 
 ### The Geodesic Is Not a "Compromise"
 
@@ -350,8 +352,6 @@ Dr. Stein consented to DBS with his pre-modification heuristic — a heuristic t
 
 ### The Nine-Dimensional Analysis of Identity-Altering Interventions
 
-[Figure 9.2: Trajectory diagram showing Dr. Stein's attribute vector before and after DBS, with the pre-modification consent path and the post-modification experienced path]
-
 **Pre-DBS attribute vector:** $\mathbf{a}_{\text{pre}} = (d_1{=}{-}0.9, d_2{=}0, d_3{=}0, d_4{=}{+}0.7, d_5{=}{+}0.3, d_6{=}{-}0.5, d_7{=}{+}0.8, d_8{=}0, d_9{=}{+}0.9)$
 
 Dr. Stein's pre-DBS state: terrible clinical outcomes ($d_1$), intact autonomy ($d_4$), moderate trust ($d_5$), suffering family ($d_6$), strong philosophical identity ($d_7$), and excellent understanding ($d_9$).
@@ -361,6 +361,10 @@ Dr. Stein's pre-DBS state: terrible clinical outcomes ($d_1$), intact autonomy (
 Dr. Stein's post-DBS state: excellent clinical outcomes ($d_1$), intact autonomy ($d_4$), improved trust ($d_5$), improved family relationships ($d_6$), but diminished philosophical identity ($d_7$) and reduced self-understanding ($d_9$) — he no longer knows who he was.
 
 **The identity dimension has been traded for the outcomes dimension.** On the scalar (QALY), this is an unambiguous improvement — his quality of life score has increased dramatically. On the manifold, the picture is more complex. The $d_7$ cost (loss of pre-illness identity) is real, and it is a cost that the pre-modification self accepted on behalf of the post-modification self — a self who, by construction, cannot retrospectively disagree because the intervention changed the very heuristic that would evaluate the trade-off.
+
+![Figure 9.2](figures/ch09_fig2.svg)
+
+*Figure 9.2. Case 5 of Section 9.5, a worked example. Each row is one dimension; the ring is the attribute before deep brain stimulation and the filled mark is the attribute after, on the section's scale from minus 1 to plus 1. Outcomes rise from minus 0.9 to plus 0.8, and trust and social impact rise. Dignity and identity fall from 0.8 to 0.2 and epistemic status from 0.9 to 0.5. A scalar that reads outcomes sees only the first row.*
 
 ### The Consent Paradox of Identity-Altering Interventions
 
@@ -448,8 +452,6 @@ Her attending asks her: "What makes you a better clinician than you were a year 
 Her attending nods. "That's clinical judgment," she says.
 
 On the manifold, it is $\varepsilon$-admissible heuristic pathfinding. But the attending's term is older, and Sarah does not correct her.
-
-[Figure 9.3: Composite visualization showing the five cases as five trajectories on the clinical decision complex, each highlighting a different structural feature: the sacred boundary in Case 1, the process path in Case 2, the constrained reachable set in Case 3, the proxy divergence in Case 4, and the temporal identity split in Case 5]
 
 ---
 

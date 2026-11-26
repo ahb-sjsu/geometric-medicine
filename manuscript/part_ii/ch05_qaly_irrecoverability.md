@@ -61,7 +61,9 @@ $$\text{CF}(\gamma_{v_0 \to v_1}) = d_{\text{Mahal}}(v_0, v_1) + \lambda > d_{\t
 
 The QALY-maximizing path selects $v_1$; the clinical geodesic selects $v_2$. The divergence (the difference in clinical friction between the two paths) is at least $\lambda$, which can be made arbitrarily large by increasing the boundary penalty. $\square$
 
-[Figure 5.1: The QALY Irrecoverability Theorem visualized. The nine-dimensional clinical-moral state space is projected onto the one-dimensional QALY axis. The level set $Q^{-1}(c)$ is an 8-dimensional submanifold (shown as a plane for $d = 3$). Distinct clinical-moral states A and B, with radically different profiles on $d_5$--$d_9$, map to the same QALY value. The information distinguishing them is irrecoverable.]
+![Figure 5.1](figures/ch05_fig1.svg)
+
+*Figure 5.1. A schematic of Theorem 5.1 in two of the nine dimensions. The square is the plane of outcomes and one other dimension. The slanted lines are level sets of a weighted-sum QALY function of the kind Definition 5.1 allows, drawn with illustrative weights 0.7 and 0.3. States A and B lie on the same level set, so the function sends both to 0.5 on the axis at the right, and nothing computed from 0.5 can tell them apart. In nine dimensions the level set has dimension at least 8.*
 
 ## 5.3 What Exactly Is Lost?
 
@@ -229,6 +231,10 @@ David's geodesic: not surgery (not yet). The geodesic begins with non-$d_1$ inte
 The QALY says: same number (0.35), same treatment priority. It cannot distinguish Margaret from David because the information that distinguishes them lives in the kernel of $dQ$. The eight-dimensional kernel contains the trust, the understanding, the autonomy, the dignity, and the social context that make Margaret and David not just clinically different but morally different --- requiring different paths, different timelines, different goals, and different institutional responses.
 
 This is what the theorem means in practice. It is not an abstract mathematical fact. It is a fact about what happens to patients when institutions rely on a number that has lost the information needed to treat them as persons.
+
+![Figure 5.2](figures/ch05_fig2.svg)
+
+*Figure 5.2. The two patients of Section 5.11, both with a QALY estimate of 0.35. Each bar is the squared difference between their scores on one dimension, computed from the two attribute vectors the section prints. The bars sum to 1.9525, a Euclidean distance of about 1.40. Outcomes, the dimension the standard QALY is a function of, contributes 0.01, the smallest of the nine. This is a worked example, not data.*
 
 ## 5.12 Comparison to Other Irrecoverability Results
 

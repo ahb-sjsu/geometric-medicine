@@ -35,8 +35,6 @@ When we write "clinical manifold" informally, we mean the clinical decision comp
 
 This definition is identical to Definition 1 of the GCE paper (the submitted JME paper), reproduced here for self-containedness. The clinical decision complex is the domain-specific instantiation of the general moral manifold from *Geometric Ethics* --- the same nine dimensions, the same Mahalanobis metric structure, the same boundary architecture, specialized for clinical decision-making.
 
-[Figure 4.1: The clinical decision complex for a simple clinical scenario. Vertices: healthy, diagnosed, treated, recovered, deceased. Edges: diagnostic test, treatment, supportive care, disease progression. Each vertex carries a nine-dimensional attribute vector; each edge carries a weight computed from the Mahalanobis distance plus boundary penalties. The clinical geodesic is the minimum-cost path from "diagnosed" to "recovered."]
-
 ## 4.2 The Nine Clinical-Moral Dimensions
 
 The clinical decision complex inherits its nine dimensions from the moral manifold of *Geometric Ethics*, re-interpreted for clinical contexts. Each dimension captures a distinct aspect of clinical-moral reality that clinicians evaluate simultaneously in every decision.
@@ -123,8 +121,6 @@ $d_9$ interacts with $d_4$ through the covariance term $\Sigma_{49}$: consent re
 
 **Attribute value:** $a_9(v) \in [0, 1]$, where 1 = complete diagnostic certainty and perfect patient understanding, and 0 = total diagnostic uncertainty and complete incomprehension.
 
-[Figure 4.2: The nine clinical-moral dimensions with their interactions. A $9 \times 9$ matrix showing the major covariance terms $\Sigma_{ij}$. Heavy lines connect dimensions with strong positive covariance (e.g., $\Sigma_{49}$: autonomy requires understanding). Dashed lines connect dimensions with potential negative covariance (e.g., $\Sigma_{18}$: institutional protocols may constrain optimal outcomes in individual cases).]
-
 ## 4.3 Why Nine Dimensions, Not Four
 
 This question was addressed informally in Chapter 3. Here the answer is formal.
@@ -179,6 +175,10 @@ The boundary penalty $\sum_k \beta_k \cdot \mathbf{1}[\text{boundary } k \text{ 
 
 5. *The sacred-value boundary ($\beta_{\text{sacred}} = \infty$): Actions that are absolutely prohibited regardless of consequences --- non-consensual experimentation, deliberate non-palliative killing, participation in torture. $\beta_{\text{sacred}} = \infty$: no clinical benefit can offset them.*
 
+![Figure 4.1](figures/ch04_fig1.svg)
+
+*Figure 4.1. The typical calibrations that Definition 4.3 posits for the five clinical-moral boundaries, in the chapter's normalized units. The horizontal axis is the boundary penalty. A bar spans the range the definition gives. An arrow marks a penalty the definition sets to infinity: consent of a competent patient outside an emergency, and the sacred-value boundary. These are posited values, not estimates from data.*
+
 ### 4.4.3 A Worked Example
 
 To ground the abstract construction, consider a single clinical action and compute its edge weight.
@@ -212,7 +212,9 @@ Total edge weight: $w(v_i, v_j') = \text{Mahalanobis distance} + 0 \approx 0.05 
 
 On the full nine-dimensional manifold, supportive care ($w = 0.05$) is manifold-optimal and intubation ($w = 10.15$) is manifold-suboptimal. On the $d_1$ projection alone, intubation is optimal (it improves survival probability). This is the divergence between QALY-optimal and manifold-optimal decisions that the QALY Irrecoverability Theorem (Chapter 5) formalizes.
 
-[Figure 4.3: The intubation decision on the clinical decision complex. Two edges from the current state: intubation (improving $d_1$, $d_8$ but worsening $d_3$, $d_4$, $d_5$, $d_6$, $d_7$, $d_9$ and crossing $\beta_{\text{consent}}$) and supportive care (slightly worsening $d_1$, $d_8$ but preserving all other dimensions). Edge weights shown. The clinical geodesic selects supportive care despite its lower $d_1$ value.]
+![Figure 4.2](figures/ch04_fig2.svg)
+
+*Figure 4.2. The worked example of Section 4.4.3. Each pair of bars is the change that one action makes on one dimension, computed from the three attribute vectors the section prints. Intubation raises outcomes and institutional compliance by 0.10 and lowers six other dimensions. Supportive care lowers those two and raises four. The edge weights in the legend are the section's illustrative values: the covariance matrix has not been estimated, and almost all of the weight of intubation is the consent boundary penalty of 10.*
 
 ## 4.5 The Clinical-Moral Covariance Matrix
 

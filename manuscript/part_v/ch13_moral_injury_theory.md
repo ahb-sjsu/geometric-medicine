@@ -120,6 +120,10 @@ The accumulation theorem has four practical implications:
 
 ---
 
+![Figure 13.1](figures/ch13_fig1.svg)
+
+*Figure 13.1. Cumulative moral injury as Definition 13.1 computes it, for the two clinicians of Implication 3 in Section 13.3. The horizontal axis counts forced boundary crossings and the vertical axis is the running sum. One clinician makes a single crossing with an increment of 50 and then none. The other makes fifty crossings with an increment of 5 each and ends at 250. The sum never falls, because each increment is zero or positive. The values are the chapter's illustration of the definition, not measurements.*
+
 ## 13.4 The Two Damage Modes: Hypervigilance and Moral Numbing
 
 ### Hypervigilance: $\beta_k$ Inflation
@@ -159,8 +163,6 @@ Hypervigilance and moral numbing are opposite in their direction of $\beta_k$ ch
 | Time course | Often acute (after a single severe crossing) | Often gradual (after many moderate crossings) |
 
 But they are identical in their mechanism: both are permanent alterations of $h(n)$ caused by forced boundary crossing. And both degrade clinical decision quality — hypervigilance by making the clinician too cautious, moral numbing by making the clinician too permissive.
-
-[Figure 13.1: Phase diagram showing the two damage modes as perturbations of the pre-injury heuristic. The horizontal axis is boundary penalty $\beta_k$; the vertical axis is clinical decision quality. The optimal operating point (pre-injury $\varepsilon$-admissible heuristic) is at the peak. Hypervigilance shifts left (increased $\beta_k$, decreased quality); moral numbing shifts right (decreased $\beta_k$, decreased quality).]
 
 ### Which Mode Predominates?
 
@@ -304,6 +306,10 @@ The distinction between moral resilience and moral numbing is precise:
 The framework predicts that resilience-trained clinicians should show stable $\beta_k$ profiles over time, while morally injured clinicians should show either inflation (hypervigilance) or deflation (numbing). This prediction is testable: measure $\beta_k$ profiles longitudinally in clinicians exposed to repeated boundary crossings, and compare profiles of clinicians with and without resilience training.
 
 ---
+
+![Figure 13.2](figures/ch13_fig2.svg)
+
+*Figure 13.2. The two damage modes and moral resilience as Definitions 13.2, 13.3 and 13.6 state them, on one axis: a clinician's penalty for a boundary after forced crossings, compared with the value before. Moral numbing is a penalty that has fallen below the earlier value; hypervigilance is one that has risen above it; resilience is one that stays within a tolerance of it. The lines under each mode are the features the table of Section 13.4 posits. The chapter gives directions only, so no scale is drawn.*
 
 ## 13.9 Sarah's Moral Injury
 

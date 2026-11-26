@@ -132,3 +132,23 @@ Each item needs the author. The text is unchanged.
 15. **Figures.** Every figure in the book is a bracketed description ("[Figure 13.1: ...]"), and no figure files exist. In the description of Figure 13.1 the directions are reversed: with the boundary penalty on the horizontal axis, hypervigilance (a larger penalty) is said to shift left and numbing to shift right.
 
 16. **Disparity ratio.** Definition 12.2 divides by the Bond Index of the reference population and is undefined when that index is zero, a case Proposition 12.1 allows.
+
+## Found while drawing the figures (2026-11-26), not changed
+
+These were noticed while the figures were drawn and are left for the author. No figure draws them.
+
+1. Section 2.4 gives Maria Santos a respiratory rate of 28; the START paragraph treats a rate above 30 as abnormal.
+2. Attribute scales differ: Chapters 2, 4 and 6 score on 0 to 1, Section 9.5 on -0.9 to +0.9, and Section 9.1 enters changes of minus infinity on d2 and d4, which fit no stated scale.
+3. Section 5.11 calls the Euclidean distance a lower bound on the Mahalanobis distance. That is false in general, and it is the error correction 8 removed from Section 4.4.3.
+4. Definition 5.1 makes the standard QALY a function of a1 alone, yet Margaret (a1 = 0.45) and David (a1 = 0.35) have the same QALY.
+5. Section 6.7 states a Bond Index "much higher than" a dollar amount, for one patient.
+6. Section 9.1: Path B's weight is given as (0.4) squared over sigma_1 squared, ignoring the +0.5, +0.2 and +0.3 changes in its own table; the text then says the alternatives keep zero cost on d2 through d9. The case calls an urgent laparotomy in the emergency department "non-emergency". The patient is David Okafor here, James Okafor in Section 1.1, and Patient B of Section 1.6 is David Kowalski.
+7. Section 10.3, Case A: "0.50 expected life-years per life-year at stake" is a difference of survival probabilities; the d1 gain is added as a cost in CF(reallocate); and the penalty is compared with a d1 change of 0.5 while Definition 4.3 puts the abandonment penalty at 15 to 50, on which scale reallocation is never optimal.
+8. Section 10.8 dates ESI to 2011 and lists it before START (1983); says Larrey discarded social status (d6) and military rank (d8) where Section 2.2.1 credits the same move to d3; White et al. is cited as 2009 in Section 10.3 and 2020 in Section 10.8; "Definition 5 in the GCE paper" (Section 10.5) has no reference.
+9. Definition 11.3, condition 2, writes the sacred-value penalty as finite; Definition 4.3 fixes it as infinite.
+10. Implication 3 of Chapter 13 ("frequency matters more than severity") compares totals of 50 and 250 and so shows only that a larger sum is larger. Section 13.9 has Sarah's abandonment penalty inflated and then deflated; Section 15.8 says it is still inflated and that the dignity penalty is the deflated one.
+11. Section 17.6: 23% of 84 is not a whole number of patients (19 of 84 is 22.6%).
+
+## Figure placeholders
+
+The bracketed figure descriptions that stood in Chapters 1 to 11 and 13 were taken out when the drawn figures went in, and are kept with a verdict on each in figures/PLACEHOLDERS.md. Chapter 14 is not published and keeps its two.

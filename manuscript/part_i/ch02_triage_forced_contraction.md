@@ -39,8 +39,6 @@ Dr. Kim was not computing $d_1$ alone. She was computing, in a compressed and au
 
 The triage score would record: ESI-1. A single integer. The moral computation that produced the integer --- the simultaneous evaluation of nine dimensions, the assessment of two competing boundary crossings, the half-second of hesitation that contained the full weight of clinical ethics --- would not be recorded anywhere.
 
-[Figure 2.1: Dr. Kim's ninety-second triage of four patients, represented on the nine-dimensional clinical decision complex. Each patient occupies a point in the nine-dimensional space. The triage decision contracts each nine-dimensional state to a single ordinal ranking (ESI level). The figure shows the information lost in each contraction: Patient 1 loses the futility/abandonment boundary trade-off; Patient 3 loses the justice dimension (back of the line means waiting longest despite arriving first by ambulance).]
-
 ## 2.2 A History of Sorting
 
 Triage is as old as organized military medicine, and every instantiation tells us something about which dimensions of clinical reality a society considers worth preserving under pressure.
@@ -72,8 +70,6 @@ The contemporary triage landscape reflects decades of refinement in which differ
 COVID-19 forced a new triage paradigm: crisis standards of care (CSC), which explicitly authorize the reallocation of scarce resources (primarily ventilators and ICU beds) based on probability of survival and expected duration of benefit. The dominant framework, articulated by Emanuel et al. (2020), proposed four values for allocation: maximizing benefits, treating equally, promoting and rewarding instrumental value, and giving priority to the worst off.[^2]
 
 Emanuel et al.'s framework is remarkable for its explicit multi-dimensionality. It names four values, not one. But the implementation --- the actual triage algorithm deployed in hospitals --- typically contracted these four values to a single scalar: a composite priority score based on short-term prognosis, long-term prognosis, and (in some versions) life-cycle considerations. The four values were stated in the framework and discarded in the implementation. The gap between the ethical framework (four-dimensional) and the operational protocol (one-dimensional) is precisely the gap this book addresses.
-
-[Figure 2.2: Historical evolution of triage dimensionality. Larrey (1792): $d_1$ only. Geneva Conventions (1864--1949): $d_1 + d_2 + d_3$. ESI (2011): $d_1 + d_8$. START (1983): three binary physiologic parameters within $d_1$. CSC (2020): stated as $d_1 + d_3 + d_7$, implemented as $d_1$ only. Each system is a specific projection of the nine-dimensional clinical decision complex.]
 
 ## 2.3 The Anatomy of Forced Contraction
 
@@ -160,7 +156,9 @@ If Maria arrived during a pandemic surge with ICU beds scarce, a crisis standard
 
 *Moral residue:* Very high. The CSC protocol denies Maria an ICU bed based on a prognosis estimated under conditions of maximal uncertainty ($d_9 = 0.2$), for a patient whose trust deficit ($d_5 = 0.2$) means she may not cooperate with non-ICU alternatives, from a system she already perceives as exploitative. The clinician who implements this triage decision bears the moral cost of the abandonment boundary crossing ($\beta_{\text{abandon}}$) and the justice boundary crossing ($\beta_{\text{justice}}$: a Spanish-speaking, low-trust, minority patient deprioritized by a system that has not communicated with her in her language). The residue does not vanish. It changes the clinician.
 
-[Figure 2.3: Maria Santos evaluated by three triage systems. Each system projects her nine-dimensional state onto a different subspace. ESI: $d_1 + d_8$ (acuity + resources). START: three binary parameters within $d_1$. CSC: $d_1$ weighted by prognosis. The nine-dimensional attribute vector is the same in all three cases. The triage classifications are different. The moral residue is different. The patient is the same.]
+![Figure 2.1](figures/ch02_fig1.svg)
+
+*Figure 2.1. Maria Santos, the worked example of Section 2.4. On the left is the nine-dimensional attribute vector the section assigns her, each score between 0 and 1. On the right are the dimensions each of three triage systems preserves, as the section reads them: the Emergency Severity Index keeps outcomes and institutional resources, START keeps a minimal reading of outcomes, and crisis standards of care keep outcomes and claim justice. The bottom row is the classification each system returns for the same patient.*
 
 ## 2.5 Why Clinicians Resist Utilitarian Triage
 

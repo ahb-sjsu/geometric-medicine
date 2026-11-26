@@ -38,8 +38,6 @@ $$(\gamma_1^*, \ldots, \gamma_n^*) = \arg\min_{\gamma_1, \ldots, \gamma_n} \sum_
 
 Without resource constraints, each patient follows their individual geodesic $\gamma_i^*$. The total cost is $\sum_i \text{CF}(\gamma_i^*)$ — the sum of individually optimal paths. Resource constraints force deviations from individual geodesics. Some patients receive suboptimal paths (delayed treatment, no ventilator, comfort care instead of ICU admission). The triage question is: *which patients deviate, and how far?*
 
-[Figure 10.1: Schematic showing $n = 30$ patients on the clinical manifold, with individually optimal geodesics (dashed) and resource-constrained feasible paths (solid), highlighting the deviation between individual geodesics and constrained allocations]
-
 ### Tractability
 
 General multi-agent pathfinding is NP-hard. But clinical triage operates under constraints that make the problem tractable in practice:
@@ -217,8 +215,6 @@ The pandemic literature is consistent with this prediction. Rushton (2018) docum
 
 The pandemic exposed a fundamental asymmetry in existing triage protocols: they were designed to optimize $d_1$ (clinical outcomes) under resource constraints, but the moral costs of implementation fell on dimensions ($d_5$: trust, $d_7$: dignity, $d_3$: justice) that the protocols did not model.
 
-[Figure 10.2: Dimensional activation map of COVID-19 triage decisions, showing which of the nine clinical-moral dimensions were activated by different triage scenarios, with predicted and observed moral injury correlation]
-
 The framework suggests three design principles for manifold-aware triage protocols:
 
 1. **Minimize unnecessary boundary crossings.** Many pandemic triage protocols crossed boundaries that could have been avoided. For example, some protocols required explicit age-based deprioritization when a lottery among similar-prognosis patients would have achieved comparable $d_1$ outcomes without the $d_3$ violation.
@@ -255,6 +251,10 @@ For the system as a whole:
 - Patients with very similar prognoses (rank 11, 12, 13, 14) should be allocated by lottery rather than by marginal $d_1$ differences that are within measurement error.
 - Patients who have been receiving ventilation for several days should not be withdrawn unless the $d_1$ differential exceeds the withdrawal boundary costs.
 - Patients from communities with historically low healthcare trust ($d_5$) should not be disproportionately denied — the bond index (Chapter 12) should be monitored.
+
+![Figure 10.1](figures/ch10_fig1.svg)
+
+*Figure 10.1. A schematic of Scenario 1 of Section 10.6: thirty patients who need a ventilator and twelve ventilators. Each mark is a position in the ranking by expected life-years; no prognosis is drawn. The scalar computation ventilates ranks 1 to 12 and denies the other 18. One of the modifications the chapter proposes treats ranks 11 to 14 as within measurement error and allocates among them by lottery, which by arithmetic leaves ten places set by ranking and two ventilators for those four patients.*
 
 ### Scenario 2: The Slow Surge — Accumulated Decisions Over Weeks
 
@@ -354,9 +354,11 @@ COVID-19 triage guidelines (Emanuel et al., 2020; White et al., 2020) attempted 
 
 The history of triage shows a slow expansion of the acknowledged dimensional space: from $d_1$ alone (Larrey) to $d_1 + d_8$ (ESI) to $d_1 + d_3$ (pandemic ethics). The geometric framework proposes the final step: triage on the full nine-dimensional manifold. This does not mean that every triage decision must explicitly compute nine-dimensional costs — in acute settings, rapid heuristic triage remains necessary. It means that *the objective function* against which triage systems are designed and evaluated should be the full manifold cost, not a scalar projection.
 
-[Figure 10.3: Historical evolution of triage dimensionality, from Larrey (1D) through ESI (2D) and pandemic ethics (2D) to the manifold-optimal framework (9D)]
-
 ---
+
+![Figure 10.2](figures/ch10_fig2.svg)
+
+*Figure 10.2. The dimensional reading of triage systems in Section 10.8, as a grid: one row for each system in the order the section lists them, one column for each of the nine dimensions, and a mark where the section says the system acknowledges the dimension. The pandemic crisis standards are entered as the section has them, an attempted expansion to justice. The last row is the framework's proposal, the full nine. The count at the right runs 1, 2, 1, 2, 9.*
 
 ## 10.9 The Ethics of Triage Communication
 
