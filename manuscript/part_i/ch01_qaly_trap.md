@@ -127,7 +127,7 @@ A measurement apparatus that destroys all four is not measuring clinical-moral r
 
 ## 1.4 The Scalar Irrecoverability Theorem (Preview)
 
-The losses catalogued above are not merely inconvenient. They are mathematically irreversible. This is the content of the Scalar Irrecoverability Theorem, proved in *Geometric Reasoning* (Ch. 13) and here previewed in its clinical form. The full clinical version --- the QALY Irrecoverability Theorem --- is proved in Chapter 5.
+The losses catalogued above are not merely inconvenient. They are mathematically irreversible. This is the content of the Scalar Irrecoverability Theorem, stated as a conditional theorem in *Geometric Reasoning*, Theorem 13.1 (Chapter 13; restated in that book's Section 10.7), and here previewed in its clinical form. The full clinical version --- the QALY Irrecoverability Theorem --- is proved in Chapter 5.
 
 **Theorem 1.1 (Scalar Irrecoverability for Clinical Metrics, Preview).** *Let $\mathbf{a} \in \mathbb{R}^9$ be the attribute vector of a patient's clinical-moral state across the nine dimensions of the clinical decision complex. For any scalar projection $Q: \mathbb{R}^9 \to \mathbb{R}$ (including but not limited to QALYs, APACHE scores, and triage indices), there exist clinically and morally distinct states $\mathbf{a}_1$ and $\mathbf{a}_2$ such that $Q(\mathbf{a}_1) = Q(\mathbf{a}_2)$ despite $\mathbf{a}_1$ and $\mathbf{a}_2$ differing on a substantive subset of the nine dimensions. The information destroyed by $Q$ --- namely, the identity of which dimensions are intact and which are compromised --- is not recoverable from $Q(\mathbf{a}_1)$ and $Q(\mathbf{a}_2)$ alone.*
 

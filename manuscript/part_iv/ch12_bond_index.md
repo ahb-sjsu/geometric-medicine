@@ -373,7 +373,7 @@ The clinical Bond Index $\text{BI}(P, S) = \mathbb{E}[\text{CF}(\gamma_P^*) - \t
 
 ---
 
-[^1]: The Bond Index is named for its structural role in the Geometric Series: it measures the deviation between actual and optimal paths on the moral manifold, serving as a "bond" between theoretical ethics and empirical measurement. The name is coincidental with the author's surname.
+[^1]: The clinical Bond Index measures the deviation between actual and optimal paths on the clinical decision complex, serving as a "bond" between theoretical ethics and empirical measurement. The Bond Index of *Geometric Ethics* (Ch. 18), whose name it shares, is a different quantity: the mean deviation of an evaluation over declared re-descriptions, divided by a tolerance, which measures invariance under re-description (Section 12.1). The name is coincidental with the author's surname.
 
 [^2]: The dimensional decomposition of the Bond Index disparity is analogous to the Oaxaca-Blinder decomposition in labor economics, which decomposes wage gaps into explained (due to differences in characteristics) and unexplained (due to differences in returns to characteristics) components. The Bond Index decomposition operates on the clinical manifold rather than on the wage equation, but the methodological logic is similar.
 

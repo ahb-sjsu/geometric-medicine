@@ -130,7 +130,7 @@ Determining whether the clinical manifold is Riemannian, Finsler, or topological
 
 ### The General Theorem and Its Clinical Specificity
 
-The No Escape Theorem (Chapter 16) states that an AI system constrained by the clinical decision complex cannot produce recommendations that cross sacred-value boundaries. The general theorem is a conditional theorem of *Geometric Ethics* (Theorem 18.1 there, conditional on its four requirements). The clinical-specific questions are:
+The No Escape Theorem (Chapter 16) states that an AI system constrained by the clinical decision complex cannot produce recommendations that cross sacred-value boundaries. Theorem 16.1 is an analogue of the No Escape Theorem of *Geometric Ethics* (Theorem 18.1, conditional on four requirements). The clinical-specific questions are:
 
 **Question 4: What are the precise sacred-value boundaries for medical AI?**
 

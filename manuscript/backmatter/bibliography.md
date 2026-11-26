@@ -2,12 +2,12 @@
 
 ## Primary Sources (The Geometric Series)
 
-- Bond, A. H. (2026a). *Geometric Methods in Computational Modeling.* San Jose State University. [Book 1]
+- Bond, A. H. (2026a). *Geometric Methods: Computational Modeling.* San Jose State University. [Book 1]
 - Bond, A. H. (2026b). *Geometric Reasoning: From Search to Manifolds.* San Jose State University. [Book 3]
 - Bond, A. H. (2026c). *Geometric Ethics: The Mathematical Structure of Moral Reasoning.* San Jose State University. [Book 2]
-- Bond, A. H. (2026d). *Geometric Economics: Markets, Welfare, and the Topology of Value.* San Jose State University. [Book 4]
-- Bond, A. H. (2026e). *Geometric Law: Legal Reasoning and the Structure of Justice.* San Jose State University. [Book 5]
-- Bond, A. H. (2026f). *Geometric Cognition: The Mathematical Structure of Mind.* San Jose State University. [Book 6]
+- Bond, A. H. (2026d). *Geometric Economics: Decision Manifolds, Equilibria, and the Geometry of Markets.* San Jose State University. [Book 4]
+- Bond, A. H. (2026e). *Geometric Law: Symmetry, Invariance, and the Structure of Legal Reasoning.* San Jose State University. [Book 5]
+- Bond, A. H. (2026f). *Geometric Cognition: The Mathematical Structure of Human and Artificial Thought.* San Jose State University. [Book 6]
 - Bond, A. H. (2026g). *Geometric Communication: Language, Signal, and the Topology of Meaning.* San Jose State University. [Book 7]
 - Bond, A. H. (2026h). "Geometric Clinical Ethics: Medical Decision-Making as Pathfinding on the Moral Manifold, and the Mathematical Structure of Moral Injury." Submitted to *Journal of Medical Ethics.*
 - Bond, A. H. and Thiele, L. (2026). "Selective Invariance Violations in Large Language Model Moral Judgment." Submitted to *Nature Machine Intelligence.*

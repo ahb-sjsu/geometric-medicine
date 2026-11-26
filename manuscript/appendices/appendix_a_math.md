@@ -1,6 +1,6 @@
 # Appendix A: Mathematical Prerequisites
 
-This appendix collects the mathematical definitions and results used throughout the book. It is self-contained for readers unfamiliar with differential geometry, simplicial complexes, or search algorithms; those with background in these areas may skip directly to the chapters. Full proofs and extended treatments can be found in *Geometric Methods in Computational Modeling* (Bond, 2026a) and *Geometric Reasoning* (Bond, 2026c).
+This appendix collects the mathematical definitions and results used throughout the book. It is self-contained for readers unfamiliar with differential geometry, simplicial complexes, or search algorithms; those with background in these areas may skip directly to the chapters. Full proofs and extended treatments can be found in *Geometric Methods: Computational Modeling* (Bond, 2026a) and *Geometric Reasoning* (Bond, 2026b).
 
 ---
 
@@ -107,7 +107,7 @@ where $\Delta \mathbf{a} = \mathbf{a}(v_j) - \mathbf{a}(v_i)$ is the change in t
 
 ## A.8 The Scalar Irrecoverability Theorem
 
-**Theorem A.2 (Scalar Irrecoverability; Bond 2026b).** Let $Q: \mathbb{R}^n \to \mathbb{R}$ be any continuous function mapping an $n$-dimensional state to a scalar ($n > 1$). Then:
+**Theorem A.2 (Scalar Irrecoverability; Bond 2026c, *Geometric Ethics*, Theorem 15.1, conditional there on that book's Definition 5.2).** Let $Q: \mathbb{R}^n \to \mathbb{R}$ be any continuous function mapping an $n$-dimensional state to a scalar ($n > 1$). Then:
 
 1. $Q$ is not injective: multiple distinct states map to the same scalar value.
 2. The information destroyed by $Q$ is irrecoverable: there exists no function $\psi: \mathbb{R} \to \mathbb{R}^n$ such that $\psi \circ Q = \text{id}$.

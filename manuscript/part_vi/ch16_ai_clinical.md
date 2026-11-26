@@ -124,7 +124,7 @@ This prediction is testable: compare MI scores in units before and after impleme
 
 ### Statement and Clinical Implications
 
-The No Escape Theorem, *Geometric Ethics*, Theorem 18.1 (Bond, 2026c, Ch. 18), a conditional theorem there (conditional on its four requirements), is read here as stating that an AI system operating within the geometric ethical framework cannot escape the manifold's structure — specifically, it cannot produce outputs that cross sacred-value boundaries ($\beta_{\text{sacred}} = \infty$), regardless of how the system is optimized.
+Theorem 16.1 is an analogue of the No Escape Theorem of *Geometric Ethics*, Theorem 18.1 (Bond, 2026c, Ch. 18), conditional there on four requirements. It borrows the name, not the mechanism, and states for the clinical decision complex that an AI system operating within the geometric ethical framework cannot escape the manifold's structure — specifically, it cannot produce outputs that cross sacred-value boundaries ($\beta_{\text{sacred}} = \infty$), regardless of how the system is optimized.
 
 **Theorem 16.1 (No Escape Theorem, Clinical Instantiation).** *A medical AI system constrained by the clinical decision complex $\mathcal{C}$ with sacred-value boundaries ($\beta_{\text{sacred}} = \infty$) cannot produce recommendations that cross those boundaries, regardless of the optimization objective. Specifically:*
 

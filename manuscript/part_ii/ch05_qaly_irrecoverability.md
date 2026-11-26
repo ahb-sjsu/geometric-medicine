@@ -238,7 +238,7 @@ This is what the theorem means in practice. It is not an abstract mathematical f
 
 ## 5.12 Comparison to Other Irrecoverability Results
 
-The QALY Irrecoverability Theorem is the clinical instantiation of the general Scalar Irrecoverability Theorem proved in *Geometric Reasoning* (Ch. 13) and applied in *Geometric Ethics* (Ch. 15), *Geometric Economics* (Ch. 6), *Geometric Communication* (Ch. 1), and *Geometric Cognition* (Ch. 1). In each domain, the theorem has the same algebraic structure (rank-nullity) but different substantive content (different dimensions in the kernel).
+The QALY Irrecoverability Theorem is the clinical instantiation of the general Scalar Irrecoverability Theorem, stated as a conditional theorem in *Geometric Reasoning*, Theorem 13.1 (Chapter 13; restated in that book's Section 10.7), and applied in *Geometric Ethics* (Ch. 15), *Geometric Economics* (Ch. 6), *Geometric Communication* (Ch. 1), and *Geometric Cognition* (Ch. 1). In this volume, as in *Geometric Ethics* (Theorem 15.1), the argument is a dimension count (rank-nullity); what differs from domain to domain is the substantive content (different dimensions in the kernel).
 
 | Domain | Scalar | Dimensions | Kernel Contains |
 |--------|--------|:---:|---|

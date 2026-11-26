@@ -5,7 +5,6 @@
 ---
 
 > *"The clinician who says 'I have to balance autonomy against beneficence' is like the navigator who says 'I have to balance north against east.' You do not balance dimensions. You navigate them."*
-> --- Andrew H. Bond, *Geometric Ethics*
 
 > **THE CONSTRUCTION**
 >
