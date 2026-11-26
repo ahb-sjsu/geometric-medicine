@@ -1,8 +1,10 @@
 # Appendix B: Code Walkthrough
 
-This appendix provides a guided walkthrough of the Python implementations that produce the computational results in this book. The code is organized in two modules: `ch21_clinical.py` (individual clinical decision-making, pathfinding, and moral injury) and `ch27_bioethics.py` (population-level allocation, the bioethical decision complex, and the clinical Bond Index). Both modules are self-contained and depend only on NumPy and SciPy.
+This appendix provides a guided walkthrough of the Python implementations described for the computations in this book. The code is organized in two modules: `ch21_clinical.py` (individual clinical decision-making, pathfinding, and moral injury) and `ch27_bioethics.py` (population-level allocation, the bioethical decision complex, and the clinical Bond Index). Both modules are self-contained and depend only on NumPy and SciPy.
 
-All code examples are presented in the order they appear in the text. Line references are to the versions archived with this volume.
+All code examples are presented in the order they appear in the text.
+
+> **Note (2026-11-26).** Neither `ch21_clinical.py` nor `ch27_bioethics.py` is in this book's repository or in the repository of *Geometric Ethics*, and no output from either is held with this volume. The listings below are the code as this appendix prints it. The worked numbers in the chapters follow from the formulas the chapters print, and several are illustrative; none is the recorded output of these modules.
 
 ---
 
@@ -191,7 +193,7 @@ def clinical_astar(
     return None, float('inf')  # No path found: ethics consultation needed
 ```
 
-The return value `None` corresponds to the clinical situation "path not found" --- a genuine ethical impasse where no available clinical action reaches an acceptable outcome without crossing a sacred-value boundary. This is the formal trigger for ethics consultation (Chapter 6, Table 6.1).
+The return value `None` corresponds to the clinical situation "path not found" --- a genuine ethical impasse where no available clinical action reaches an acceptable outcome without crossing a sacred-value boundary. This is the formal trigger for ethics consultation (Chapter 6, the component table of Section 6.1.1, row "Path not found").
 
 ---
 
@@ -433,17 +435,17 @@ def triage_divergence_analysis(
     }
 ```
 
-The divergence analysis (Chapter 10) demonstrates the Divergence Theorem: utilitarian and manifold-optimal triage coincide only when decisions activate only $d_1$ and no boundaries are crossed. In every pandemic scenario tested, the divergence fraction is non-zero.
+The divergence analysis (Chapter 10) demonstrates the Divergence Theorem: utilitarian and manifold-optimal triage coincide only when decisions activate only $d_1$ and no boundaries are crossed. The theorem predicts a non-zero divergence fraction in any scenario where triage decisions cross boundaries or activate non-outcome dimensions; no run of this function is recorded with this volume.
 
 ---
 
 ## B.6 Reproducibility
 
-All computational results in this book can be reproduced by:
+Once the two modules are available (see the note at the head of this appendix), the computations they implement are meant to be reproduced by:
 
 1. Installing dependencies: `pip install numpy scipy`
 2. Running `ch21_clinical.py` for individual clinical decision results (Chapters 4--9, 13--15)
 3. Running `ch27_bioethics.py` for population-level allocation results (Chapters 10--12)
 4. Comparing output against the tables and figures in the relevant chapters
 
-Random seeds are fixed where stochastic elements appear. The code requires Python 3.10 or later. No GPU is required --- all computations run on CPU in under one minute on commodity hardware.
+As described here, the modules fix random seeds where stochastic elements appear, require Python 3.10 or later, and need no GPU; the expectation is that all computations run on CPU in under one minute on commodity hardware.

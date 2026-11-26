@@ -54,7 +54,7 @@ The framework does not propose replacing existing triage heuristics (ESI, START,
 
 ### The Utilitarian Objective
 
-The dominant approach to crisis standards of care is utilitarian: maximize the number of lives saved, or maximize total life-years saved. Emanuel et al. (2020), in their influential *New England Journal of Medicine* framework for COVID-19 resource allocation, proposed four values (maximizing benefits, treating people equally, promoting instrumental value, giving priority to the worst off) but operationalized the framework primarily through $d_1$ — clinical prognosis, expected survival, life-years gained.
+The dominant approach to crisis standards of care is utilitarian: maximize the number of lives saved, or maximize total life-years saved. Emanuel et al. (2020), in their influential *New England Journal of Medicine* framework for COVID-19 resource allocation, proposed four values (maximizing benefits, treating people equally, promoting instrumental value, giving priority to the worst off) but operationalized the framework primarily through $d_1$ — clinical prognosis, expected survival, life-years gained.[^1]
 
 The utilitarian triage objective is:
 
@@ -112,7 +112,7 @@ The scenario that defined the moral crisis of the COVID-19 pandemic. A patient h
 
 $$d_1(\text{new patient, ventilated}) - d_1(\text{current patient, continued}) = 0.70 - 0.20 = +0.50$$
 
-The utilitarian gain is 0.50 expected life-years per life-year at stake. Reallocate.
+The utilitarian gain is 0.50 in probability of survival: half a life saved, in expectation, by reallocating the one ventilator. Reallocate.
 
 **Manifold analysis:**
 
@@ -124,7 +124,9 @@ The ventilator withdrawal crosses two boundaries:
 
 Additionally, the withdrawal imposes a cost on $d_7$ (dignity) — the current patient is effectively told that their life is worth less than the new arrival's — and on $d_8$ (institutional legitimacy) — the hospital's protocols did not warn the patient that ventilator support could be withdrawn.
 
-$$\text{CF}(\text{reallocate}) = \Delta d_1 \text{ gain} + \beta_{\text{abandon}} + \beta_{\text{trust}} + \Delta d_7 + \Delta d_8$$
+$$\text{CF}(\text{reallocate}) - \text{CF}(\text{continue}) = -\Delta d_1 \text{ gain} + \beta_{\text{abandon}} + \beta_{\text{trust}} + \Delta d_7 + \Delta d_8$$
+
+The $d_1$ gain lowers the cost of reallocating; the boundary penalties and the costs on $d_7$ and $d_8$ raise it.
 
 For $\beta_{\text{abandon}} + \beta_{\text{trust}} > \Delta d_1$, the manifold-optimal decision is to *not* reallocate — to continue ventilation for the current patient and find an alternative for the new arrival (transfer, improvised ventilation, prone positioning without intubation).
 
@@ -171,13 +173,13 @@ The $d_1$ cost of a lottery relative to the utilitarian optimum is, by hypothesi
 
 **Proposition 10.1 (Manifold Superiority of Lottery Allocation).** *When the $d_1$ differential among patients is below threshold $\epsilon$ (comparable prognoses), lottery allocation is manifold-superior to criterion-based allocation for any criterion that activates $d_3$, $d_7$, or $d_8$.*
 
-This result formalizes the intuition behind the widespread endorsement of lottery allocation in pandemic ethics guidelines (White et al., 2009; Emanuel et al., 2020). The utilitarian framework cannot justify lotteries — they are $d_1$-equivalent at best. The manifold framework can: lotteries are manifold-superior because they avoid boundary crossings on non-outcome dimensions.
+This result formalizes the intuition behind the widespread endorsement of lottery allocation in pandemic ethics guidelines (White et al., 2009; Emanuel et al., 2020). The utilitarian framework cannot justify lotteries — they are $d_1$-equivalent at best. The manifold framework can: lotteries are manifold-superior because they avoid boundary crossings on non-outcome dimensions.[^2]
 
 ---
 
 ## 10.4 Why Clinicians Resist Utilitarian Triage
 
-The widespread clinician resistance to utilitarian crisis standards of care during COVID-19 — documented by Greenberg et al. (2020), Rushton (2018), and many others — has been characterized as emotional, irrational, or a failure of moral courage. The geometric framework offers a different interpretation.
+Clinician resistance to utilitarian crisis standards of care during COVID-19 — which this book does not document; in its bibliography the literature on clinician distress is represented by Greenberg et al. (2020), on the mental health of healthcare workers in the pandemic, and by Rushton (2018), a book on moral resilience written before it — has been characterized as emotional, irrational, or a failure of moral courage. The geometric framework offers a different interpretation.
 
 **Proposition 10.2 (Clinician Resistance as Correct Manifold Computation).** *Clinician resistance to utilitarian triage is not irrationality. It is the clinician's well-calibrated heuristic $h(n)$ correctly identifying that the utilitarian triage path crosses moral boundaries whose total manifold cost exceeds the utilitarian benefit. The clinicians are right on the full manifold. The utilitarian algorithms are right on the scalar projection. The conflict is dimensional mismatch, not ethical disagreement.*
 
@@ -195,21 +197,23 @@ This interpretation has practical consequences. If clinician resistance is irrat
 
 The COVID-19 pandemic was the largest forced contraction in the history of clinical ethics. Across the world, clinicians were required to contract nine-dimensional clinical-moral tensors to binary decisions (ventilate / do not ventilate) under time pressure, resource scarcity, and extreme uncertainty.
 
-The pandemic tested the framework's predictions in real time:
+> **Note (2026-11-26).** The findings this section attributes to published work have not been checked against that work. Greenberg et al. (2020) and Rushton (2018) are in the bibliography; Rushton (2018) was written before the pandemic. No study cited here was designed to test these predictions. The predictions are stated as expectations, and each finding is given as attributed, not as established.
+
+The pandemic is a setting in which the framework's predictions can be tested:
 
 **Prediction 10.1**: Clinician moral distress should be highest when triage decisions activate multiple manifold dimensions simultaneously.
 
-The empirical evidence is consistent. The most morally distressing triage decisions were not those with clear $d_1$ differentials (patient A will clearly survive, patient B will clearly not) but those involving multiple dimensions: withdrawing ventilators from current patients ($d_1 + d_5 + d_7$), denying treatment to elderly patients ($d_1 + d_3 + d_7$), and making decisions under extreme prognostic uncertainty ($d_1 + d_9$). Single-dimension triage (patient A is more likely to survive than patient B, all else equal) caused less distress — exactly as the framework predicts.
+The framework expects the most morally distressing triage decisions to be not those with clear $d_1$ differentials (patient A will clearly survive, patient B will clearly not) but those involving multiple dimensions: withdrawing ventilators from current patients ($d_1 + d_5 + d_7$), denying treatment to elderly patients ($d_1 + d_3 + d_7$), and making decisions under extreme prognostic uncertainty ($d_1 + d_9$). It expects single-dimension triage (patient A is more likely to survive than patient B, all else equal) to cause less distress. This chapter cites no study that compares the two kinds of decision, so the prediction is untested here.
 
 **Prediction 10.2**: Moral injury should correlate with the number of boundary crossings, not just the severity of outcomes.
 
-Greenberg et al. (2020) documented that moral injury in COVID-19 healthcare workers was not simply a function of patient mortality (a $d_1$ measure). Clinicians in high-mortality units with clear triage protocols reported less moral distress than clinicians in moderate-mortality units with ambiguous protocols that required repeated boundary crossings. The quantity of morally costly decisions — each one a boundary crossing on the manifold — mattered more than the clinical severity of any individual decision.
+Greenberg et al. (2020) is cited here for the observation that moral injury in COVID-19 healthcare workers was not simply a function of patient mortality (a $d_1$ measure): clinicians in high-mortality units with clear triage protocols reported less moral distress than clinicians in moderate-mortality units with ambiguous protocols that required repeated boundary crossings. The work of that name in the bibliography is an article on managing the mental health of healthcare workers in the pandemic, and whether it reports this comparison has not been checked. If the observation holds, the quantity of morally costly decisions — each one a boundary crossing on the manifold — mattered more than the clinical severity of any individual decision.
 
 **Prediction 10.3**: Clinicians who disagreed with the triage protocol should show higher moral injury than clinicians who agreed with it, independent of clinical outcomes.
 
-This prediction follows directly from the moral injury definition (Definition 5 in the GCE paper): moral injury occurs when the institutionally mandated geodesic requires crossing boundaries that the clinician's personal manifold assigns high penalties. If the clinician's $\beta_k$ values are aligned with the protocol's, no boundary is crossed. If they diverge, every triage decision is a forced boundary crossing.
+This prediction follows directly from the moral injury definition (Definition 13.1; Definition 5 in the GCE paper, Bond 2026h): moral injury occurs when the institutionally mandated geodesic requires crossing boundaries that the clinician's personal manifold assigns high penalties. If the clinician's $\beta_k$ values are aligned with the protocol's, no boundary is crossed. If they diverge, every triage decision is a forced boundary crossing.
 
-The pandemic literature is consistent with this prediction. Rushton (2018) documented that moral distress was highest among clinicians whose personal ethical commitments conflicted with institutional protocols — not among clinicians who were simply exhausted.
+The literature on moral distress is cited as consistent with this prediction. Rushton (2018), a book written before the pandemic, is cited for the observation that moral distress was highest among clinicians whose personal ethical commitments conflicted with institutional protocols — not among clinicians who were simply exhausted. The observation has not been checked against the book here, and it is not a study of pandemic triage.
 
 ### What the Pandemic Revealed About Triage Design
 
@@ -266,7 +270,7 @@ The acute surge is dramatic but conceptually simple — thirty patients, twelve 
 
 3. **The heuristic degrades under sustained stress.** After weeks of triage decisions, the clinician's $h(n)$ begins to change — either hypervigilance (holding ventilators in reserve "just in case," which is manifold-suboptimal) or moral numbing (boundary penalties decrease, making future boundary crossings easier but degrading the quality of future decisions).
 
-**The manifold framework predicts**: Slow-surge triage is more morally injurious than acute-surge triage, even if the total number of deaths is the same, because the slow surge produces more cumulative boundary crossings and more heuristic degradation.
+**The manifold framework predicts**: Slow-surge triage is more morally injurious than acute-surge triage, even if the total number of deaths is the same, because the slow surge produces more cumulative boundary crossings and more heuristic degradation.[^3]
 
 ### Scenario 3: Pediatric Triage
 
@@ -336,9 +340,9 @@ Every triage system in the history of medicine is a specific contraction of the 
 
 **Baron Dominique Jean Larrey (1792): Contraction to $d_1$.**
 
-Napoleon's chief surgeon introduced the first systematic battlefield triage: sort casualties by survivability, treat the most salvageable first, regardless of rank. Larrey's system contracted the clinical tensor to a single dimension — clinical outcomes ($d_1$). It was revolutionary because it ignored social status ($d_6$), military rank ($d_8$), and political importance — dimensions that had previously dominated allocation. Larrey's innovation was not just medical but geometric: he identified $d_1$ as the relevant dimension and discarded the rest.
+Napoleon's chief surgeon introduced the first systematic battlefield triage: sort casualties by survivability, treat the most salvageable first, regardless of rank. Larrey's system contracted the clinical tensor to a single dimension — clinical outcomes ($d_1$). It was revolutionary because it ignored social status ($d_6$), military rank ($d_8$), and political importance — dimensions that had previously dominated allocation. Dropping them as criteria is the same move that Section 2.2.1 reads as a gain on $d_3$ (justice): sorting by need rather than rank made the allocation egalitarian. Larrey's innovation was not just medical but geometric: he identified $d_1$ as the relevant dimension and discarded the rest.
 
-**Emergency Severity Index, ESI (2011): Contraction to $d_1 + d_8$.**
+**Emergency Severity Index, ESI (Version 4, 2011): Contraction to $d_1 + d_8$.**
 
 The modern ESI system, used in most US emergency departments, assigns patients to five triage levels based on clinical acuity and anticipated resource needs. The system contracts the clinical tensor to two dimensions: $d_1$ (how sick is the patient?) and $d_8$ (how many resources will treatment require?). The system does not account for $d_3$ (justice: is the allocation equitable across demographics?), $d_5$ (trust: does the patient trust the emergency department?), or $d_7$ (dignity: is the triage process experienced as dehumanizing?).
 
@@ -348,7 +352,7 @@ The Simple Triage and Rapid Treatment (START) system, used for mass casualty eve
 
 **Pandemic Crisis Standards of Care (2020): Attempted expansion to $d_1 + d_3$.**
 
-COVID-19 triage guidelines (Emanuel et al., 2020; White et al., 2020) attempted to incorporate justice ($d_3$) alongside clinical outcomes ($d_1$): lotteries as tiebreakers, life-cycle considerations, essential worker prioritization. This represented an expansion from one-dimensional to two-dimensional triage. The geometric framework predicts that the expansion was insufficient — seven dimensions remained unaccounted for — and the pandemic moral injury literature confirms the prediction.
+COVID-19 triage guidelines (Emanuel et al., 2020; White and Lo, 2020) attempted to incorporate justice ($d_3$) alongside clinical outcomes ($d_1$): lotteries as tiebreakers, life-cycle considerations, essential worker prioritization. This represented an expansion from one-dimensional to two-dimensional triage. The geometric framework predicts that the expansion was insufficient — seven dimensions remained unaccounted for. The pandemic moral injury literature would test the prediction; this chapter cites no study that does.
 
 ### The Geometric Trend
 
@@ -440,7 +444,7 @@ The manifold exists. Sarah has traversed its most costly regions. The mathematic
 
 ## Chapter Summary
 
-Triage is constrained multi-agent pathfinding on the clinical decision complex. The utilitarian objective — maximize clinical outcomes — coincides with the manifold objective only when triage decisions activate only $d_1$ and no moral boundaries are crossed. In the cases that matter most — ventilator withdrawal, age-based deprioritization, and allocation among comparable-prognosis patients — the utilitarian and manifold objectives diverge. Clinician resistance to utilitarian triage is not irrationality but correct computation on a higher-dimensional space. The COVID-19 pandemic served as a natural experiment that tested and confirmed the framework's predictions about moral distress, boundary-crossing costs, and the dimensional structure of triage decisions. Manifold-aware triage protocol design — which supplements the utilitarian objective with boundary penalties, lottery tiebreaking, Bond Index monitoring, and Moral Injury Index estimation — offers a path toward triage systems that are both clinically effective and morally sustainable.
+Triage is constrained multi-agent pathfinding on the clinical decision complex. The utilitarian objective — maximize clinical outcomes — coincides with the manifold objective only when triage decisions activate only $d_1$ and no moral boundaries are crossed. In the cases that matter most — ventilator withdrawal, age-based deprioritization, and allocation among comparable-prognosis patients — the utilitarian and manifold objectives diverge. Clinician resistance to utilitarian triage is not irrationality but correct computation on a higher-dimensional space. The COVID-19 pandemic is read as a natural experiment for the framework's predictions about moral distress, boundary-crossing costs, and the dimensional structure of triage decisions; the predictions are stated and set beside attributed findings, and none is tested here. Manifold-aware triage protocol design — which supplements the utilitarian objective with boundary penalties, lottery tiebreaking, Bond Index monitoring, and Moral Injury Index estimation — offers a path toward triage systems that are both clinically effective and morally sustainable.
 
 ---
 

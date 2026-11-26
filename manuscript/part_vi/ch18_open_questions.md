@@ -52,7 +52,7 @@ Clinical practice evolves. Patient expectations change. Institutional norms shif
 
 ### The Noether Connection
 
-If the clinical Lagrangian is invariant under the medical BIP — clinical evaluations do not change when the patient is re-described in equivalent terms — then Noether's theorem implies a conserved quantity. What is it?
+If the clinical Lagrangian is invariant under the medical BIP — clinical evaluations do not change when the patient is re-described in equivalent terms — and if that invariance is under a continuous group of transformations (Section 18.3, Stage 2), then Noether's theorem implies a conserved quantity. What is it?
 
 In *Geometric Ethics*, the BIP-invariance of the moral Lagrangian is taken to imply the invariance of harm accounting: the accounting of harm cannot be changed by re-description, only by real transformation. (Earlier versions of that book stated this as a conservation law, Conservation of Harm, which it has withdrawn.) The clinical analogue would be a conservation law for some clinical quantity — but which one, if any?
 
@@ -86,7 +86,7 @@ The research program to derive clinical conservation laws would proceed in three
 
 **Stage 1: Formalize the clinical Lagrangian.** The Lagrangian $\mathcal{L}$ for the clinical decision complex must be specified — what quantity is extremized along the clinical geodesic? The natural candidate is clinical friction $\text{CF}(\gamma)$, the total cost of the clinical path. The clinical geodesic minimizes $\text{CF}$, so $\text{CF}$ plays the role of the action in classical mechanics.
 
-**Stage 2: Identify the symmetries.** The medical BIP states that the Lagrangian is invariant under patient re-description. This is a continuous symmetry group — the group of meaning-preserving transformations of clinical information. The group's generators must be identified explicitly.
+**Stage 2: Identify the symmetries.** The medical BIP states that the Lagrangian is invariant under patient re-description. This is a symmetry group — the group of meaning-preserving transformations of clinical information. Noether's theorem needs a continuous symmetry, and the re-descriptions this book lists (language, chart format, framing) are discrete, so whether the group has a continuous part is itself open. If it does, its generators must be identified explicitly.
 
 **Stage 3: Apply Noether's theorem.** For each continuous symmetry of the Lagrangian, Noether's theorem yields a conserved quantity. The conserved quantities are the conservation laws of clinical reasoning.
 
@@ -118,7 +118,7 @@ Non-Hausdorff manifolds are mathematically exotic, but they may be clinically na
 
 The Riemannian metric is symmetric: the distance from state A to state B equals the distance from state B to state A. But clinical transitions may be asymmetric: the cost of transitioning from health to illness is not the same as the cost of transitioning from illness to health. Recovery is not the reverse of disease onset — it follows a different path through the manifold, with different costs on different dimensions.
 
-A Finsler metric — a metric that depends not just on position but on direction — would capture this asymmetry. The clinical geodesic from illness to health would differ from the geodesic from health to illness, even between the same two points. This would explain the clinical observation that recovery paths are not reverse-disease paths: a patient who develops heart failure through a specific sequence of events does not recover by reversing that sequence.
+A Finsler metric — a metric that depends not just on position but on direction — would capture this asymmetry. The clinical geodesic from illness to health would differ from the geodesic from health to illness, even between the same two points. This would explain the clinical observation that recovery paths are not reverse-disease paths: a patient who develops heart failure through a specific sequence of events does not recover by reversing that sequence.[^1]
 
 ### Research Direction
 
@@ -208,7 +208,7 @@ The boundary penalties $\beta_k$ and the covariance matrix $\Sigma$ are not univ
 
 - **Religious cultures** (many Middle Eastern and South Asian contexts): High weight on $d_7$ (identity as tied to religious practice) with specific boundary penalties for interventions that conflict with religious obligations.
 
-**Question 9: Can the framework accommodate cross-cultural variation without relativism?**
+**Question 9: Can the framework accommodate cross-cultural variation without relativism?**[^2]
 
 The framework must navigate between two extremes: universalism (one set of $\beta_k$ values for all cultures — which ignores genuine cultural variation) and relativism (every culture's $\beta_k$ values are equally valid — which provides no basis for identifying unjust practices within any culture).
 
@@ -220,12 +220,12 @@ The cultural variation must be mapped empirically. This requires estimating $\Si
 
 ## 18.9 The Frontier, Honestly Stated
 
-The geometric framework for clinical medicine is, at this writing, a theoretical structure with strong connections to existing clinical data but limited direct empirical validation. The central claims are:
+The geometric framework for clinical medicine is, at this writing, a theoretical structure with connections to the existing clinical literature but no direct empirical validation. The central claims are:
 
 1. Clinical decisions have nine-dimensional structure. *Status: Theoretically grounded, empirically untested at scale.*
 2. Clinical reasoning is $A^*$ pathfinding on the clinical manifold. *Status: Formally developed, behaviorally plausible, not directly validated.*
 3. The QALY destroys irrecoverable information. *Status: Proved mathematically, consistent with the QALY critique literature.*
-4. Moral injury is cumulative forced boundary crossing. *Status: Consistent with the existing moral injury literature, generates novel predictions.*
+4. Moral injury is cumulative forced boundary crossing. *Status: Consistent with the moral injury literature as Chapters 10 and 14 cite it (the attributed findings have not been checked against their sources), generates novel predictions.*
 5. The Bond Index detects structural injustice. *Status: Formally defined, operationally feasible, not yet computed from clinical data.*
 6. Consent is a gauge-invariance condition. *Status: Formally developed, untested; illustrated by a hypothetical pilot (Section 17.6), full study not yet conducted.*
 
@@ -235,7 +235,7 @@ The framework's claims are specific enough to be tested and falsified. The exper
 
 ## 18.10 Sarah's Grant Proposal
 
-Sarah, now an attending physician and ethics committee member, writes a grant proposal to the National Institutes of Health.
+Sarah, now an attending physician and ethics committee member, writes a grant proposal to the National Institutes of Health.[^3]
 
 The title: "Estimating the Clinical-Moral Covariance Matrix: A Multi-Site Prospective Study."
 
@@ -259,7 +259,7 @@ The mathematics is written. The empirical test remains. Sarah intends to conduct
 
 ## Chapter Summary
 
-The geometric framework for clinical medicine faces seven open questions at the frontier: whether the $9 \times 9$ covariance matrix $\Sigma$ is universal or context-dependent, what conservation law (if any) the medical BIP implies, whether the clinical manifold is Riemannian or requires more exotic geometry, what engineering requirements the No Escape Theorem imposes on medical AI, whether the Moral Injury Index can be validated prospectively, whether nine dimensions are sufficient for clinical medicine, and how cross-cultural variation in the metric should be mapped empirically. Each question is specific, answerable, and connected to a feasible research program. The framework's status is honest: it is a theoretical structure with strong connections to existing evidence, specific falsifiable predictions, and an empirical program that can validate or refute its claims. The geometry has been written. The measurement awaits.
+The geometric framework for clinical medicine faces seven open questions at the frontier: whether the $9 \times 9$ covariance matrix $\Sigma$ is universal or context-dependent, what conservation law (if any) the medical BIP implies, whether the clinical manifold is Riemannian or requires more exotic geometry, what engineering requirements the No Escape Theorem imposes on medical AI, whether the Moral Injury Index can be validated prospectively, whether nine dimensions are sufficient for clinical medicine, and how cross-cultural variation in the metric should be mapped empirically. Each question is specific, answerable, and connected to a feasible research program. The framework's status is honest: it is a theoretical structure with connections to existing evidence, specific falsifiable predictions, and an empirical program that can validate or refute its claims. The geometry has been written. The measurement awaits.
 
 ---
 

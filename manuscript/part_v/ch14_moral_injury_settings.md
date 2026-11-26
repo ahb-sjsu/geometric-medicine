@@ -12,7 +12,7 @@ Chapter 13 developed the mathematical theory: moral injury as cumulative forced 
 
 ### The Moral Injury Signature
 
-The pandemic ICU is the setting where the geometric theory of moral injury was developed — it was the COVID-19 pandemic that forced the distinction between burnout and moral injury into clinical consciousness. The pandemic ICU's moral injury signature is:
+The pandemic ICU is the setting for which the geometric theory of moral injury was developed — the COVID-19 pandemic pressed on clinicians the distinction between burnout and moral injury that Dean et al. (2019) had drawn before it (Chapter 13). The pandemic ICU's moral injury signature is:
 
 **Dominant boundary crossings:**
 - $\beta_{\text{abandon}}$: Denying ventilators, denying ICU admission, withdrawing life support for reallocation
@@ -22,7 +22,7 @@ The pandemic ICU is the setting where the geometric theory of moral injury was d
 
 **Dominant damage mode:** Mixed — acute hypervigilance from early triage decisions, transitioning to moral numbing over weeks of sustained boundary crossing.
 
-**Characteristic trajectory:** The moral injury trajectory in a pandemic ICU follows a predictable arc:
+**Characteristic trajectory:** The framework predicts that the moral injury trajectory in a pandemic ICU follows an arc, given here schematically:[^1]
 
 1. **Phase 1 (Days 1–7): Acute distress.** The first triage decisions are experienced as deeply distressing. $\beta_k$ values are at pre-crisis levels. Each boundary crossing produces a large $\Delta \text{MI}(t)$ because the gap between $\beta_k^{(\text{clin})}$ and $\tau$ is large.
 
@@ -32,9 +32,9 @@ The pandemic ICU is the setting where the geometric theory of moral injury was d
 
 4. **Phase 4 (Post-pandemic): Mixed residue.** After the crisis, the clinician's $\beta_k$ profile is permanently altered: some boundaries are inflated (hypervigilance on the most traumatic crossings), others are deflated (numbing on the most frequent crossings). The moral injury vector $\vec{\text{MI}}$ is non-zero on multiple components.
 
-[Figure 14.1: The pandemic moral injury trajectory: $\beta_{\text{abandon}}$ over time showing the three-phase arc (acute distress → hypervigilance → moral numbing) with schematic moral injury accumulation curve]
-
 ### Five Predictions and the Empirical Evidence
+
+> **Note (2026-11-26).** The findings in this chapter's "Evidence" paragraphs and in Section 14.6 are attributed to the works named and have not been checked against those works. Of them, Greenberg et al. (2020), Rushton (2018) and Dean et al. (2019) are in this book's bibliography; Lai et al. (2020), Lamiani et al. (2017), Dodek et al. (2016), Mantri et al. (2020), Rushton et al. (2021) and Shale (2020) are not. The bibliography lists Greenberg et al. (2020) as an article on managing the mental health of healthcare workers in the pandemic, and Rushton (2018) as a book on moral resilience written before it. Each "Evidence" paragraph therefore says what the attributed findings would show if they hold. None is a test of the prediction.
 
 The framework generates five specific predictions about pandemic moral injury:
 
@@ -42,25 +42,25 @@ The framework generates five specific predictions about pandemic moral injury:
 
 *Rationale:* ICU clinicians make more triage decisions (more boundary crossings) than clinicians in non-triage specialties. The moral injury increment is proportional to boundary-crossing frequency.
 
-*Evidence:* Consistent. Greenberg et al. (2020) documented higher moral distress among ICU staff compared to general ward staff. Lai et al. (2020) found that frontline healthcare workers (ICU and emergency) reported significantly higher psychological distress than non-frontline workers. The specificity of the prediction — that the differential is driven by triage decisions, not by exposure to death per se — is partially supported by evidence that palliative care workers (who are exposed to death but do not make triage decisions) showed lower moral distress than ICU workers during the pandemic.
+*Evidence (attributed, not checked):* Consistent, if the attributed findings hold. Greenberg et al. (2020) is cited for higher moral distress among ICU staff than among general ward staff. Lai et al. (2020) is cited for the finding that frontline healthcare workers (ICU and emergency) reported significantly higher psychological distress than non-frontline workers. The specificity of the prediction — that the differential is driven by triage decisions, not by exposure to death per se — would be partially supported if palliative care workers (who are exposed to death but do not make triage decisions) showed lower moral distress than ICU workers during the pandemic; no source is given for that comparison.
 
 **Prediction 14.2: Higher MI among clinicians who disagreed with the triage protocol.**
 
 *Rationale:* Moral injury is the gap $\beta_k^{(\text{clin})} - \tau$. Clinicians who agree with the protocol have $\beta_k$ values aligned with the protocol's boundary crossings, producing small gaps. Clinicians who disagree have $\beta_k$ values that diverge from the protocol, producing large gaps.
 
-*Evidence:* Consistent. Rushton (2018) documented that moral distress was highest among clinicians whose personal ethical commitments conflicted with institutional protocols. Lamiani et al. (2017) found that perceived ethical violations by the organization were stronger predictors of moral distress than individual patient care decisions.
+*Evidence (attributed, not checked):* Consistent, if the attributed findings hold. Rushton (2018) is cited for the observation that moral distress was highest among clinicians whose personal ethical commitments conflicted with institutional protocols. Lamiani et al. (2017) is cited for the finding that perceived ethical violations by the organization were stronger predictors of moral distress than individual patient care decisions.
 
 **Prediction 14.3: MI correlated with number of triage decisions, not just severity.**
 
 *Rationale:* The Accumulation Theorem states that $\text{MI}(T) = \sum_t \Delta \text{MI}(t)$ — cumulative moral injury is the sum of individual boundary-crossing increments. More triage decisions means more increments.
 
-*Evidence:* Partially consistent. Dodek et al. (2016) found that moral distress was correlated with the frequency of ethically challenging situations, not just their severity. However, few studies have specifically measured the number of triage decisions as a distinct predictor, separate from overall workload — a measurement gap that the framework identifies.
+*Evidence (attributed, not checked):* Partially consistent, if the attributed finding holds. Dodek et al. (2016) is cited for the finding that moral distress was correlated with the frequency of ethically challenging situations, not just their severity. However, no study cited here measures the number of triage decisions as a distinct predictor, separate from overall workload — a measurement gap that the framework identifies.
 
 **Prediction 14.4: MI dissociable from burnout.**
 
 *Rationale:* MI ($h(n)$-damage) and burnout ($g(n)$-depletion) are structurally independent. The prediction is that clinicians with high MI and low burnout exist (well-rested but morally damaged) and that clinicians with low MI and high burnout exist (exhausted but morally intact).
 
-*Evidence:* Consistent. Dean et al. (2019) explicitly argued for the MI-burnout distinction and provided case examples of clinicians with high moral distress and low burnout scores. Mantri et al. (2020) found that MISS-HP scores and MBI scores were moderately correlated but statistically distinguishable, with different demographic and occupational predictors.
+*Evidence (attributed, not checked):* Consistent, if the attributed findings hold. Dean et al. (2019) argued for the MI-burnout distinction (its title in the bibliography is "Reframing Clinician Distress: Moral Injury Not Burnout") and is cited for case examples of clinicians with high moral distress and low burnout scores. Mantri et al. (2020) is cited for the finding that MISS-HP scores and MBI scores were moderately correlated but statistically distinguishable, with different demographic and occupational predictors.
 
 **Prediction 14.5: MI partially predictable from pre-pandemic $\beta_k$ profiles.**
 
@@ -83,7 +83,7 @@ Palliative care presents a different moral injury pattern than the pandemic ICU.
 
 **Dominant damage mode:** Moral numbing — gradual deflation of $\beta_{\text{futile}}$ through repeated exposure to futile treatment.
 
-**Characteristic trajectory:** Unlike the pandemic ICU's dramatic arc, the palliative care trajectory is a slow erosion:
+**Characteristic trajectory:** Unlike the pandemic ICU's dramatic arc, the palliative care trajectory the framework predicts is a slow erosion:
 
 1. **Year 1:** The clinician enters palliative care with well-calibrated $\beta_k$ values. Futile treatment is distressing. Each family request for "everything" produces moral distress because the clinician's $\beta_{\text{futile}}$ assigns high cost to continuing treatment without benefit.
 
@@ -117,7 +117,7 @@ An expert palliative care clinician may have lower $\beta_{\text{futile}}$ than 
 
 - *Numbing: The clinician's decisions on the futility boundary are less accurate than they would have been with intact $\beta_k$. The clinician fails to identify cases where continued treatment is truly futile, processing them as routine rather than evaluating them critically.*
 
-*The distinguishing test: Does the clinician's sensitivity to futility boundary cases decrease (numbing) or does their specificity increase (calibration)? A calibrated clinician becomes better at identifying the boundary; a numbed clinician becomes less responsive to it.*
+*The distinguishing test: Does the clinician's sensitivity to futility boundary cases decrease (numbing) or does their specificity increase (calibration)? A calibrated clinician becomes better at identifying the boundary; a numbed clinician becomes less responsive to it.*[^2]
 
 ---
 
@@ -148,7 +148,7 @@ Psychiatric moral injury has a unique structure: the boundary crossings are not 
 
 $$\beta_k^{(\text{institutional})} < \tau < \beta_k^{(\text{personal})}$$
 
-*The institutional estimate says the crossing is within tolerance; the personal estimate says it is not. The clinician crosses the boundary (following the institutional mandate) while experiencing moral injury (the personal penalty exceeds threshold).*
+*The institutional estimate says the crossing is within tolerance; the personal estimate says it is not. The clinician crosses the boundary (following the institutional mandate) while experiencing moral injury (the personal penalty exceeds threshold).*[^3]
 
 The conflicted heuristic is unique to settings where the institution provides a justification for the boundary crossing that the clinician partially accepts. In the pandemic ICU, there is typically no justification that the clinician accepts — the triage protocol overrides the clinician's judgment, and the clinician experiences the override as a pure violation. In psychiatry, the institution provides a justification (patient safety) that the clinician partially endorses, creating the split.
 
@@ -185,19 +185,17 @@ Although the chapter focuses on three primary settings (pandemic ICU, palliative
 
 **Dominant damage mode:** Rapid-cycling mixed. Unlike the pandemic ICU (sustained acute crossing), palliative care (chronic gradual crossing), or psychiatry (conflicted crossing), emergency medicine produces rapid alternation between boundary crossings and non-crossings. A single shift might include twelve triage decisions, of which three cross moral boundaries. The clinician cycles between boundary-crossing distress and non-crossing competence within hours.
 
-**Characteristic trajectory:** Emergency clinicians develop a distinctive $\beta_k$ profile: moderately deflated boundaries on all dimensions (generalized numbing from chronic low-level crossing), combined with occasional hypervigilant spikes on the abandonment dimension (triggered by specific cases that resemble prior traumatic triage decisions).
+**Characteristic trajectory:** The framework expects emergency clinicians to develop a distinctive $\beta_k$ profile: moderately deflated boundaries on all dimensions (generalized numbing from chronic low-level crossing), combined with occasional hypervigilant spikes on the abandonment dimension (triggered by specific cases that resemble prior traumatic triage decisions).
 
 **Proposition 14.3 (Emergency Medicine MI Pattern).** *Emergency medicine moral injury is characterized by rapid-cycling mixed damage — alternating boundary crossings and non-crossings within single shifts — producing a distinctive $\beta_k$ profile of generalized moderate numbing with dimension-specific hypervigilant spikes. This pattern is distinct from the three primary patterns (pandemic: sustained acute; palliative: chronic gradual; psychiatry: conflicted) and requires its own measurement and intervention strategy.*
 
-The emergency medicine pattern supports the framework's central claim: moral injury is not a single construct but a family of related pathologies, distinguished by their boundary-crossing patterns, damage modes, and $\beta_k$ profiles. Scalar measurement collapses these distinctions; vector measurement preserves them.
+The emergency medicine pattern illustrates the framework's central claim: moral injury is not a single construct but a family of related pathologies, distinguished by their boundary-crossing patterns, damage modes, and $\beta_k$ profiles. Scalar measurement collapses these distinctions; vector measurement preserves them.
 
 ---
 
 ## 14.5 Cross-Setting Comparison
 
 ### The Moral Injury Taxonomy
-
-[Figure 14.2: Three-panel comparison showing the moral injury vector, dominant damage mode, and characteristic trajectory for each clinical setting]
 
 | Feature | Pandemic ICU | Palliative Care | Psychiatry |
 |---|---|---|---|
@@ -245,15 +243,15 @@ Making high-stakes decisions with unreliable edge weights is intrinsically more 
 
 ### What the Pandemic Literature Shows
 
-The empirical literature on COVID-19 moral injury is substantial and broadly consistent with the framework's predictions:
+The literature on COVID-19 moral injury is cited here for the findings below. If they hold, they are broadly consistent with the framework's predictions. As the note in Section 14.1 says, none has been checked against its source here, and of the four works only Greenberg et al. (2020) is in the bibliography.
 
-- **Greenberg et al. (2020)**: Healthcare workers during the pandemic reported high levels of moral distress, with themes including inability to provide optimal care, witnessing patients die alone, and feeling that institutional protocols were inadequate. These themes map onto $\beta_{\text{abandon}}$, $\beta_{\text{dignity}}$, and $d_8$ (institutional legitimacy) respectively.
+- **Greenberg et al. (2020)**: cited for reports that healthcare workers during the pandemic had high levels of moral distress, with themes including inability to provide optimal care, witnessing patients die alone, and feeling that institutional protocols were inadequate. These themes map onto $\beta_{\text{abandon}}$, $\beta_{\text{dignity}}$, and $d_8$ (institutional legitimacy) respectively.
 
-- **Rushton et al. (2021)**: Found that moral resilience — measured by the Rushton Moral Resilience Scale — was negatively correlated with moral distress but not with burnout, supporting the MI-burnout distinction.
+- **Rushton et al. (2021)**: cited for the finding that moral resilience — measured by the Rushton Moral Resilience Scale — was negatively correlated with moral distress but not with burnout, which would support the MI-burnout distinction.
 
-- **Mantri et al. (2020)**: Found that MISS-HP scores were elevated among healthcare workers exposed to COVID-19 patients, with the highest scores among those making allocation decisions — consistent with the prediction that triage decisions (boundary crossings) are the primary driver.
+- **Mantri et al. (2020)**: cited for the finding that MISS-HP scores were elevated among healthcare workers exposed to COVID-19 patients, with the highest scores among those making allocation decisions — which would be consistent with the prediction that triage decisions (boundary crossings) are the primary driver.
 
-- **Shale (2020)**: Described the "moral injury" of healthcare workers as distinct from burnout, using language remarkably close to the geometric framework's formulation: "a deep sense that one has violated one's own moral code" — which is precisely the experience of crossing a boundary where $\beta_k^{(\text{clin})} > \tau$.
+- **Shale (2020)**: cited for describing the "moral injury" of healthcare workers as distinct from burnout, in language close to the geometric framework's formulation: "a deep sense that one has violated one's own moral code" (the quotation has not been checked against its source) — which is precisely the experience of crossing a boundary where $\beta_k^{(\text{clin})} > \tau$.
 
 ---
 
@@ -321,7 +319,7 @@ Sarah needs different support for each component: structured debriefing for the 
 
 ## Chapter Summary
 
-Three clinical settings — pandemic ICU, palliative care, and psychiatry — produce structurally distinct moral injury patterns. The pandemic ICU produces acute, high-frequency boundary crossings on the abandonment dimension, with a characteristic trajectory from hypervigilance to moral numbing. Palliative care produces chronic, gradual boundary crossings on the futility dimension, with the Palliative Paradox: the setting that most needs intact moral sensitivity is the setting most likely to erode it. Psychiatry produces conflicted boundary crossings on the consent dimension, where the clinician simultaneously agrees with and is morally injured by the clinically justified intervention. The three-setting taxonomy demonstrates that "moral injury" is not a single construct but a multi-dimensional pattern requiring setting-specific assessment and intervention — and that scalar MI instruments will fail to distinguish patterns that a vector-valued approach captures.
+Three clinical settings — pandemic ICU, palliative care, and psychiatry — produce structurally distinct moral injury patterns. The pandemic ICU produces acute, high-frequency boundary crossings on the abandonment dimension, with a characteristic trajectory from hypervigilance to moral numbing. Palliative care produces chronic, gradual boundary crossings on the futility dimension, with the Palliative Paradox: the setting that most needs intact moral sensitivity is the setting most likely to erode it. Psychiatry produces conflicted boundary crossings on the consent dimension, where the clinician simultaneously agrees with and is morally injured by the clinically justified intervention. The three-setting taxonomy argues that "moral injury" is not a single construct but a multi-dimensional pattern requiring setting-specific assessment and intervention — and that scalar MI instruments will fail to distinguish patterns that a vector-valued approach captures.
 
 ---
 

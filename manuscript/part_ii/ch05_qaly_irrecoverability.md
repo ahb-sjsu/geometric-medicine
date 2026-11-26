@@ -222,7 +222,7 @@ The Mahalanobis distance between these two patients is:
 
 $$d_{\text{Mahal}}(\mathbf{a}_{\text{Margaret}}, \mathbf{a}_{\text{David}}) = \sqrt{(\mathbf{a}_M - \mathbf{a}_D)^T \Sigma^{-1} (\mathbf{a}_M - \mathbf{a}_D)}$$
 
-Without the empirical $\Sigma$, we can compute the Euclidean distance as a lower bound: $\|\mathbf{a}_M - \mathbf{a}_D\| = \sqrt{0.01 + 0.09 + 0.04 + 0.4225 + 0.4225 + 0.2025 + 0.3025 + 0.04 + 0.4225} = \sqrt{1.9525} \approx 1.40$. This is a substantial distance --- the two patients are far apart on the clinical decision complex. Their clinical geodesics diverge immediately from the start node.
+Without the empirical $\Sigma$, we can compute the Euclidean distance in its place (it equals the Mahalanobis distance when $\Sigma$ is the identity, and in general it is neither a lower nor an upper bound): $\|\mathbf{a}_M - \mathbf{a}_D\| = \sqrt{0.01 + 0.09 + 0.04 + 0.4225 + 0.4225 + 0.2025 + 0.3025 + 0.04 + 0.4225} = \sqrt{1.9525} \approx 1.40$. This is a substantial distance --- the two patients are far apart on the clinical decision complex. Their clinical geodesics diverge immediately from the start node.
 
 Margaret's geodesic: palliative care focused on cognitive preservation, comfort optimization, and family engagement. The path does not cross any boundaries (Margaret's treatment refusal is autonomous and informed; the clinical team respects it). The geodesic's primary cost is on $d_1$ (she will die sooner than with aggressive treatment), but the total manifold cost is low because all other dimensions are preserved.
 

@@ -150,3 +150,15 @@ when the figures were drawn.
 [Figure 13.1: Phase diagram showing the two damage modes as perturbations of the pre-injury heuristic. The horizontal axis is boundary penalty $\beta_k$; the vertical axis is clinical decision quality. The optimal operating point (pre-injury $\varepsilon$-admissible heuristic) is at the peak. Hypervigilance shifts left (increased $\beta_k$, decreased quality); moral numbing shifts right (decreased $\beta_k$, decreased quality).]
 
 **Verdict:** Wrong: left and right reversed, and its quality curve is given by no formula. Replaced by drawn Figure 13.2.
+
+## Placeholder 14.1 (manuscript/part_v/ch14_moral_injury_settings.md)
+
+[Figure 14.1: The pandemic moral injury trajectory: $\beta_{\text{abandon}}$ over time showing the three-phase arc (acute distress → hypervigilance → moral numbing) with schematic moral injury accumulation curve]
+
+**Verdict:** Not drawn. Chapter 14 went online on 2026-11-26 without figures; the chapter states the trajectories as predictions and gives no values to plot.
+
+## Placeholder 14.2 (manuscript/part_v/ch14_moral_injury_settings.md)
+
+[Figure 14.2: Three-panel comparison showing the moral injury vector, dominant damage mode, and characteristic trajectory for each clinical setting]
+
+**Verdict:** Not drawn. Chapter 14 went online on 2026-11-26 without figures; the chapter states the trajectories as predictions and gives no values to plot.

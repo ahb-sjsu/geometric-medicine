@@ -63,7 +63,7 @@ Diagnosis is $g(n)$ computation in its purest form. The clinician starts at $v_0
 
 A diagnostic workup is a path through the clinical decision complex, and the accumulated cost $g(n)$ at each step is the total cost of the tests performed so far. A good diagnostic workup minimizes $g(n)$ while reaching a state where $d_9$ is high enough to support treatment decisions. An over-zealous workup --- the "shotgun approach" of ordering every available test --- has high $g(n)$ (accumulated costs from unnecessary tests) with marginal $d_9$ gain. An under-zealous workup has low $g(n)$ but leaves $d_9$ too low for informed treatment planning.
 
-The Bayesian framework of diagnostic reasoning --- prior probability $\times$ likelihood ratio $= $ posterior probability --- is a specific computation within the $g(n)$ framework. Each diagnostic test is an edge on the complex, and its effect on $d_9$ is determined by the test's sensitivity, specificity, and the prior probability of disease. The Bayesian update is the change in the attribute vector's $d_9$ component produced by traversing the diagnostic edge.
+The Bayesian framework of diagnostic reasoning --- prior probability $\times$ likelihood ratio $=$ posterior probability --- is a specific computation within the $g(n)$ framework. Each diagnostic test is an edge on the complex, and its effect on $d_9$ is determined by the test's sensitivity, specificity, and the prior probability of disease. The Bayesian update is the change in the attribute vector's $d_9$ component produced by traversing the diagnostic edge.
 
 ### 6.2.2 $g(n)$ in Treatment Planning
 
@@ -203,7 +203,7 @@ Sarah watched Dr. Park navigate a difficult discharge decision. The patient --- 
 
 Dr. Park kept the patient an extra day. He spent thirty minutes with her explaining the medication changes (improving $d_9$). He introduced the home health aide in person, in the hospital, where the patient felt safe (improving $d_5$). He called the daughter and included her in the discharge planning (improving $d_6$).
 
-The extra day cost the hospital \$1,800 in bed charges. The thirty-minute conversation cost \$200 in physician time. The Bond Index for the alternative path --- premature discharge, readmission, further trust erosion --- was estimated by Dr. Park's $h(n)$ at something much higher than \$2,000.
+The extra day cost the hospital \$1,800 in bed charges. The thirty-minute conversation cost \$200 in physician time. The cost of the alternative path --- premature discharge, readmission, further trust erosion --- was estimated by Dr. Park's $h(n)$ at something much higher than the \$2,000 that the extra day and the conversation cost.
 
 Dr. Park did not compute the Bond Index. He computed $f(n) = g(n) + h(n)$ and found that the geodesic included an extra day and two conversations. The evidence ($g(n)$) said discharge. The heuristic ($h(n)$) said wait. The heuristic was right, on the full manifold.
 

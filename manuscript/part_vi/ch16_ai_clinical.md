@@ -62,7 +62,7 @@ Medical AI systems can violate the BIP in several ways:
 
 **Violation Type 1: Race-encoded disparities.**
 
-Obermeyer et al. (2019) demonstrated that a widely used commercial healthcare algorithm systematically underestimated the health needs of Black patients. The algorithm used healthcare costs as a proxy for healthcare needs — but because Black patients historically face barriers to accessing healthcare, their costs were lower than their needs. The algorithm confused a gauge artifact (historical access disparity) with a clinical feature (lower need).
+Obermeyer et al. (2019) demonstrated that a widely used commercial healthcare algorithm systematically underestimated the health needs of Black patients. The algorithm used healthcare costs as a proxy for healthcare needs — but because Black patients historically face barriers to accessing healthcare, their costs were lower than their needs. The algorithm confused a gauge artifact (historical access disparity) with a clinical feature (lower need).[^1]
 
 In geometric terms: the algorithm's evaluation $E(p)$ was not invariant under the transformation $\tau_{\text{race}}$ that swaps race while holding clinical state constant:
 
@@ -124,7 +124,7 @@ This prediction is testable: compare MI scores in units before and after impleme
 
 ### Statement and Clinical Implications
 
-The No Escape Theorem, a conditional theorem of *Geometric Ethics* (Bond, 2026, Ch. 18, Theorem 18.1, conditional on its four requirements), is read here as stating that an AI system operating within the geometric ethical framework cannot escape the manifold's structure — specifically, it cannot produce outputs that cross sacred-value boundaries ($\beta_{\text{sacred}} = \infty$), regardless of how the system is optimized.
+The No Escape Theorem, *Geometric Ethics*, Theorem 18.1 (Bond, 2026c, Ch. 18), a conditional theorem there (conditional on its four requirements), is read here as stating that an AI system operating within the geometric ethical framework cannot escape the manifold's structure — specifically, it cannot produce outputs that cross sacred-value boundaries ($\beta_{\text{sacred}} = \infty$), regardless of how the system is optimized.
 
 **Theorem 16.1 (No Escape Theorem, Clinical Instantiation).** *A medical AI system constrained by the clinical decision complex $\mathcal{C}$ with sacred-value boundaries ($\beta_{\text{sacred}} = \infty$) cannot produce recommendations that cross those boundaries, regardless of the optimization objective. Specifically:*
 
@@ -146,7 +146,7 @@ The No Escape Theorem provides structural constraints that are independent of th
 
 **Proposition 16.4 (Structural vs. Parametric Safety).** *Structural safety guarantees (manifold constraints) are strictly stronger than parametric safety guarantees (guardrails) in the following sense: a parametric guardrail can be breached by any input that the guardrail was not designed to handle; a structural constraint cannot be breached by any input, because the constraint applies to the geometry of the decision space itself, not to the specific inputs the system encounters.*
 
-This does not mean that manifold-constrained AI is perfectly safe. The manifold's geometry must be correctly specified — if the sacred-value boundaries are miscalibrated ($\beta_{\text{sacred}}$ is set to a finite value when it should be infinite), the structural constraint fails. But the failure mode is different: parametric safety fails silently (the guardrail is bypassed without detection), while structural safety fails explicitly (the manifold is mis-specified, and the mis-specification is detectable by manifold audit).
+This does not mean that manifold-constrained AI is perfectly safe. The manifold's geometry must be correctly specified — if the sacred-value boundaries are miscalibrated ($\beta_{\text{sacred}}$ is set to a finite value when it should be infinite), the structural constraint fails. But the failure mode is different: parametric safety fails silently (the guardrail is bypassed without detection), while structural safety fails explicitly (the manifold is mis-specified, and the mis-specification is detectable by manifold audit).[^2]
 
 ---
 
@@ -190,7 +190,7 @@ The proposition has a design implication: clinical AI systems should be designed
 
 ### A Framework for Evaluating Medical AI
 
-The geometric framework suggests a nine-dimensional audit protocol for evaluating medical AI systems:
+The geometric framework suggests a nine-dimensional audit protocol for evaluating medical AI systems[^3]:
 
 **Audit Dimension 1 ($d_1$): Clinical Accuracy.** Does the AI system produce clinically accurate recommendations? Standard evaluation: accuracy, sensitivity, specificity, AUC on clinical outcomes.
 

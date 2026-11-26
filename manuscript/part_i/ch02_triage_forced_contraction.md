@@ -138,7 +138,7 @@ The ESI nurse evaluates Maria on two dimensions: acuity (how sick?) and resource
 
 ### Contraction 2: START
 
-If Maria had arrived at a mass casualty scene, the START algorithm would evaluate her as follows. Respiration: present, rate >30 (abnormal). Perfusion: radial pulse present, capillary refill delayed. Mental status: confused, does not follow commands. START classification: **Immediate (Red)**.
+If Maria had arrived at a mass casualty scene, the START algorithm would evaluate her as follows. Respiration: present, rate 28 (not above 30, so respiration does not decide). Perfusion: radial pulse present, capillary refill delayed (inadequate). Mental status: confused, does not follow commands. START classification: **Immediate (Red)**.
 
 *What the contraction preserves:* A minimal $d_1$ assessment --- Maria is acutely physiologically deranged and needs immediate intervention to survive.
 

@@ -16,7 +16,7 @@ Senior Member, IEEE | San Jose State University
 This book is a domain instantiation of the general framework developed in:
 
 - **Geometric Methods in Computational Modeling** (Bond, 2026a) — the mathematical toolkit
-- **Geometric Reasoning: From Search to Manifolds** (Bond, 2026c) — the parent theory
+- **Geometric Reasoning: From Search to Manifolds** (Bond, 2026b) — the parent theory
 
 It inherits the heuristic field formalism, geodesic deviation measure, failure taxonomy, gauge invariance diagnostics, and engineering toolkit from the parent text, and instantiates them on a domain-specific manifold.
 

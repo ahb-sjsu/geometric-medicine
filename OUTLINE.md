@@ -383,7 +383,7 @@ The frontier, honestly stated. What the geometric framework for clinical medicin
 
 ## Appendices
 
-**A. Mathematical Prerequisites** — Riemannian geometry (manifolds, metrics, geodesics, curvature), simplicial complexes, A* search algorithm, Mahalanobis distance, gauge invariance. Self-contained, with references to Geometric Methods (Bond, 2026a) and Geometric Reasoning (Bond, 2026c) for proofs. Sufficient for a reader with undergraduate linear algebra and basic real analysis.
+**A. Mathematical Prerequisites** — Riemannian geometry (manifolds, metrics, geodesics, curvature), simplicial complexes, A* search algorithm, Mahalanobis distance, gauge invariance. Self-contained, with references to Geometric Methods (Bond, 2026a) and Geometric Reasoning (Bond, 2026b) for proofs. Sufficient for a reader with undergraduate linear algebra and basic real analysis.
 
 **B. The Clinical Decision Complex: Code Walkthrough** — Python implementation of the clinical decision complex, A* pathfinding on the complex, moral injury accumulation computation, and Bond Index calculation. Based on ch21_clinical.py and ch27_bioethics.py. Reproducibility guide for all computational results.
 

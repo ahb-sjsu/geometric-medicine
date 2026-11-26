@@ -58,7 +58,7 @@ The gauge-variance feature is particularly diagnostic. A person who rejects a va
 
 *3. Autonomy assertion ($d_4$): The individual prioritizes bodily autonomy over collective benefit, even with full information and full trust. Intervention: this is not a failure at all — it is a legitimate manifold computation with different dimensional weights.*
 
-*Standard public health messaging conflates all three under "hesitancy." The geometric framework distinguishes them because they occupy different regions of the manifold and require different interventions.*
+*Standard public health messaging conflates all three under "hesitancy." The geometric framework distinguishes them because they occupy different regions of the manifold and require different interventions.*[^2]
 
 This distinction has immediate practical consequences. An education campaign addresses failure 1 but not failure 2 or 3. A mandate addresses all three but at substantial $d_4$ cost. A community-engaged outreach program addresses failure 2. Only by distinguishing the three failures can the intervention be matched to the cause.
 
@@ -74,7 +74,7 @@ The existing allocation system (UNOS in the United States, NHS Blood and Transpl
 
 ### What MELD Captures and What It Misses
 
-The MELD score, used for liver transplant allocation since 2002, is computed from three laboratory values: bilirubin, creatinine, and INR. It predicts 90-day mortality without transplant — a pure $d_1$ measure.
+The MELD score, used for liver transplant allocation since 2002, is computed from three laboratory values: bilirubin, creatinine, and INR. It predicts 90-day mortality without transplant — a pure $d_1$ measure.[^1]
 
 **Dimensional analysis of MELD:**
 
@@ -125,13 +125,13 @@ Public health mandates — vaccination requirements, quarantine orders, water fl
 
 *1. Geodesic divergence: The collective geodesic $\gamma^*_{\text{collective}}$ differs from the Nash equilibrium $\gamma^*_{\text{Nash}}$. Without the mandate, individual choices produce a collectively suboptimal outcome.*
 
-*2. Bounded autonomy cost: The autonomy restriction $\Delta d_4$ does not cross a sacred-value boundary ($\beta_{\text{sacred}} < \infty$). The mandate restricts autonomy but does not violate bodily integrity, religious practice, or personal identity in ways that have infinite boundary penalties.*
+*2. Bounded autonomy cost: The autonomy restriction $\Delta d_4$ does not cross a sacred-value boundary (every boundary the mandate crosses has a finite penalty; $\beta_{\text{sacred}} = \infty$ by Definition 4.3). The mandate restricts autonomy but does not violate bodily integrity, religious practice, or personal identity in ways that have infinite boundary penalties.*
 
 *3. Proportionate benefit: The collective benefit on $d_1 + d_6$ exceeds the individual cost on $d_4$, under the community's metric tensor $\Sigma$.*
 
 $$\frac{(\Delta d_1 + \Delta d_6)^T \Sigma^{-1} (\Delta d_1 + \Delta d_6)}{(\Delta d_4)^2 / \sigma_4^2} > 1$$
 
-*All three conditions are necessary. A mandate that satisfies conditions 1 and 3 but not condition 2 (e.g., forced medical experimentation that violates bodily integrity — a sacred-value boundary) is never geometrically justified, regardless of the collective benefit.*
+*All three conditions are necessary. A mandate that satisfies conditions 1 and 3 but not condition 2 (e.g., forced medical experimentation that violates bodily integrity — a sacred-value boundary) is never geometrically justified, regardless of the collective benefit.*[^3]
 
 ### Application: Vaccination Mandates
 
@@ -211,7 +211,7 @@ Now the clinician learns that Patient B is a Holocaust survivor who specifically
 
 Each piece of information activates a new dimension of the manifold. The manifold-optimal allocation changes with each activation. The clinician's distress increases — not because the information is distressing but because the dimensionality of the decision space has grown, making the geodesic computation harder.
 
-**Proposition 11.7 (The Allocation Paradox).** *Acquiring more morally relevant information about patients in an allocation scenario increases the dimensional activation of the decision, which in general increases the clinician's moral distress and the computational difficulty of finding the manifold-optimal allocation. Scalar triage systems are simpler precisely because they discard this information.*
+**Proposition 11.6 (The Allocation Paradox).** *Acquiring more morally relevant information about patients in an allocation scenario increases the dimensional activation of the decision, which in general increases the clinician's moral distress and the computational difficulty of finding the manifold-optimal allocation. Scalar triage systems are simpler precisely because they discard this information.*
 
 The paradox explains why many triage systems deliberately restrict the information available to the triage decision-maker. ESI protocols explicitly exclude social history, personal narrative, and family context from the triage assessment. This restriction is not callousness — it is a deliberate dimensional reduction that makes the triage computation tractable. The manifold framework makes the trade-off explicit: dimensional reduction makes decisions easier but sacrifices moral information that, if included, would change the decision.
 
@@ -289,7 +289,7 @@ The Gini penalty $\lambda \cdot \text{Gini}(\cdot)$ is the mathematical expressi
 
 Every allocation policy sits on a frontier between equity ($d_3$) and efficiency ($d_1$). The utilitarian policy maximizes $d_1$ without regard to distribution. The egalitarian policy equalizes cost distribution without regard to $d_1$. The manifold-optimal policy finds the point on the frontier that minimizes total clinical friction including the Gini penalty.
 
-**Proposition 11.6 (No Free Lunch on the Equity-Efficiency Frontier).** *There exists no allocation policy that simultaneously maximizes $d_1$ and minimizes the Gini coefficient of cost distribution, except in the degenerate case where the population is homogeneous on all nine dimensions. Every allocation involves a trade-off between equity and efficiency — and the trade-off's optimal point depends on the community's metric tensor $\Sigma$, which encodes how the community weighs the nine dimensions against each other.*
+**Proposition 11.7 (No Free Lunch on the Equity-Efficiency Frontier).** *There exists no allocation policy that simultaneously maximizes $d_1$ and minimizes the Gini coefficient of cost distribution, except in the degenerate case where the population is homogeneous on all nine dimensions. Every allocation involves a trade-off between equity and efficiency — and the trade-off's optimal point depends on the community's metric tensor $\Sigma$, which encodes how the community weighs the nine dimensions against each other.*
 
 ---
 
@@ -324,6 +324,6 @@ Beyond pandemic triage, three allocation problems reveal distinct structures of 
 
 [^1]: The MELD score was introduced in 2002 by Kamath et al. and has been widely validated as a predictor of short-term mortality in end-stage liver disease. Its clinical validity is not in question. The geometric critique is that clinical validity on $d_1$ does not imply adequacy on the full manifold — and that allocation decisions should be evaluated on the full manifold, not on $d_1$ alone.
 
-[^2]: The three-failure decomposition of vaccine hesitancy parallels the three-failure decomposition of manifold alignment in shared decision-making (Definition 6 in Chapter 8): epistemic misalignment, value misalignment, and goal misalignment. The geometric framework reveals the structural isomorphism between individual clinical consent and population-level public health uptake — both are manifold alignment problems with the same dimensional structure.
+[^2]: The three-failure decomposition of vaccine hesitancy parallels the three-failure decomposition of manifold alignment in shared decision-making (Definition 8.2 in Chapter 8): epistemic misalignment, value misalignment, and goal misalignment. The geometric framework reveals the structural isomorphism between individual clinical consent and population-level public health uptake — both are manifold alignment problems with the same dimensional structure.
 
 [^3]: The geometric justification for public health mandates is structurally similar to the justification for psychiatric involuntary treatment (Case 3 in Chapter 9): both involve overriding $d_4$ (autonomy) when the individual's geodesic diverges dangerously from the manifold-optimal path. The key difference is that involuntary treatment overrides a miscalibrated heuristic (the patient's psychosis distorts their perception of reality), while mandates override a correctly calibrated but individually rational heuristic (the individual correctly computes their personal geodesic but ignores externalities on $d_6$).

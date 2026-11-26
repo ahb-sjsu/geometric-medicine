@@ -45,7 +45,7 @@ Clinical heuristics form a hierarchy of four categories, ordered by their relati
 
 **Clinical examples:**
 - Non-consensual treatment of a competent patient: $\beta_{\text{consent}} = 100$, but $\beta_{\text{consent}}^* \approx \infty$ (career-ending malpractice, criminal charges, permanent trust destruction, institutional legitimacy crisis). Any finite $\beta$ is admissible.
-- Non-therapeutic experimentation on patients: $\beta_{\text{sacred}} = $ any finite value, $\beta_{\text{sacred}}^* = \infty$. The heuristic is admissible regardless of calibration.
+- Non-therapeutic experimentation on patients: $\beta_{\text{sacred}}$ = any finite value, $\beta_{\text{sacred}}^* = \infty$. The heuristic is admissible regardless of calibration.
 - Deliberate non-palliative killing: same structure.
 
 Strictly admissible heuristics have a distinctive clinical property: they are *prohibitions*. The boundary penalty is so high that no clinical scenario produces a geodesic that crosses the boundary. These are the absolute constraints of clinical ethics --- the sacred-value boundaries that no cost-benefit analysis can override. The heuristic underestimates the cost; A* explores the paths on the other side of the boundary; and it always concludes that those paths are more expensive than going around.

@@ -33,7 +33,7 @@ When we write "clinical manifold" informally, we mean the clinical decision comp
 
 - *Higher simplices: A $k$-simplex $[v_0, \ldots, v_k]$ represents a care bundle --- a set of jointly administered interventions (e.g., a chemotherapy protocol: drug + antiemetic + hydration + counseling) whose costs are not additive but must be evaluated as a unit.*
 
-This definition is identical to Definition 1 of the GCE paper (the submitted JME paper), reproduced here for self-containedness. The clinical decision complex is the domain-specific instantiation of the general moral manifold from *Geometric Ethics* --- the same nine dimensions, the same Mahalanobis metric structure, the same boundary architecture, specialized for clinical decision-making.
+This definition is identical to Definition 1 of the GCE paper (the submitted JME paper, Bond 2026h), reproduced here for self-containedness.[^1] The clinical decision complex is the domain-specific instantiation of the general moral manifold from *Geometric Ethics* --- the same nine dimensions, the same Mahalanobis metric structure, the same boundary architecture, specialized for clinical decision-making.
 
 ## 4.2 The Nine Clinical-Moral Dimensions
 

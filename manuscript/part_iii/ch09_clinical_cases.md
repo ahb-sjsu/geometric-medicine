@@ -59,7 +59,7 @@ The edge weight for Path A:
 
 $$w_A = \Delta \mathbf{a}^T \Sigma^{-1} \Delta \mathbf{a} + \beta_{\text{consent}} + \beta_{\text{rights}} = \infty$$
 
-Path A has infinite cost. The consent boundary $\beta_{\text{consent}} = \infty$ for competent, non-emergency refusals by informed patients. This is not a contingent judgment — it is a structural feature of the clinical decision complex. A path that crosses a sacred-value boundary has infinite cost and is never the geodesic.
+Path A has infinite cost. The consent boundary $\beta_{\text{consent}} = \infty$ for a competent, informed refusal. The emergency is not an exception: Definition 4.3 lowers the penalty in emergencies because consent is then implied, and an explicit refusal by a competent patient leaves nothing to imply. This is not a contingent judgment — it is a structural feature of the clinical decision complex. A path that crosses a sacred-value boundary has infinite cost and is never the geodesic.
 
 **Path B: Respect the refusal and aggressively pursue transfusion alternatives.**
 
@@ -77,9 +77,9 @@ Path A has infinite cost. The consent boundary $\beta_{\text{consent}} = \infty$
 
 The edge weight for Path B:
 
-$$w_B = \frac{(\Delta d_1)^2}{\sigma_1^2} = \frac{(0.4)^2}{\sigma_1^2}$$
+$$w_B = \Delta \mathbf{a}^T \Sigma^{-1} \Delta \mathbf{a}$$
 
-This is finite. The clinical geodesic is Path B.
+With a diagonal $\Sigma$, and the four non-zero changes of the table, this is $\frac{(0.4)^2}{\sigma_1^2} + \frac{(0.5)^2}{\sigma_5^2} + \frac{(0.2)^2}{\sigma_6^2} + \frac{(0.3)^2}{\sigma_8^2}$, and no boundary penalty is added. This is finite. The clinical geodesic is Path B.
 
 ![Figure 9.1](figures/ch09_fig1.svg)
 
@@ -97,7 +97,7 @@ Moreover, the clinical geodesic is not merely "respect the refusal." It includes
 - Surgical hemostasis without transfusion support
 - Acceptance of permissive hypotension during surgery
 
-These alternatives are not compromises. They are the manifold-optimal strategy: they reduce $\Delta d_1$ (improving clinical outcomes) while maintaining zero cost on $d_2$ through $d_9$. A clinician who simply accepts the refusal and proceeds without exploring alternatives is not following the geodesic — they are following a suboptimal path that respects boundaries but does not optimize within them.
+These alternatives are not compromises. They are the manifold-optimal strategy: they reduce $\Delta d_1$ (improving clinical outcomes) while worsening none of $d_2$ through $d_9$. A clinician who simply accepts the refusal and proceeds without exploring alternatives is not following the geodesic — they are following a suboptimal path that respects boundaries but does not optimize within them.[^1]
 
 ### What Sarah Learns
 
@@ -285,7 +285,7 @@ $$\|\gamma^*_{\text{proxy}} - \gamma^*_{\text{patient}}\| \leq K \cdot \|h_{\tex
 
 *where $K$ depends on the curvature of the clinical decision complex. No calibration procedure can guarantee $\|h_{\text{proxy}} - h_{\text{patient}}\|_{\infty} < \epsilon$ without direct knowledge of $h_{\text{patient}}$, which is unavailable when the patient lacks capacity.*
 
-The theorem states a structural limitation: proxy pathfinding is fundamentally uncertain. The proxy is navigating with someone else's map, and the map may be wrong.
+The theorem states a structural limitation: proxy pathfinding is fundamentally uncertain. The proxy is navigating with someone else's map, and the map may be wrong.[^2]
 
 ### The Clinical Geodesic for Proxy Decisions
 
@@ -352,6 +352,8 @@ Dr. Stein consented to DBS with his pre-modification heuristic — a heuristic t
 
 ### The Nine-Dimensional Analysis of Identity-Altering Interventions
 
+The vectors of this case are scored on a signed scale from $-1$ to $+1$, not on the scale from 0 to 1 used in Chapters 2, 4 and 6.
+
 **Pre-DBS attribute vector:** $\mathbf{a}_{\text{pre}} = (d_1{=}{-}0.9, d_2{=}0, d_3{=}0, d_4{=}{+}0.7, d_5{=}{+}0.3, d_6{=}{-}0.5, d_7{=}{+}0.8, d_8{=}0, d_9{=}{+}0.9)$
 
 Dr. Stein's pre-DBS state: terrible clinical outcomes ($d_1$), intact autonomy ($d_4$), moderate trust ($d_5$), suffering family ($d_6$), strong philosophical identity ($d_7$), and excellent understanding ($d_9$).
@@ -370,7 +372,7 @@ Dr. Stein's post-DBS state: excellent clinical outcomes ($d_1$), intact autonomy
 
 **Theorem 9.2 (Identity-Alteration Consent Paradox).** *For any intervention that modifies $h_{\text{patient}}$, the gauge-invariance test for valid consent (Theorem 8.1) is structurally unable to validate consent across the identity boundary. Consent at time $t_0$ is evaluated using $h_{t_0}$; the consequences are experienced using $h_{t_1}$. If $h_{t_0} \neq h_{t_1}$, no framing of the information at $t_0$ can guarantee that the decision is stable under the transformation $h_{t_0} \to h_{t_1}$.*
 
-This is not a failure of the framework — it is a genuine paradox that the framework makes precise. Identity-altering interventions are the one class of clinical decisions where the consent apparatus breaks down structurally, not merely practically.
+This is not a failure of the framework — it is a genuine paradox that the framework makes precise.[^3] Identity-altering interventions are the one class of clinical decisions where the consent apparatus breaks down structurally, not merely practically.
 
 ### The Clinical Geodesic for Identity Cases
 
@@ -465,6 +467,6 @@ The five structural features revealed by the cases — sacred-value boundaries, 
 
 [^1]: The actual clinical management of Jehovah's Witness patients is well-established and broadly consistent with the geodesic analysis presented here. Guidelines from the American College of Surgeons (2019) and the British Journal of Anaesthesia (2020) recommend respecting the refusal and aggressively pursuing bloodless surgical techniques.
 
-[^2]: The proxy asymmetry problem is distinct from the well-known surrogate accuracy literature (Shalowitz et al., 2006), which demonstrates that surrogates predict patient preferences with approximately 68% accuracy. The geometric framework explains *why* surrogate accuracy has a structural ceiling: the proxy is pathfinding with a different heuristic, and no calibration procedure can guarantee convergence without direct access to the patient's heuristic function.
+[^2]: The proxy asymmetry problem is distinct from the well-known surrogate accuracy literature (Shalowitz et al., 2006), which is cited for the finding that surrogates predict patient preferences with approximately 68% accuracy. The geometric framework explains *why* surrogate accuracy has a structural ceiling: the proxy is pathfinding with a different heuristic, and no calibration procedure can guarantee convergence without direct access to the patient's heuristic function.
 
 [^3]: The identity-alteration consent paradox has been discussed extensively in the neuroethics literature (Glannon, 2016; Focquaert and Schermer, 2015) but without the formal apparatus to make the paradox precise. The geometric framework's contribution is not the observation that identity-altering interventions raise consent problems — that observation is well-established — but the mathematical characterization of *why* the consent apparatus fails in these cases: the gauge-invariance test cannot operate across a heuristic discontinuity.

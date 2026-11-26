@@ -28,9 +28,9 @@ The covariance matrix has 45 unique entries (9 diagonal + 36 off-diagonal, count
 
 1. **Dimensional measurement**: A coding scheme that assigns each clinical decision a nine-dimensional attribute vector. This requires trained coders (clinicians who can evaluate decisions along all nine dimensions) and a validated coding protocol.
 
-2. **Sufficient sample size**: Estimating a $9 \times 9$ covariance matrix with reasonable precision requires at least $n = 200$ observations per condition (Maydeu-Olivares and Coffman, 2006). For ethics consultations, this means coding at least 500 consultations (allowing for incomplete data and stratification).
+2. **Sufficient sample size**: Estimating a $9 \times 9$ covariance matrix with reasonable precision requires, as a rule of thumb, at least $n = 200$ observations per condition (a figure attributed to Maydeu-Olivares and Coffman, 2006). For ethics consultations, this means coding at least 500 consultations (allowing for incomplete data and stratification).
 
-3. **Representative sampling**: The consultations must be representative of the clinical contexts where the framework applies — not just the dramatic cases (which are overrepresented in ethics consultations) but also the routine cases (which are underrepresented).
+3. **Representative sampling**: The consultations must be representative of the clinical contexts where the framework applies — not just the dramatic cases (which are overrepresented in ethics consultations) but also the routine cases (which are underrepresented).[^1]
 
 These requirements are feasible but have not been met — the framework is new, and the measurement infrastructure does not yet exist.
 
@@ -52,7 +52,7 @@ These requirements are feasible but have not been met — the framework is new, 
 3. Identify the largest off-diagonal elements — these are the cross-dimensional dependencies that drive the most clinical-ethical complexity.
 4. Bootstrap confidence intervals for all 45 entries.
 
-*Feasibility:* Ethics consultation records are maintained at most academic medical centers. Retrospective coding requires clinical expertise but not patient contact, IRB consent (the records already exist), or prospective recruitment. The primary cost is coder time — approximately 30 minutes per consultation for nine-dimensional coding, or 250 hours per coder for 500 consultations (500 coder-hours for the two independent coders).
+*Feasibility:* Ethics consultation records are maintained at most academic medical centers. Retrospective coding requires clinical expertise but not patient contact or prospective recruitment. Because the records already exist, the study may not need new consent from the patients; review of identifiable records still needs ethics review by an IRB or a waiver from one (Section 18.10 budgets IRB approval at each site). The primary cost is coder time — approximately 30 minutes per consultation for nine-dimensional coding, or 250 hours per coder for 500 consultations (500 coder-hours for the two independent coders).
 
 **Study 2: Prospective Discrete Choice Experiment**
 
@@ -60,7 +60,7 @@ These requirements are feasible but have not been met — the framework is new, 
 
 *Sample:* $n \geq 200$ clinicians (physicians, nurses, and allied health professionals) from at least three clinical settings (ICU, general medicine, palliative care).
 
-*Vignette design:* Fractional-factorial design with the nine clinical-moral dimensions as factors and two levels per factor (high/low). The full factorial design would require $2^9 = 512$ vignettes per participant — infeasible. A fractional-factorial design with resolution V (estimating all main effects and two-factor interactions) requires approximately 50–80 vignettes per participant, administrable in a 45-minute session.
+*Vignette design:* Fractional-factorial design with the nine clinical-moral dimensions as factors and two levels per factor (high/low). The full factorial design would require $2^9 = 512$ vignettes per participant — infeasible. A fractional design that estimates all main effects and two-factor interactions needs at least 46 vignettes (one mean, nine main effects and 36 two-factor interactions); the chapter's estimate is approximately 50–80 vignettes per participant, administrable in a 45-minute session. A regular two-level fractional factorial of resolution V for nine factors has 128 runs, so a smaller design must be an irregular (for example, computer-generated) one.
 
 *Analysis:* Conditional logit regression to estimate marginal rates of substitution (MRS) between dimensions:
 
@@ -168,7 +168,7 @@ The framework generates six specific predictions, each with an experimental desi
 
 Measure: (a) treatment preference after each framing (same/different), (b) health literacy (REALM or NVS), (c) self-reported understanding of the procedure.
 
-**Predicted result:** Framing-variant patients (those whose preferences change) have lower health literacy scores ($r = -0.4$) and lower self-reported understanding than framing-invariant patients. The gauge-invariance test identifies consent quality better than form completion alone.
+**Predicted result:** Framing-variant patients (those whose preferences change) have lower health literacy scores ($r = -0.4$) and lower self-reported understanding than framing-invariant patients. The gauge-invariance test identifies consent quality better than form completion alone.[^2]
 
 **What would falsify:** No correlation between framing invariance and comprehension. This would indicate that framing effects are independent of understanding — refuting the claim that consent is a gauge-invariance condition.
 
@@ -280,7 +280,7 @@ The framework would be falsified by any of the following:
 
 6. **Clinicians' pre-crisis $\beta_k$ profiles do not predict post-crisis moral injury.** If vulnerability is entirely situational rather than dispositional, the accumulation model's mechanism is wrong.
 
-Each of these falsification criteria is specific, testable, and decisive. The framework stands or falls on the evidence.
+Each of these falsification criteria is specific, testable, and decisive. The framework stands or falls on the evidence.[^3]
 
 ---
 

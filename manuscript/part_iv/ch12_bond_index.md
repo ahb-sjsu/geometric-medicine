@@ -14,7 +14,7 @@ This chapter makes that claim explicit and computable. The clinical Bond Index $
 
 ### The Clinical Bond Index and the Bond Index
 
-The clinical Bond Index was introduced in *Geometric Ethics* (Bond, 2026, Ch. 21, Definition 21.10) as a measure of the cost an institutional policy imposes on a population. This chapter develops it for healthcare.
+The clinical Bond Index was introduced in *Geometric Ethics*, Definition 21.10 (Bond, 2026c, Ch. 21), as a measure of the cost an institutional policy imposes on a population. This chapter develops it for healthcare.[^1]
 
 It shares a name with the Bond Index of *Geometric Ethics* (Ch. 18) and is a different quantity. The Bond Index measures how much an evaluation changes under re-descriptions that should not change it, and 0 is perfect invariance. The clinical Bond Index $\text{BI}(P, S)$ measures how much more the path a policy mandates costs a population than the clinical geodesic, and 0 means the policy costs that population nothing beyond the optimum. The two are not interchangeable, and a value of one says nothing about the other. In this chapter "Bond Index" always means the clinical Bond Index.
 
@@ -48,7 +48,7 @@ The Bond Index for a single population tells us how far the policy deviates from
 
 $$\text{DR}(P, S_1, S_2) = \frac{\text{BI}(P, S_1)}{\text{BI}(P, S_2)}$$
 
-*A disparity ratio of 1.0 indicates equal manifold cost. A disparity ratio of 2.3 indicates that population $S_1$ bears 2.3 times the manifold cost of population $S_2$ under policy $P$.*
+*The ratio is defined when $\text{BI}(P, S_2) > 0$; when the policy is manifold-optimal for $S_2$ (Proposition 12.1, part 2), it is undefined. A disparity ratio of 1.0 indicates equal manifold cost. A disparity ratio of 2.3 indicates that population $S_1$ bears 2.3 times the manifold cost of population $S_2$ under policy $P$.*
 
 The disparity ratio is the clinical Bond Index's primary diagnostic output. It transforms "this policy may be unjust" into "this policy imposes 2.3 times the manifold cost on Black patients compared to white patients" — a specific, testable, actionable claim.
 
@@ -86,7 +86,7 @@ A QALY-based policy weights $d_1$ heavily and $d_4$, $d_7$ negligibly. The polic
 
 $$\text{BI}(P_{\text{QALY}}, S_{\text{disabled}}) > \text{BI}(P_{\text{QALY}}, S_{\text{non-disabled}})$$
 
-The disability discrimination is mathematical, not moral (Corollary 1 in the GCE paper). It follows from the dimensional collapse: any scalar projection that weights $d_1$ most heavily will disadvantage populations whose needs are concentrated on other dimensions.
+The disability discrimination is mathematical, not moral (Corollary 5.2; Corollary 1 in the GCE paper, Bond 2026h). It follows from the dimensional collapse: any scalar projection that weights $d_1$ most heavily will disadvantage populations whose needs are concentrated on other dimensions.
 
 ### Age Discrimination
 
@@ -189,7 +189,7 @@ A hypothetical large academic medical center's COVID-19 crisis standards of care
 
 **Illustrative dimensional decomposition of the Black-White disparity:**
 
-The Bond Index disparity between Black and White populations decomposes by dimension:
+The Bond Index disparity between Black and White populations decomposes by dimension[^2]:
 
 | Dimension | Contribution to BI Disparity | Explanation |
 |---|---|---|
@@ -234,7 +234,7 @@ The claim "policy $P$ is structurally unjust toward population $S$" becomes:
 
 $$\text{BI}(P, S) > \text{BI}(P, S_{\text{ref}}) + \epsilon$$
 
-where $\epsilon$ is a threshold for clinically meaningful disparity. This is an empirical claim with a specific numerical value, testable against data, and falsifiable. If the Bond Index computation shows no disparity, the structural injustice claim is not supported — regardless of the analyst's political commitments. If it shows a disparity, the claim is supported — again regardless of political commitments.
+where $\epsilon$ is a threshold for clinically meaningful disparity.[^3] This is an empirical claim with a specific numerical value, testable against data, and falsifiable. If the Bond Index computation shows no disparity, the structural injustice claim is not supported — regardless of the analyst's political commitments. If it shows a disparity, the claim is supported — again regardless of political commitments.
 
 **Prediction 4 (from the GCE paper, instantiated).** *The clinical Bond Index computed from institutional policy analysis should predict patient-reported experience disparities across demographic groups. Specifically: groups with higher $\text{BI}$ should report worse experience on HCAHPS trust, communication, and respect dimensions.*
 

@@ -30,7 +30,7 @@ Ms. Santos is a Jehovah's Witness. She is alert, oriented, and has decision-maki
 
 ### Clinical Geodesic Analysis
 
-Path A has edge weight $w_A = \infty$ because $\beta_{\text{consent}} = \infty$ for competent non-emergency patients. The clinical geodesic is Path B, which includes: (a) aggressive volume resuscitation with crystalloids and colloids; (b) erythropoietin administration; (c) intraoperative cell salvage if surgery is required; (d) iron infusion; (e) permissive hypotension protocols.
+Path A has edge weight $w_A = \infty$ because $\beta_{\text{consent}} = \infty$ for a competent, informed refusal (the emergency does not lower it: Definition 4.3 lowers the penalty in emergencies because consent is then implied, and an explicit refusal leaves nothing to imply). The clinical geodesic is Path B, which includes: (a) aggressive volume resuscitation with crystalloids and colloids; (b) erythropoietin administration; (c) intraoperative cell salvage if surgery is required; (d) iron infusion; (e) permissive hypotension protocols.
 
 This is not a "concession to autonomy." It is the minimum-cost path on the full nine-dimensional manifold. Path A is not merely ethically worse --- it is computationally unreachable because a sacred-value boundary blocks it.
 

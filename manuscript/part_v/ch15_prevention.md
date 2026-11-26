@@ -74,7 +74,7 @@ After a clinician makes a triage decision that crosses a moral boundary, a brief
 2. **Contextualization**: Placement of the crossing within the institutional framework — "the protocol required this; you did not choose it."
 3. **Heuristic recalibration**: Explicit comparison of the clinician's $\beta_k$ response with the protocol's justification, providing an opportunity for conscious recalibration that may prevent the $\beta_k$ from inflating (hypervigilance) or deflating (numbing) beyond its appropriate range.
 
-**Design guideline**: Debrief after every morally costly decision, not quarterly. Moral injury is cumulative; recalibration must be frequent enough to prevent $\beta_k$ drift between debrief sessions.
+**Design guideline**: Debrief after every morally costly decision, not quarterly. Moral injury is cumulative; recalibration must be frequent enough to prevent $\beta_k$ drift between debrief sessions.[^1]
 
 ### Principle 4: Separate $g(n)$ and $h(n)$ Support Systems
 
@@ -212,7 +212,7 @@ The geometric framework suggests that moral resilience training should focus on 
 
 2. **Measure moral injury, not just burnout.** Use both MBI (burnout) and MISS-HP (moral injury) in clinician wellness assessments. Track separately. Intervene separately.
 
-3. **Prospective Moral Injury Index for new policies.** Before implementing any new clinical policy, compute $\text{MI}(P)$. If the Index exceeds a threshold, require policy redesign before implementation.
+3. **Prospective Moral Injury Index for new policies.** Before implementing any new clinical policy, compute $\text{MI}(P)$. If the Index exceeds a threshold, require policy redesign before implementation.[^2]
 
 ---
 
@@ -278,7 +278,7 @@ For clinicians whose $\text{MI}(T)$ exceeds $\text{MI}_{\text{crit}}$, the goal 
 
 *2. Compensate consciously — using deliberate $d_9$-mediated reasoning to override the damaged heuristic in situations where the damage would produce suboptimal decisions.*
 
-*3. Maintain adequate clinical performance — despite permanently altered heuristics, the clinician produces paths that are $\varepsilon'$-optimal, where $\varepsilon' > \varepsilon$ (the tolerance is wider) but still clinically acceptable.*
+*3. Maintain adequate clinical performance — despite permanently altered heuristics, the clinician produces paths that are $\varepsilon'$-optimal, where $\varepsilon' > \varepsilon$ (the tolerance is wider) but still clinically acceptable.*[^3]
 
 Functional adaptation is not the same as recovery. The clinician's heuristic is permanently altered. But with conscious compensation, the altered heuristic can produce acceptable clinical decisions — not optimal (the damage prevents optimality) but adequate (the conscious compensation narrows the gap between the damaged heuristic and the optimal path).
 
