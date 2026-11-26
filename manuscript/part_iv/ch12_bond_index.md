@@ -12,9 +12,11 @@ This chapter makes that claim explicit and computable. The clinical Bond Index $
 
 ## 12.1 The Clinical Bond Index: Formal Definition
 
-### From the General Bond Index to the Clinical Instantiation
+### The Clinical Bond Index and the Bond Index
 
-The Bond Index was introduced in *Geometric Ethics* (Bond, 2026, Ch. 16) as a general measure of the moral cost imposed by institutional policy on a population. The clinical Bond Index is the domain-specific instantiation for healthcare.
+The clinical Bond Index was introduced in *Geometric Ethics* (Bond, 2026, Ch. 21, Definition 21.10) as a measure of the cost an institutional policy imposes on a population. This chapter develops it for healthcare.
+
+It shares a name with the Bond Index of *Geometric Ethics* (Ch. 18) and is a different quantity. The Bond Index measures how much an evaluation changes under re-descriptions that should not change it, and 0 is perfect invariance. The clinical Bond Index $\text{BI}(P, S)$ measures how much more the path a policy mandates costs a population than the clinical geodesic, and 0 means the policy costs that population nothing beyond the optimum. The two are not interchangeable, and a value of one says nothing about the other. In this chapter "Bond Index" always means the clinical Bond Index.
 
 **Definition 12.1 (Clinical Bond Index).** *The clinical Bond Index $\text{BI}(P, S)$ of an institutional policy $P$ with respect to a patient population $S$ is the expected deviation between the clinical geodesic on the full manifold and the path mandated by the policy:*
 
