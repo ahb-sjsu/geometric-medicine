@@ -136,7 +136,7 @@ This prediction is testable: survey clinicians' $\beta_k$ estimates before and a
 
 ### Rushton's Moral Resilience, Formalized
 
-Cynda Rushton (2018) defined moral resilience as "the capacity of an individual to sustain or restore their integrity in response to moral complexity, confusion, distress, or setbacks." In the geometric framework, moral resilience is the maintenance of $\varepsilon$-admissible $h(n)$ despite boundary crossings below threshold.
+Cynda Rushton (2018) defined moral resilience as "the capacity of an individual to sustain or restore their integrity in response to moral complexity, confusion, distress, or setbacks." In the geometric framework, moral resilience is the maintenance of $\varepsilon$-admissible $h(n)$ despite boundary crossings below threshold. Definition 13.6 stated the first of the three conditions below; Definition 15.2 adds the other two.
 
 **Definition 15.2 (Geometric Moral Resilience).** *A clinician exhibits moral resilience when:*
 
@@ -214,7 +214,7 @@ The geometric framework suggests that moral resilience training should focus on 
 
 Beyond specific policies and interventions, the institution's culture — its unwritten norms, its informal hierarchies, its collective attitudes toward moral cost — functions as an ambient $\beta_k$ calibration environment. A culture that acknowledges moral cost ("triage is hard, and your distress is appropriate") maintains higher $\beta_k$ sensitivity than a culture that denies it ("this is what we signed up for — toughen up").
 
-**Definition 15.4 (Morally Sustaining Culture).** *An institutional culture is morally sustaining when it:*
+**Definition 15.3 (Morally Sustaining Culture).** *An institutional culture is morally sustaining when it:*
 
 *1. Acknowledges moral cost: Boundary crossings are recognized as inherently costly, not as routine events to be processed without comment.*
 
@@ -264,7 +264,7 @@ This is not a failure of the framework. It is a prediction of the framework — 
 
 For clinicians whose $\text{MI}(T)$ exceeds $\text{MI}_{\text{crit}}$, the goal shifts from restoration to functional adaptation: developing compensatory strategies that produce near-optimal clinical paths despite permanently altered heuristics.
 
-**Definition 15.3 (Functional Adaptation).** *A clinician with $\text{MI}(T) > \text{MI}_{\text{crit}}$ achieves functional adaptation when they:*
+**Definition 15.4 (Functional Adaptation).** *A clinician with $\text{MI}(T) > \text{MI}_{\text{crit}}$ achieves functional adaptation when they:*
 
 *1. Recognize their altered $\beta_k$ profile — aware of which boundaries are inflated (hypervigilance) and which are deflated (numbing).*
 

@@ -34,7 +34,7 @@ The experimental designs in Chapter 17 require dedicated data collection — eth
 
 The challenge is that three of nine dimensions ($d_5$: trust, $d_7$: dignity, $d_9$: epistemic status) are not routinely captured in EHRs. Natural language processing of clinical notes may provide partial proxies — mentions of "patient expresses concern about treatment," "family meeting conducted," "patient does not understand diagnosis" — but these are noisy and incomplete.
 
-A promising approach: use the six dimensions that are measured in EHRs to estimate a $6 \times 6$ submatrix of $\Sigma$, then use proxy instruments on a subsample to estimate the remaining 27 entries and validate the NLP-based proxies against the instrument-based measurements.
+A promising approach: use the six dimensions that are measured in EHRs to estimate a $6 \times 6$ submatrix of $\Sigma$, then use proxy instruments on a subsample to estimate the remaining 24 entries and validate the NLP-based proxies against the instrument-based measurements.
 
 **Question 3: How stable is $\Sigma$ over time?**
 
@@ -44,11 +44,13 @@ Clinical practice evolves. Patient expectations change. Institutional norms shif
 
 ## 18.2 What Is the Conservation Law for Clinical Reasoning?
 
+> **Note (2026-11-26).** *Geometric Ethics* withdrew Conservation of Harm as a thesis on 2026-06-19 (its ledger entry GE-HARM-CONSERVATION; the claim is absent from its text since version 1.24) and kept the weaker claim, the invariance of harm accounting under re-description. The sentence of this section that cited conservation of harm now cites the weaker claim. Candidate 3 below was offered as the clinical analogue of harm conservation; it loses that precedent and stands only as an open candidate. Candidates 1, 2 and 4, and the research program of Section 18.3, do not depend on the withdrawn claim and stand as open questions.
+
 ### The Noether Connection
 
 If the clinical Lagrangian is invariant under the medical BIP — clinical evaluations do not change when the patient is re-described in equivalent terms — then Noether's theorem implies a conserved quantity. What is it?
 
-In *Geometric Ethics*, the BIP-invariance of the moral Lagrangian implies conservation of harm: harm cannot be created or destroyed by re-description, only by real transformation. The clinical analogue should be a conservation law for some clinical quantity — but which one?
+In *Geometric Ethics*, the BIP-invariance of the moral Lagrangian is taken to imply the invariance of harm accounting: the accounting of harm cannot be changed by re-description, only by real transformation. (Earlier versions of that book stated this as a conservation law, Conservation of Harm, which it has withdrawn.) The clinical analogue would be a conservation law for some clinical quantity — but which one, if any?
 
 ### Candidate Conservation Laws
 
@@ -56,7 +58,7 @@ In *Geometric Ethics*, the BIP-invariance of the moral Lagrangian implies conser
 
 **Candidate 2: Conservation of manifold cost.** The total clinical friction along any path is invariant under patient re-description. This is a stronger claim: not just that the patient's state is invariant but that the cost of the path through the manifold is invariant. If true, it implies that the cost of treating a patient does not depend on how the patient is described — a testable claim that connects to the algorithmic bias literature (where costs demonstrably vary with description).
 
-**Candidate 3: Conservation of boundary penalty.** The total boundary penalty incurred along a clinical path is invariant under re-description. This is the clinical analogue of harm conservation: the total moral cost of boundary crossings cannot be changed by re-describing the patient.
+**Candidate 3: Conservation of boundary penalty.** The total boundary penalty incurred along a clinical path is invariant under re-description. This is the clinical analogue of the invariance of harm accounting in *Geometric Ethics* (stated there as harm conservation before that claim was withdrawn): the total moral cost of boundary crossings cannot be changed by re-describing the patient.
 
 **Candidate 4: No conservation law exists.** The clinical Lagrangian may not be exactly BIP-invariant — there may be genuine BIP violations (cases where re-description legitimately changes the evaluation) that break the symmetry and prevent a conservation law from holding. Cultural variation in $\Sigma$ (Question 1 above) would imply that the Lagrangian is not universally invariant, and Noether's theorem would not apply globally.
 
@@ -92,7 +94,7 @@ This program has not been completed. The clinical Lagrangian has been informally
 
 ### The Riemannian Assumption
 
-The framework assumes that the clinical decision complex has the structure of a smooth Riemannian manifold with a positive-definite metric. This assumption enables the use of geodesics, curvature, and parallel transport. But clinical decision-making may have geometric structures that Riemannian geometry cannot capture.
+The clinical decision complex is formally a weighted simplicial complex (Section 4.1), but the framework's geometric vocabulary treats it as if it had the structure of a smooth Riemannian manifold with a positive-definite metric. This assumption enables the use of geodesics, curvature, and parallel transport. But clinical decision-making may have geometric structures that Riemannian geometry cannot capture.
 
 ### Three Non-Riemannian Possibilities
 
@@ -124,7 +126,7 @@ Determining whether the clinical manifold is Riemannian, Finsler, or topological
 
 ### The General Theorem and Its Clinical Specificity
 
-The No Escape Theorem (Chapter 16) states that an AI system constrained by the clinical decision complex cannot produce recommendations that cross sacred-value boundaries. The general theorem is proved. The clinical-specific questions are:
+The No Escape Theorem (Chapter 16) states that an AI system constrained by the clinical decision complex cannot produce recommendations that cross sacred-value boundaries. The general theorem is a conditional theorem of *Geometric Ethics* (Theorem 18.1 there, conditional on its four requirements). The clinical-specific questions are:
 
 **Question 4: What are the precise sacred-value boundaries for medical AI?**
 
@@ -147,7 +149,7 @@ This is the strongest possible safety guarantee: not just that the AI is unlikel
 
 ---
 
-## 18.5 Can the Moral Injury Index Be Validated Prospectively?
+## 18.6 Can the Moral Injury Index Be Validated Prospectively?
 
 ### The Decisive Test
 
@@ -168,7 +170,7 @@ No such test has been conducted. It requires institutional buy-in (a hospital wi
 
 ---
 
-## 18.6 What Is the Right Dimensionality?
+## 18.7 What Is the Right Dimensionality?
 
 ### Nine Dimensions: Sufficient or Not?
 
@@ -188,7 +190,7 @@ Conversely, some of the nine dimensions may be redundant — highly correlated o
 
 ---
 
-## 18.7 Cross-Cultural Variation in the Metric
+## 18.8 Cross-Cultural Variation in the Metric
 
 ### The Empirical Mapping Challenge
 
@@ -212,7 +214,7 @@ The cultural variation must be mapped empirically. This requires estimating $\Si
 
 ---
 
-## 18.8 The Frontier, Honestly Stated
+## 18.9 The Frontier, Honestly Stated
 
 The geometric framework for clinical medicine is, at this writing, a theoretical structure with strong connections to existing clinical data but limited direct empirical validation. The central claims are:
 
@@ -221,13 +223,13 @@ The geometric framework for clinical medicine is, at this writing, a theoretical
 3. The QALY destroys irrecoverable information. *Status: Proved mathematically, consistent with the QALY critique literature.*
 4. Moral injury is cumulative forced boundary crossing. *Status: Consistent with the existing moral injury literature, generates novel predictions.*
 5. The Bond Index detects structural injustice. *Status: Formally defined, operationally feasible, not yet computed from clinical data.*
-6. Consent is a gauge-invariance condition. *Status: Formally developed, pilot data supportive, full study not yet conducted.*
+6. Consent is a gauge-invariance condition. *Status: Formally developed, untested; illustrated by a hypothetical pilot (Section 17.6), full study not yet conducted.*
 
 The framework's claims are specific enough to be tested and falsified. The experimental designs exist. The instruments are available. What is needed is the empirical work — the studies, the data, the validation.
 
 ---
 
-## 18.9 Sarah's Grant Proposal
+## 18.10 Sarah's Grant Proposal
 
 Sarah, now an attending physician and ethics committee member, writes a grant proposal to the National Institutes of Health.
 
@@ -239,7 +241,7 @@ The aims:
 3. Compute the Bond Index for each institution's triage, consent, and discharge policies.
 4. Test Predictions 1–6 from the falsifiable prediction suite.
 
-The budget: $1.2 million over three years. Two full-time research coordinators, one statistician, 100 clinician-hours of vignette coding, IRB approval at three sites.
+The budget: \$1.2 million over three years. Two full-time research coordinators, one statistician, 100 clinician-hours of vignette coding, IRB approval at three sites.
 
 Sarah does not know whether the grant will be funded. She does not know whether the predictions will be confirmed. She knows that the manifold exists — she has been pathfinding on it for ten years. She knows that her clinical judgment, her moral injury, her consent conversations, and her triage decisions all have geometric structure. The question is whether the structure can be measured.
 

@@ -124,7 +124,7 @@ This prediction is testable: compare MI scores in units before and after impleme
 
 ### Statement and Clinical Implications
 
-The No Escape Theorem, proved in *Geometric Ethics* (Bond, 2026, Ch. 19), states that an AI system operating within the geometric ethical framework cannot escape the manifold's structure — specifically, it cannot produce outputs that cross sacred-value boundaries ($\beta_{\text{sacred}} = \infty$), regardless of how the system is optimized.
+The No Escape Theorem, a conditional theorem of *Geometric Ethics* (Bond, 2026, Ch. 18, Theorem 18.1, conditional on its four requirements), is read here as stating that an AI system operating within the geometric ethical framework cannot escape the manifold's structure — specifically, it cannot produce outputs that cross sacred-value boundaries ($\beta_{\text{sacred}} = \infty$), regardless of how the system is optimized.
 
 **Theorem 16.1 (No Escape Theorem, Clinical Instantiation).** *A medical AI system constrained by the clinical decision complex $\mathcal{C}$ with sacred-value boundaries ($\beta_{\text{sacred}} = \infty$) cannot produce recommendations that cross those boundaries, regardless of the optimization objective. Specifically:*
 
@@ -176,7 +176,7 @@ The most dangerous failure mode in clinical AI is not algorithmic error on $d_1$
 
 When a clinician repeatedly follows an AI recommendation without applying their own heuristic assessment, the clinician's $h(n)$ atrophies — the boundary penalties become less calibrated, the moral sensitivity decreases, and the clinician becomes a conduit for the algorithm rather than a pathfinder on the manifold. This is a form of moral numbing induced by automation: the clinician stops evaluating the moral cost of clinical actions because the machine has already "decided."
 
-**Proposition 16.6 ($h(n)$ Atrophy Under Automation).** *Prolonged reliance on AI-generated clinical recommendations without independent $h(n)$ evaluation by the clinician produces heuristic atrophy: the clinician's boundary penalties $\beta_k$ deflate toward the AI system's implicit $\beta_k$ values (which are typically zero on non-outcome dimensions). This is functionally equivalent to moral numbing — the clinician loses the ability to independently evaluate boundary-crossing costs.*
+**Proposition 16.5 ($h(n)$ Atrophy Under Automation).** *Prolonged reliance on AI-generated clinical recommendations without independent $h(n)$ evaluation by the clinician produces heuristic atrophy: the clinician's boundary penalties $\beta_k$ deflate toward the AI system's implicit $\beta_k$ values (which are typically zero on non-outcome dimensions). This is functionally equivalent to moral numbing — the clinician loses the ability to independently evaluate boundary-crossing costs.*
 
 The proposition has a design implication: clinical AI systems should be designed to *require* the clinician's independent heuristic assessment, not to bypass it. The system should present information and options; the clinician should apply boundary penalties and make the decision. The system should never present a final recommendation that the clinician simply accepts or rejects — this framing encourages $h(n)$ delegation.
 
@@ -210,7 +210,7 @@ The geometric framework suggests a nine-dimensional audit protocol for evaluatin
 
 The nine-dimensional audit produces a profile, not a scalar. An AI system might score well on $d_1$ (clinically accurate) and $d_8$ (transparent) but poorly on $d_3$ (biased against certain populations) and $d_5$ (recommendations that, if followed mechanically, damage trust). The profile reveals the system's strengths and vulnerabilities on the manifold.
 
-**Proposition 16.5 (Scalar AI Evaluation Is Insufficient).** *Evaluating a medical AI system solely on $d_1$ (clinical accuracy) is insufficient, for the same mathematical reason that evaluating a patient solely by QALY is insufficient: the Scalar Irrecoverability Theorem applies to AI evaluation as well as to patient evaluation. Two AI systems with identical $d_1$ scores can have radically different manifold profiles — one may be fair and transparent, the other biased and opaque — and the scalar evaluation cannot distinguish them.*
+**Proposition 16.6 (Scalar AI Evaluation Is Insufficient).** *Evaluating a medical AI system solely on $d_1$ (clinical accuracy) is insufficient, for the same mathematical reason that evaluating a patient solely by QALY is insufficient: the Scalar Irrecoverability Theorem applies to AI evaluation as well as to patient evaluation. Two AI systems with identical $d_1$ scores can have radically different manifold profiles — one may be fair and transparent, the other biased and opaque — and the scalar evaluation cannot distinguish them.*
 
 ---
 
@@ -250,13 +250,13 @@ The No Escape Theorem suggests a long-term vision: medical AI systems with *prov
 
 ## 16.8 Sarah's AI Evaluation
 
-Sarah is appointed to a hospital committee evaluating a new AI triage system. The system uses machine learning to predict ICU mortality and recommends allocation of scarce resources based on predicted survival probability.
+In this illustrative scenario, Sarah is appointed to a hospital committee evaluating a new AI triage system. The system and its numbers are hypothetical. The system uses machine learning to predict ICU mortality and recommends allocation of scarce resources based on predicted survival probability.
 
 Sarah applies the nine-dimensional audit.
 
 **$d_1$ (Clinical accuracy):** The system has high AUC (0.89) on a validation cohort. It accurately predicts which patients will survive ICU admission.
 
-**$d_3$ (Justice):** Sarah computes the Bond Index for the AI system, stratified by demographics:
+**$d_3$ (Justice):** Sarah computes the Bond Index for the AI system, stratified by demographics (illustrative values):
 
 | Population | $\text{BI}(\text{AI}, S)$ | Disparity Ratio |
 |---|---|---|

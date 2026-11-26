@@ -349,7 +349,7 @@ def detect_structural_injustice(
 # the policy is structurally unjust toward Black patients.
 ```
 
-The Bond Index converts "structural injustice" from a philosophical claim to an empirical measurement. It is computable from clinical data using existing instruments (Chapter 17, Section 17.3).
+The Bond Index converts "structural injustice" from a philosophical claim to an empirical measurement. It is computable from clinical data using existing instruments (Chapter 17, Section 17.2).
 
 ---
 

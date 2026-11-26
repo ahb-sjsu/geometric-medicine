@@ -357,7 +357,7 @@ The empirical chapter. The framework's central empirical challenge: estimating t
 
 *Measuring the Bond Index from EHR data*: Six of nine dimensions are routinely captured in electronic health records and clinical quality registries. The chapter provides concrete operationalizations for d_5 (trust), d_7 (dignity), and d_9 (epistemic status) using validated instruments and existing survey data.
 
-*Sarah's thread*: Sarah designs her first study: a prospective consent gauge-invariance experiment. She presents patients with framing-variant consent information and measures decision stability. Her preliminary results show a correlation between framing sensitivity and health literacy (r = -0.4, p < 0.01) — the geometric prediction confirmed.
+*Sarah's thread*: Sarah designs her first study: a prospective consent gauge-invariance experiment. She presents patients with framing-variant consent information and measures decision stability. Her hypothetical pilot results (illustrative; no such study has been run) show a correlation between framing sensitivity and health literacy (r = -0.4, p < 0.01) — what the geometric prediction says a real study should find.
 
 **18. Open Questions**
 
@@ -408,9 +408,9 @@ The frontier, honestly stated. What the geometric framework for clinical medicin
 | Manifold deviation measure | GR Ch. 4 | Ch. 12 (Bond Index as deviation) |
 | 9-dimensional moral manifold | GE Ch. 5 | Ch. 4 (9D clinical decision complex) |
 | Moral contraction | GE Ch. 15 | Ch. 2 (triage as forced contraction) |
-| D4 Hohfeldian symmetry | GE Ch. 8 | Ch. 4 (rights structure on d_2) |
-| No Escape Theorem | GE Ch. 19 | Ch. 16 (medical AI constraints) |
-| Bond Index (general) | GE Ch. 16 | Ch. 12 (clinical Bond Index) |
+| V4 Hohfeldian symmetry (D4 withdrawn in GE v1.25) | GE Ch. 8 | Ch. 4 (rights structure on d_2) |
+| No Escape Theorem | GE Ch. 18 | Ch. 16 (medical AI constraints) |
+| Bond Index (general) | GE Ch. 18 | Ch. 12 (clinical Bond Index, a different quantity) |
 | Moral injury (general) | GE Ch. 21 | Ch. 13–15 (full mathematical theory) |
 | Informed consent | GE Ch. 21 | Ch. 8 (expanded: gauge invariance test) |
 | Triage formalism | GE Ch. 21 | Ch. 10 (expanded: multi-agent pathfinding) |

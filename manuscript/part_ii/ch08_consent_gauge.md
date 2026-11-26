@@ -76,7 +76,7 @@ The legal checklist addresses $d_1$ and $d_4$ partially, $d_2$ partially, and $d
 
 The central theorem of this chapter connects informed consent to the Bond Invariance Principle --- the symmetry requirement that is the foundational axiom of the Geometric Ethics programme.
 
-**Theorem 8.1 (Consent as Gauge Invariance).** *Valid informed consent is equivalent to a gauge-invariance condition: the patient's clinical decision must be invariant under changes in the description of the options, dependent only on the attribute vectors of the options. Formally, if $\tau$ is a meaning-preserving transformation of the clinical information (e.g., reframing "90% survival rate" as "10% mortality rate"), then consent is valid only if:*
+**Theorem 8.1 (Consent as Gauge Invariance).** *Valid informed consent requires a gauge-invariance condition: the patient's clinical decision must be invariant under changes in the description of the options, dependent only on the attribute vectors of the options. Formally, if $\tau$ is a meaning-preserving transformation of the clinical information (e.g., reframing "90% survival rate" as "10% mortality rate"), then consent is valid only if:*
 
 $$\gamma^*_{\text{patient}}(\tau(x)) = \gamma^*_{\text{patient}}(x) \quad \text{for all meaning-preserving } \tau$$
 

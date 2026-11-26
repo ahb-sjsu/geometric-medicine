@@ -176,7 +176,7 @@ And yet the moral injury occurs. The clinician's $\beta_{\text{consent}}^{(\text
 
 ### The Unique Structure of Emergency Moral Injury
 
-Although the chapter focuses on three primary settings (pandemic ICU, palliative care, psychiatry), a brief analysis of emergency medicine reveals a fourth moral injury pattern that further validates the multi-dimensional taxonomy.
+Although the chapter focuses on three primary settings (pandemic ICU, palliative care, psychiatry), a brief analysis of emergency medicine reveals a fourth moral injury pattern that further illustrates the multi-dimensional taxonomy.
 
 **Dominant boundary crossings in emergency medicine:**
 - $\beta_{\text{abandon}}$: Discharging patients who need admission when the hospital is full
@@ -261,7 +261,7 @@ The empirical literature on COVID-19 moral injury is substantial and broadly con
 
 ### Pandemic ICU (Month 1)
 
-Sarah's pandemic experience was detailed in Chapter 10. Her moral injury vector after the pandemic:
+Sarah's pandemic experience was detailed in Chapter 10. Her moral injury vector after the pandemic (the values here and below are illustrative):
 
 $$\vec{\text{MI}}_{\text{pandemic}} = (\text{MI}_{\text{harm}} = 0, \text{MI}_{\text{futile}} = 12, \text{MI}_{\text{consent}} = 0, \text{MI}_{\text{abandon}} = 47, \text{MI}_{\text{sacred}} = 0)$$
 
@@ -299,7 +299,7 @@ $\beta_{\text{consent}}^{(\text{institutional})}$: "This patient is psychotic, d
 
 $\beta_{\text{consent}}^{(\text{personal})}$: "I am holding down a screaming human being while another person injects him with a drug he does not want. This is violence."
 
-Both assessments are correct. The clinical justification is sound (Chapter 9 proved this). The personal assessment is also accurate — the act is a form of coercion, regardless of its clinical justification. The moral injury occurs in the gap between the two assessments.
+Both assessments are correct. The clinical justification is sound (Chapter 9 argued this). The personal assessment is also accurate — the act is a form of coercion, regardless of its clinical justification. The moral injury occurs in the gap between the two assessments.
 
 Her psychiatry moral injury vector:
 

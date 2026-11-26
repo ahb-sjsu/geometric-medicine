@@ -69,7 +69,7 @@ flowchart TB
 | Book | Status |
 |------|--------|
 | [Geometric Methods: Computational Modeling](https://github.com/ahb-sjsu/geometric-methods) | Published |
-| [Geometric Ethics: The Mathematical Structure of Moral Reasoning](https://github.com/ahb-sjsu/geometric-ethics) | Published (v1.23) |
+| [Geometric Ethics: The Mathematical Structure of Moral Reasoning](https://github.com/ahb-sjsu/geometric-ethics) | Published (v1.28) |
 | [Geometric Reasoning: From Search to Manifolds](https://github.com/ahb-sjsu/geometric-reasoning) | Draft complete |
 | [Geometric Economics: Decision Manifolds, the Bond Geodesic Equilibrium, and the Irrecoverable Geometry of Markets](https://github.com/ahb-sjsu/geometric-economics) | Draft |
 | [Geometric Law: Symmetry, Invariance, and the Structure of Legal Reasoning](https://github.com/ahb-sjsu/geometric-law) | Draft |

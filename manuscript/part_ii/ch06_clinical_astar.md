@@ -201,7 +201,7 @@ Sarah watched Dr. Park navigate a difficult discharge decision. The patient --- 
 
 Dr. Park kept the patient an extra day. He spent thirty minutes with her explaining the medication changes (improving $d_9$). He introduced the home health aide in person, in the hospital, where the patient felt safe (improving $d_5$). He called the daughter and included her in the discharge planning (improving $d_6$).
 
-The extra day cost the hospital $1,800 in bed charges. The thirty-minute conversation cost $200 in physician time. The Bond Index for the alternative path --- premature discharge, readmission, further trust erosion --- was estimated by Dr. Park's $h(n)$ at something much higher than $2,000.
+The extra day cost the hospital \$1,800 in bed charges. The thirty-minute conversation cost \$200 in physician time. The Bond Index for the alternative path --- premature discharge, readmission, further trust erosion --- was estimated by Dr. Park's $h(n)$ at something much higher than \$2,000.
 
 Dr. Park did not compute the Bond Index. He computed $f(n) = g(n) + h(n)$ and found that the geodesic included an extra day and two conversations. The evidence ($g(n)$) said discharge. The heuristic ($h(n)$) said wait. The heuristic was right, on the full manifold.
 

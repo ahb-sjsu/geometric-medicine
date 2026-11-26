@@ -166,19 +166,19 @@ $$\text{BI}(P, S) = \frac{1}{|S|} \sum_{s \in S} \left[\text{CF}(\gamma_P^*(s)) 
 
 ---
 
-## 12.4 Case Study: Bond Index of a Hospital Triage Policy
+## 12.4 Illustrative Case Study: Bond Index of a Hospital Triage Policy
 
 ### The Policy
 
-A large academic medical center's COVID-19 crisis standards of care, implemented during the pandemic surge. The policy uses a modified SOFA score (Sequential Organ Failure Assessment) supplemented by comorbidity adjustment and life-expectancy estimation. Patients are ranked by expected clinical benefit ($d_1$) and allocated ICU beds in rank order.
+A hypothetical large academic medical center's COVID-19 crisis standards of care, implemented during the pandemic surge. The case is illustrative: the clinical Bond Index has not yet been computed from clinical data, and the numbers below are invented to show what the computation would report. The policy uses a modified SOFA score (Sequential Organ Failure Assessment) supplemented by comorbidity adjustment and life-expectancy estimation. Patients are ranked by expected clinical benefit ($d_1$) and allocated ICU beds in rank order.
 
 ### The Bond Index Computation
 
-**Population**: 847 patients evaluated for ICU admission during the surge period.
+**Population** (hypothetical): 847 patients evaluated for ICU admission during the surge period.
 
 **Demographic stratification**: White ($n = 412$), Black ($n = 198$), Hispanic ($n = 156$), Other ($n = 81$).
 
-**Results:**
+**Illustrative results:**
 
 | Population | $\text{BI}(P, S)$ | Disparity Ratio (vs. White) |
 |---|---|---|
@@ -187,7 +187,7 @@ A large academic medical center's COVID-19 crisis standards of care, implemented
 | Hispanic | 5.1 | 1.59 |
 | Other | 4.0 | 1.25 |
 
-**Dimensional decomposition of the Black-White disparity:**
+**Illustrative dimensional decomposition of the Black-White disparity:**
 
 The Bond Index disparity between Black and White populations decomposes by dimension:
 
@@ -204,7 +204,7 @@ The largest single contributor to the disparity is $d_5$ (trust): 1.9 of the 4.2
 
 ### What the Bond Index Reveals
 
-The triage policy is not explicitly racist. It does not use race as a triage criterion. It uses clinical prognosis ($d_1$) supplemented by comorbidity adjustment. But the Bond Index reveals that the policy is *structurally* unjust: it imposes 2.31 times the manifold cost on Black patients.
+The triage policy of this illustration is not explicitly racist. It does not use race as a triage criterion. It uses clinical prognosis ($d_1$) supplemented by comorbidity adjustment. But the Bond Index reveals that the policy is *structurally* unjust: it imposes 2.31 times the manifold cost on Black patients.
 
 The injustice is structural because it arises from dimensional omission — the policy operates on $d_1$ and ignores $d_5$, $d_7$, and $d_9$. The omission is not intentional; it is the inevitable consequence of scalar optimization on a multi-dimensional manifold.
 
@@ -224,7 +224,7 @@ The Bond Index addresses this objection directly. It is computed from measurable
 
 1. **Edge weights**: Derived from clinical decision data (treatment choices, outcomes, costs) using the Mahalanobis metric with empirically estimated covariance matrix $\Sigma$.
 2. **Boundary penalties**: Estimated from clinician surveys (what boundary-crossing costs do clinicians assign?) and patient outcome data (what are the measurable consequences of boundary crossings?).
-3. **Population-level attribute vectors**: Measured using validated instruments ($d_5$: trust scales, $d_7$: dignity inventories, $d_9$: health literacy assessments) and EHR data ($d_1$, $d_2$, $d_6$, $d_8$).
+3. **Population-level attribute vectors**: Measured using validated instruments ($d_5$: trust scales, $d_7$: dignity inventories, $d_9$: health literacy assessments) and EHR data ($d_1$, $d_2$, $d_3$, $d_4$, $d_6$, $d_8$).
 
 The claim "policy $P$ is structurally unjust toward population $S$" becomes:
 
@@ -333,7 +333,7 @@ The framework suggests the general strategy: identify the dimensions contributin
 
 ## 12.9 Sarah's Bond Index
 
-Sarah presents the Bond Index results to her hospital's ethics committee. The slide reads:
+Sarah presents the illustrative Bond Index results of Section 12.4 to her hospital's ethics committee. The slide reads:
 
 > **Clinical Bond Index: COVID-19 Triage Protocol**
 > - White patients: BI = 3.2 (reference)

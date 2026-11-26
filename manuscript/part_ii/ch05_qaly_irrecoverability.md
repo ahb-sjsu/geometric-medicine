@@ -31,13 +31,13 @@ The question the theorem answers is precise: what happens to the clinical inform
 
 ## 5.2 The Theorem
 
-**Theorem 5.1 (QALY Irrecoverability).** *Let $Q: \mathbb{R}^9 \to \mathbb{R}$ be any function that maps a 9-dimensional clinical-moral attribute vector to a scalar QALY value. Then:*
+**Theorem 5.1 (QALY Irrecoverability).** *Let $Q: \mathbb{R}^9 \to \mathbb{R}$ be any continuous function that maps a 9-dimensional clinical-moral attribute vector to a scalar QALY value. Then:*
 
 1. *$Q$ is not injective: there exist clinically and morally distinct states $\mathbf{a}_1 \neq \mathbf{a}_2$ such that $Q(\mathbf{a}_1) = Q(\mathbf{a}_2)$.*
 
 2. *The information destroyed by $Q$ is irrecoverable: there exists no function $\psi: \mathbb{R} \to \mathbb{R}^9$ such that $\psi \circ Q = \text{id}_{\mathbb{R}^9}$.*
 
-3. *The QALY-maximizing path on $\mathcal{C}$ is in general different from the clinical geodesic (Definition 4.3), and the divergence is not bounded by any function of $Q$ alone.*
+3. *The QALY-maximizing path on $\mathcal{C}$ is in general different from the clinical geodesic (Definition 6.2), and the divergence is not bounded by any function of $Q$ alone.*
 
 **Proof.**
 
@@ -51,7 +51,7 @@ If $Q$ is not differentiable, the result follows from a topological argument: a 
 
 *(2) Irrecoverability.* Suppose for contradiction that $\psi: \mathbb{R} \to \mathbb{R}^9$ satisfies $\psi \circ Q = \text{id}_{\mathbb{R}^9}$. Then $\psi$ is a left inverse of $Q$, which means $Q$ must be injective. But (1) shows $Q$ is not injective. Contradiction. $\square$
 
-Alternatively, by the data processing inequality from information theory: for any Markov chain $\mathbf{a} \to Q(\mathbf{a}) \to \psi(Q(\mathbf{a}))$, we have $I(\mathbf{a}; \psi(Q(\mathbf{a}))) \leq I(\mathbf{a}; Q(\mathbf{a}))$, where $I$ denotes mutual information. Since $Q$ maps $\mathbb{R}^9$ to $\mathbb{R}$ and the attribute vectors have full-rank covariance (all nine dimensions are informationally independent), the mutual information $I(\mathbf{a}; Q(\mathbf{a}))$ is strictly less than the entropy of $\mathbf{a}$. The information lost by $Q$ cannot be recovered by any subsequent processing.
+Alternatively, by the data processing inequality from information theory: for any Markov chain $\mathbf{a} \to Q(\mathbf{a}) \to \psi(Q(\mathbf{a}))$, we have $I(\mathbf{a}; \psi(Q(\mathbf{a}))) \leq I(\mathbf{a}; Q(\mathbf{a}))$, where $I$ denotes mutual information. Since $Q$ maps $\mathbb{R}^9$ to $\mathbb{R}$ and the attribute vectors have full-rank covariance (no dimension is a linear function of the others), the mutual information $I(\mathbf{a}; Q(\mathbf{a}))$ is strictly less than the entropy of $\mathbf{a}$. The information lost by $Q$ cannot be recovered by any subsequent processing.
 
 *(3) Unbounded divergence.* We construct a family of examples parameterized by $\lambda > 0$ in which the divergence between the QALY-maximizing path and the clinical geodesic is at least $\lambda$.
 
@@ -172,7 +172,7 @@ He did not adopt the geometric framework. But he stopped using the phrase "the Q
 
 The rank-nullity proof is algebraic. An information-theoretic proof provides additional insight.
 
-**Proposition 5.2 (Information Loss of QALY Projection).** *Let $\mathbf{a}$ be a random variable on $\mathbb{R}^9$ with full-rank covariance matrix $\Sigma$ (all nine dimensions are informationally independent). Then for any QALY function $Q: \mathbb{R}^9 \to \mathbb{R}$:*
+**Proposition 5.2 (Information Loss of QALY Projection).** *Let $\mathbf{a}$ be a random variable on $\mathbb{R}^9$ with full-rank covariance matrix $\Sigma$ (no dimension is a linear function of the others). Then for any QALY function $Q: \mathbb{R}^9 \to \mathbb{R}$:*
 
 $$I(\mathbf{a}; Q(\mathbf{a})) \leq H(Q(\mathbf{a})) \leq H(a_1)$$
 
@@ -232,7 +232,7 @@ This is what the theorem means in practice. It is not an abstract mathematical f
 
 ## 5.12 Comparison to Other Irrecoverability Results
 
-The QALY Irrecoverability Theorem is the clinical instantiation of the general Scalar Irrecoverability Theorem proved in *Geometric Reasoning* (Ch. 13) and applied in *Geometric Ethics* (Ch. 16), *Geometric Economics* (Ch. 6), *Geometric Communication* (Ch. 1), and *Geometric Cognition* (Ch. 1). In each domain, the theorem has the same algebraic structure (rank-nullity) but different substantive content (different dimensions in the kernel).
+The QALY Irrecoverability Theorem is the clinical instantiation of the general Scalar Irrecoverability Theorem proved in *Geometric Reasoning* (Ch. 13) and applied in *Geometric Ethics* (Ch. 15), *Geometric Economics* (Ch. 6), *Geometric Communication* (Ch. 1), and *Geometric Cognition* (Ch. 1). In each domain, the theorem has the same algebraic structure (rank-nullity) but different substantive content (different dimensions in the kernel).
 
 | Domain | Scalar | Dimensions | Kernel Contains |
 |--------|--------|:---:|---|

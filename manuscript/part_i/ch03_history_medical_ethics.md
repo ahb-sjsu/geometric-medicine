@@ -130,7 +130,7 @@ The clinical decision complex provides the missing metric. Two cases are similar
 
 $$d(\mathbf{a}_1, \mathbf{a}_2) = \sqrt{(\mathbf{a}_1 - \mathbf{a}_2)^T \Sigma^{-1} (\mathbf{a}_1 - \mathbf{a}_2)}$$
 
-where $\Sigma$ is the $9 \times 9$ clinical-moral covariance matrix. This metric is not arbitrary; it is estimated from clinical decision data (Chapter 17) and encodes the cross-dimensional relationships that make some comparisons apt and others misleading. The Mahalanobis distance between the current case and the Jehovah's Witness paradigm may be very different from the Mahalanobis distance between the current case and the psychiatric paradigm, and the closer paradigm provides the better analogy.
+where $\Sigma$ is the $9 \times 9$ clinical-moral covariance matrix. This metric is not arbitrary; it is to be estimated from clinical decision data (Chapter 17) and encodes the cross-dimensional relationships that make some comparisons apt and others misleading. The Mahalanobis distance between the current case and the Jehovah's Witness paradigm may be very different from the Mahalanobis distance between the current case and the psychiatric paradigm, and the closer paradigm provides the better analogy.
 
 Casuistry without a metric is medical ethics by intuition. Casuistry with the Mahalanobis metric is medical ethics by geometry. The geometric framework does not replace casuistry; it completes it.
 

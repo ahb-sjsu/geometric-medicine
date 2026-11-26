@@ -24,7 +24,7 @@ These cross-terms are not philosophical abstractions. They are empirically estim
 
 ### Why $\Sigma$ Has Not Been Estimated
 
-The covariance matrix has 45 unique entries (9 diagonal + 36 off-diagonal, divided by 2 for symmetry). Estimating 45 parameters from clinical data requires:
+The covariance matrix has 45 unique entries (9 diagonal + 36 off-diagonal, counting each symmetric pair once). Estimating 45 parameters from clinical data requires:
 
 1. **Dimensional measurement**: A coding scheme that assigns each clinical decision a nine-dimensional attribute vector. This requires trained coders (clinicians who can evaluate decisions along all nine dimensions) and a validated coding protocol.
 
@@ -52,7 +52,7 @@ These requirements are feasible but have not been met — the framework is new, 
 3. Identify the largest off-diagonal elements — these are the cross-dimensional dependencies that drive the most clinical-ethical complexity.
 4. Bootstrap confidence intervals for all 45 entries.
 
-*Feasibility:* Ethics consultation records are maintained at most academic medical centers. Retrospective coding requires clinical expertise but not patient contact, IRB consent (the records already exist), or prospective recruitment. The primary cost is coder time — approximately 30 minutes per consultation for nine-dimensional coding, or 250 coder-hours for 500 consultations.
+*Feasibility:* Ethics consultation records are maintained at most academic medical centers. Retrospective coding requires clinical expertise but not patient contact, IRB consent (the records already exist), or prospective recruitment. The primary cost is coder time — approximately 30 minutes per consultation for nine-dimensional coding, or 250 hours per coder for 500 consultations (500 coder-hours for the two independent coders).
 
 **Study 2: Prospective Discrete Choice Experiment**
 
@@ -118,7 +118,7 @@ The three dimensions not routinely captured in EHRs require validated proxy inst
 
 ### The Bond Index Computation Pipeline
 
-**Step 1:** For a patient population $S$ at a healthcare institution, extract $d_1$, $d_2$, $d_4$, $d_6$, $d_8$ from EHR data.
+**Step 1:** For a patient population $S$ at a healthcare institution, extract $d_1$, $d_2$, $d_3$, $d_4$, $d_6$, $d_8$ from EHR data.
 
 **Step 2:** Administer proxy instruments for $d_5$, $d_7$, $d_9$ to a representative subsample. Use the subsample to train a predictive model that estimates $d_5$, $d_7$, $d_9$ from available EHR features (demographics, utilization patterns, communication notes).
 
@@ -136,7 +136,7 @@ The three dimensions not routinely captured in EHRs require validated proxy inst
 
 ## 17.3 The Falsifiable Prediction Suite
 
-The framework generates six specific predictions, each with an experimental design, instruments, and falsification criteria. These predictions are not post hoc rationalizations — they are pre-registered claims that the framework makes and that the data can reject.
+The framework generates six specific predictions, each with an experimental design, instruments, and falsification criteria. These predictions are not post hoc rationalizations — they are pre-specified claims that the framework makes and that the data can reject.
 
 ### Prediction 1: Dimensional Moral Distress
 
@@ -223,10 +223,10 @@ Each prediction requires a specific sample size for adequate statistical power. 
 - Settings: 3 (ICU, general medicine, palliative care), 100 per setting
 
 **Prediction 3 (Consent Gauge-Invariance):**
-- Effect size: $r = -0.4$ between framing invariance and health literacy
+- Effect size: $r = -0.4$ between framing variance and health literacy
 - Required $n$: 47 patients (for the correlation test)
 - Proposed $n$: 200 patients (for subgroup analysis by literacy level and procedure type)
-- Sarah's pilot: $n = 84$, $r = -0.41$ — effect size confirmed
+- Sarah's hypothetical pilot (Section 17.6, illustrative; no such study has been run): $n = 84$, $r = -0.41$ — the effect size the design assumes
 
 **Prediction 4 (Bond Index Predicts Disparities):**
 - Effect size: $r = 0.4$ between BI and HCAHPS composite
@@ -254,7 +254,7 @@ The complete six-prediction program requires approximately:
 - 200 clinicians for Prediction 5 (pre-crisis survey + simulation)
 - 200 end-of-life cases for Prediction 6 (retrospective comparison)
 
-With overlap between studies (clinicians in Predictions 1, 2, and 5 can be the same individuals; patients in Predictions 3, 4, and 6 can overlap), the total requirement is approximately 500 clinicians and 500 patients across three sites — feasible for a multi-site study with a three-year timeline and $1–2 million budget.
+With overlap between studies (clinicians in Predictions 1, 2, and 5 can be the same individuals; patients in Predictions 3, 4, and 6 can overlap), the total requirement is approximately 500 clinicians and 500 patients across three sites — feasible for a multi-site study with a three-year timeline and \$1–2 million budget.
 
 ---
 
@@ -280,23 +280,23 @@ Each of these falsification criteria is specific, testable, and decisive. The fr
 
 ---
 
-## 17.6 Sarah's Experiment
+## 17.6 Sarah's Experiment: An Illustrative Scenario
 
-Sarah designs her first study: a prospective consent gauge-invariance experiment. She presents patients scheduled for elective surgery with consent information in two framings:
+In this illustrative scenario (Sarah is a composite character, and no such study has been run), Sarah designs her first study: a prospective consent gauge-invariance experiment. She presents patients scheduled for elective surgery with consent information in two framings:
 
 - Version A: "This surgery has a 95% success rate. 5 out of 100 patients experience a complication."
 - Version B: "This surgery has a 5% complication rate. 95 out of 100 patients have no complications."
 
 She measures: (a) treatment preference after each version (proceed/defer), (b) REALM health literacy score, (c) three-item understanding assessment.
 
-Her preliminary results ($n = 84$, pilot study):
+Her hypothetical preliminary results ($n = 84$, illustrative pilot; the numbers are invented to show what the analysis would report):
 
 - 23% of patients showed framing effects (different preference under Version A vs. Version B)
 - Framing-variant patients had lower REALM scores (mean 48 vs. 61, $p < 0.001$)
 - Framing-variant patients had lower self-reported understanding (mean 2.1 vs. 3.4 on 5-point scale, $p < 0.001$)
-- Correlation between framing invariance and health literacy: $r = -0.41$, $p < 0.01$
+- Correlation between framing variance and health literacy: $r = -0.41$, $p < 0.01$
 
-The geometric prediction is confirmed in the pilot: framing-variant patients have lower health literacy and lower self-reported understanding. The consent form — which all patients signed — does not distinguish between framing-variant and framing-invariant patients. The gauge-invariance test does.
+In the scenario, the hypothetical pilot comes out as the geometric prediction says a real one should: framing-variant patients have lower health literacy and lower self-reported understanding. The consent form — which all patients signed — does not distinguish between framing-variant and framing-invariant patients. The gauge-invariance test does.
 
 Sarah submits a grant proposal for the full study ($n = 300$) with pre-registration of the six predictions. She does not know whether all six will be confirmed. She knows that the framework has made specific, falsifiable claims, and she knows how to test them. The manifold is a mathematical structure. Whether it corresponds to clinical reality is an empirical question. Sarah intends to answer it.
 

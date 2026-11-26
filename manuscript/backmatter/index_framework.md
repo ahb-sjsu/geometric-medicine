@@ -77,7 +77,7 @@
 **heuristic function ($h(n)$)**, 6, 7, 13
 **$h(n)$-damage (moral injury)**, 13, 14, 15
 **Hippocratic Oath**, 3, 4
-**Hohfeldian symmetry ($D_4$ on $d_2$)**, 4
+**Hohfeldian symmetry ($V_4$ on $d_2$)**, 4
 **hypervigilance**, 13, 14, 15
 
 **identity (professional)**, 7, 13, 14
@@ -171,7 +171,7 @@
 **Harris, John**, 5 --- QALYfying the value of life; QALY discrimination critique
 **Hart, Peter E.**, 6, App. A --- $A^*$ algorithm (with Nilsson and Raphael)
 **Hippocrates**, 3 --- "first, do no harm" as boundary condition
-**Hohfeld, Wesley Newcomb**, 4 --- jural relations, $D_4$ structure on $d_2$
+**Hohfeld, Wesley Newcomb**, 4 --- jural relations, $V_4$ structure on $d_2$
 **Jameton, Andrew**, 13 --- introduced moral distress in nursing
 **Jonsen, Albert R.**, 3 --- casuistry; case-based reasoning without a formal metric
 **Kahneman, Daniel**, 7, 8 --- framing effects, heuristics and biases
@@ -214,7 +214,7 @@
 **$\mathcal{C}$ (clinical decision complex)**, 4, 6, 10 --- 9-dimensional weighted simplicial complex
 **$\text{CF}(\gamma)$ (clinical friction)**, 10, 12 --- total path cost on the clinical decision complex
 **$d_1$--$d_9$ (clinical-moral dimensions)**, 4 --- outcomes, rights, justice, autonomy, trust, social, dignity, institutional, epistemic
-**$D_4$ (dihedral group)**, 4 --- symmetry of Hohfeldian relations on $d_2$
+**$V_4$ (Klein four-group)**, 4 --- symmetry of Hohfeldian relations on $d_2$ (stated as the dihedral group $D_4$ until *Geometric Ethics* withdrew it in v1.25)
 **$f(n) = g(n) + h(n)$ (evaluation function)**, 6, 7 --- total clinical evaluation; $g$ = EBM, $h$ = clinical wisdom
 **$\gamma^*$ (clinical geodesic)**, 6, 9, 10, 12 --- minimum-cost path on the full 9-dimensional manifold
 **$\text{MI}(T)$ (cumulative moral injury)**, 13 --- $\sum_{t=1}^T \Delta \text{MI}(t)$; monotonically non-decreasing

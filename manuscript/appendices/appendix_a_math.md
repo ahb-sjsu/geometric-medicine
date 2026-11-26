@@ -107,7 +107,7 @@ where $\Delta \mathbf{a} = \mathbf{a}(v_j) - \mathbf{a}(v_i)$ is the change in t
 
 ## A.8 The Scalar Irrecoverability Theorem
 
-**Theorem A.2 (Scalar Irrecoverability; Bond 2026c).** Let $Q: \mathbb{R}^n \to \mathbb{R}$ be any function mapping an $n$-dimensional state to a scalar ($n > 1$). Then:
+**Theorem A.2 (Scalar Irrecoverability; Bond 2026c).** Let $Q: \mathbb{R}^n \to \mathbb{R}$ be any continuous function mapping an $n$-dimensional state to a scalar ($n > 1$). Then:
 
 1. $Q$ is not injective: multiple distinct states map to the same scalar value.
 2. The information destroyed by $Q$ is irrecoverable: there exists no function $\psi: \mathbb{R} \to \mathbb{R}^n$ such that $\psi \circ Q = \text{id}$.

@@ -93,7 +93,7 @@ Consistent with the Geometric Series. Where domain-specific notation extends the
 |---|---|---|
 | $\tau$ | Meaning-preserving re-description (gauge transformation) | Ch. 8 |
 | BIP | Bond Invariance Principle | Ch. 8 |
-| $D_4$ | Dihedral group of order 8 (Hohfeldian symmetry on $d_2$) | Ch. 4 |
+| $V_4$ | Klein four-group, of order 4 (Hohfeldian symmetry on $d_2$; given as the dihedral group $D_4$ before the note of 2026-11-26 in Section 4.2.2) | Ch. 4 |
 
 ## Triage (GM)
 

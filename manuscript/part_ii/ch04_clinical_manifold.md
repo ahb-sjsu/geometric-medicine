@@ -53,7 +53,9 @@ $d_1$ is not monolithic. It decomposes into sub-dimensions: survival probability
 
 The patient's right to treatment, the clinician's duty of care, Hippocratic non-maleficence, the right to refuse treatment. $d_2$ encodes the deontic structure of the clinical relationship --- what the parties are entitled to, obligated to, permitted to, and prohibited from doing.
 
-The Hohfeldian analysis from *Geometric Ethics* (Ch. 8) applies directly: the patient's right to treatment is correlative with the clinician's duty to treat; the patient's right to refuse is correlative with the clinician's no-right to treat without consent. The $D_4$ dihedral symmetry of jural relations --- correlative and negation symmetries --- preserves the structure under re-description: swapping "the patient has a right to treatment" with "the clinician has a duty to treat" preserves the moral content, which is a gauge invariance condition on $d_2$.
+> **Note (2026-11-26).** *Geometric Ethics* withdrew, in its version 1.25, the claim that the four Hohfeldian positions carry the dihedral group $D_4$ of order eight: no quarter-turn has been demonstrated as a normative operation. The two operations that are demonstrated, the correlative and the negation, commute and generate the Klein four-group $V_4$, of order four. This section uses only those two commuting operations, so its statements stand with $V_4$ in place of $D_4$. No statement of this book depends on a quarter-turn or on order eight.
+
+The Hohfeldian analysis from *Geometric Ethics* (Ch. 8) applies directly: the patient's right to treatment is correlative with the clinician's duty to treat; the patient's right to refuse is correlative with the clinician's no-right to treat without consent. The Klein four-group $V_4$ symmetry of jural relations --- the correlative and negation symmetries --- preserves the structure under re-description: swapping "the patient has a right to treatment" with "the clinician has a duty to treat" preserves the moral content, which is a gauge invariance condition on $d_2$.
 
 **Attribute value:** $a_2(v) \in [0, 1]$, where 1 = all rights respected, all obligations fulfilled, and 0 = systematic violation of rights and obligations.
 
@@ -157,7 +159,7 @@ The Mahalanobis distance $\Delta \mathbf{a}^T \Sigma^{-1} \Delta \mathbf{a}$ mea
 
 **It accounts for dimensional correlation.** A treatment that improves $d_1$ (outcomes) but worsens $d_5$ (trust) has a different Mahalanobis distance than one that improves $d_1$ and $d_5$ by the same amounts, because $\Sigma_{15}$ is non-zero. The covariance matrix $\Sigma$ captures the empirical relationships between dimensions --- the fact that trust and outcomes tend to co-vary, that autonomy and understanding are linked, that justice and dignity interact. These relationships are not philosophical assumptions; they are estimable from clinical decision data.
 
-**It is invariant under linear re-description.** The Mahalanobis distance is invariant under affine transformations of the attribute space. If one hospital scores dignity on a 0--10 scale and another scores it on a 0--100 scale, the Mahalanobis distance is the same. This is a partial gauge invariance: the metric is invariant under rescaling and rotation of the attribute coordinates, which means that the clinical geodesic does not depend on arbitrary choices of measurement scale.
+**It is invariant under linear re-description.** The Mahalanobis distance is invariant under invertible affine transformations of the attribute space, provided $\Sigma$ is transformed with the coordinates. If one hospital scores dignity on a 0--10 scale and another scores it on a 0--100 scale, the Mahalanobis distance is the same. This is a partial gauge invariance: the metric is invariant under rescaling and rotation of the attribute coordinates, which means that the clinical geodesic does not depend on arbitrary choices of measurement scale.
 
 **It reduces to Euclidean distance when $\Sigma = I$.** If the nine dimensions are independent and equally weighted, the Mahalanobis distance reduces to the familiar Euclidean distance. The deviation of $\Sigma$ from the identity matrix encodes exactly the information that makes clinical ethics hard: the correlations and unequal weightings that prevent simple dimension-by-dimension evaluation.
 
@@ -192,7 +194,7 @@ $(+0.10, 0.0, -0.10, -0.10, -0.10, -0.10, -0.20, +0.10, -0.05)$
 
 Intubation improves outcomes slightly ($d_1$: $+0.10$) and institutional compliance ($d_8$: $+0.10$ --- intubation is the standard intervention for respiratory failure). But it worsens justice ($d_3$: $-0.10$ --- an ICU bed is consumed), autonomy ($d_4$: $-0.10$ --- the patient cannot consent), trust ($d_5$: $-0.10$ --- the family is divided and may lose trust), social impact ($d_6$: $-0.10$ --- the family's grief is complicated by the intervention), dignity ($d_7$: $-0.20$ --- intubation is one of the most dignity-reducing interventions in medicine), and epistemic status ($d_9$: $-0.05$ --- the patient cannot communicate, making it harder to assess their wishes).
 
-The Mahalanobis distance is computed as $\Delta \mathbf{a}^T \Sigma^{-1} \Delta \mathbf{a}$. Without the full covariance matrix (which must be estimated from data --- see Chapter 17), we can note that the Mahalanobis distance is strictly greater than the squared Euclidean distance $\|\Delta \mathbf{a}\|^2 = 0.01 + 0 + 0.01 + 0.01 + 0.01 + 0.01 + 0.04 + 0.01 + 0.0025 = 0.1025$ because the off-diagonal covariance terms (particularly $\Sigma_{45}$, $\Sigma_{57}$, and $\Sigma_{49}$) amplify the cost of simultaneous worsening on correlated dimensions.
+The Mahalanobis distance is computed as $\Delta \mathbf{a}^T \Sigma^{-1} \Delta \mathbf{a}$. Without the full covariance matrix (which must be estimated from data --- see Chapter 17), we can note that the Mahalanobis distance can exceed the squared Euclidean distance $\|\Delta \mathbf{a}\|^2 = 0.01 + 0 + 0.01 + 0.01 + 0.01 + 0.01 + 0.04 + 0.01 + 0.0025 = 0.1025$ when the off-diagonal covariance terms (particularly $\Sigma_{45}$, $\Sigma_{57}$, and $\Sigma_{49}$) amplify the cost of simultaneous worsening on correlated dimensions.
 
 Boundary crossings: Does intubation cross the consent boundary? The patient cannot consent (dementia), and no advance directive exists. In the absence of surrogate consent, intubation may cross $\beta_{\text{consent}}$ at a value that depends on the jurisdiction and the urgency: $\beta_{\text{consent}} \sim 5$--$15$ for emergency intubation without directive.
 
@@ -234,7 +236,7 @@ Chapter 17 proposes three complementary approaches:
 
 1. **Retrospective coding:** Code $\geq 500$ ethics committee consultations along all nine dimensions to estimate the sample covariance matrix directly.
 
-2. **Prospective discrete choice experiment:** Present clinicians with fractional-factorial clinical vignettes and estimate marginal rates of substitution between dimensions via conditional logit regression. This yields the off-diagonal entries of $\Sigma^{-1}$ (the precision matrix) directly.
+2. **Prospective discrete choice experiment:** Present clinicians with fractional-factorial clinical vignettes and estimate marginal rates of substitution between dimensions via conditional logit regression. The marginal rates of substitution are related to $\Sigma^{-1}$ (the precision matrix).
 
 3. **Cross-validation:** Validate the estimated $\Sigma$ against held-out ethics consultation recommendations. A well-estimated $\Sigma$ should predict which consultation recommendations are accepted and which are rejected.
 
@@ -270,7 +272,7 @@ Care bundles are the clinical decision complex's representation of the clinical 
 
 A concept that will recur throughout the book deserves formal introduction here.
 
-**Definition 4.7 (Clinical Friction).** *The clinical friction of a path $\gamma = (v_0, v_1, \ldots, v_m)$ on the clinical decision complex $\mathcal{C}$ is the total path cost:*
+**Definition 4.6 (Clinical Friction).** *The clinical friction of a path $\gamma = (v_0, v_1, \ldots, v_m)$ on the clinical decision complex $\mathcal{C}$ is the total path cost:*
 
 $$\text{CF}(\gamma) = \sum_{i=0}^{m-1} w(v_i, v_{i+1})$$
 
@@ -296,7 +298,7 @@ The distinction illuminates a practical clinical question: when a clinical path 
 
 The clinical decision complex is stratified: different clinical regimes occupy different strata with boundaries between them.
 
-**Definition 4.6 (Clinical Strata).** *The clinical decision complex $\mathcal{C}$ is stratified into at least four strata:*
+**Definition 4.7 (Clinical Strata).** *The clinical decision complex $\mathcal{C}$ is stratified into at least four strata:*
 
 1. *Acute: The patient has a condition that is actively deteriorating and requires immediate intervention. The active dimensions are dominated by $d_1$ and the time pressure collapses the effective dimensionality.*
 
@@ -404,4 +406,4 @@ The next chapter proves this claim formally.
 
 ---
 
-[^1]: The clinical decision complex is formally identical to Definition 1 of the GCE paper (submitted to *Journal of Medical Ethics*, 2026). The notation follows the series conventions: $\mathcal{C}$ for the clinical decision complex, $\mathbf{a}$ for attribute vectors, $\Sigma$ for the covariance matrix, $\beta_k$ for boundary penalties, $\gamma^*$ for the clinical geodesic. See Appendix E for the complete notation guide.
+[^1]: The clinical decision complex is formally identical to Definition 1 of the GCE paper (submitted to *Journal of Medical Ethics*, 2026). The notation follows the series conventions: $\mathcal{C}$ for the clinical decision complex, $\mathbf{a}$ for attribute vectors, $\Sigma$ for the covariance matrix, $\beta_k$ for boundary penalties, $\gamma^*$ for the clinical geodesic. See Appendix D for the complete notation guide.
